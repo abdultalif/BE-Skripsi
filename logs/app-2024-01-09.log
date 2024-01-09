@@ -1,0 +1,234 @@
+ [LOGGER] 2024-01-09 01:16:18.652 AM error : Error in login function: WHERE parameter "email" has invalid "undefined" value
+ [LOGGER] 2024-01-09 01:16:18.655 AM error : Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at User.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async User.findOne (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1240:12)
+ [LOGGER] 2024-01-09 01:21:03.278 AM error : Error in login function: WHERE parameter "email" has invalid "undefined" value
+ [LOGGER] 2024-01-09 01:21:03.283 AM error : Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at User.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async User.findOne (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1240:12)
+ [LOGGER] 2024-01-09 01:21:03.290 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:21:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:21:03.295 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:21:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:21:18.895 AM error : Error in login function: WHERE parameter "email" has invalid "undefined" value
+ [LOGGER] 2024-01-09 01:21:18.898 AM error : Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at User.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async User.findOne (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1240:12)
+ [LOGGER] 2024-01-09 01:21:18.907 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:21:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:21:18.911 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:21:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:25:45.156 AM error : Error in login function: WHERE parameter "email" has invalid "undefined" value
+ [LOGGER] 2024-01-09 01:25:45.161 AM error : Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at User.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async User.findOne (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1240:12)
+ [LOGGER] 2024-01-09 01:25:45.169 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:21:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:25:45.174 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:21:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:28:58.409 AM error : Error in login function: WHERE parameter "email" has invalid "undefined" value
+ [LOGGER] 2024-01-09 01:28:58.413 AM error : Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at User.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async User.findOne (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1240:12)
+ [LOGGER] 2024-01-09 01:28:58.425 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:21:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:28:58.429 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:21:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:29:27.302 AM error : Error in login function: WHERE parameter "email" has invalid "undefined" value
+ [LOGGER] 2024-01-09 01:29:27.305 AM error : Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at User.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async User.findOne (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1240:12)
+ [LOGGER] 2024-01-09 01:29:27.314 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:21:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:29:27.318 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:21:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:33:38.503 AM error : Error in login function: WHERE parameter "email" has invalid "undefined" value
+ [LOGGER] 2024-01-09 01:33:38.506 AM error : Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at User.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async User.findOne (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:1240:12)
+ [LOGGER] 2024-01-09 01:33:38.516 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:22:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:33:38.520 AM error : uncaughtException: Expected a string but received a undefined
+TypeError: Expected a string but received a undefined
+    at assertString (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\util\assertString.js:17:11)
+    at Object.isEmpty (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\validator\lib\isEmpty.js:19:29)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:22:70
+    at Array.forEach (<anonymous>)
+    at dd (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:15:26)
+    at new Promise (<anonymous>)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:13:24
+    at Array.forEach (<anonymous>)
+    at message (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/user-validation.js:9:31)
+    at new Promise (<anonymous>)
+ [LOGGER] 2024-01-09 01:37:17.931 AM error : uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as post] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:521:19)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/routes/api-public.js:10:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
