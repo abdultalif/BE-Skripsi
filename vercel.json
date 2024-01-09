@@ -1,0 +1,16 @@
+{
+  "name": "be-latihan",
+  "version": 2,
+  "builds": [
+    {
+      "src": "src",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ]
+}
