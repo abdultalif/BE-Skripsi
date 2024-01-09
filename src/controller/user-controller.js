@@ -141,8 +141,62 @@ const setActivateUser = async (req, res, next) => {
     }
 }
 
+
+const login = async (req, res, next) => {
+    try {
+        const valid = {
+            email: "required,isEmail",
+            password: "required",
+        }
+        const userLogin = await registerValidation(valid, req.body);
+        const data = userLogin.data;
+
+        if (userLogin.message.length > 0) {
+            throw new ResponseError(400, 'error', userLogin.message, 'Login Field', null);
+        }
+        const userExists = await user.findOne({
+            where: {
+                email: data.email,
+                isActive: true
+            }
+        });
+        if (!userExists) {
+            throw new ResponseError(401, 'error', 'Email or password wrong', 'Login Field', null)
+        }
+
+        const isPasswordValid = compare(data.password, userExists.password);
+        if (!isPasswordValid) {
+            throw new ResponseError(401, 'error', 'Email or password wrong', 'Login Field', null)
+        }
+
+        const usr = {
+            name: userExists.name,
+            email: userExists.email,
+        }
+        const token = generateAccessToken(usr);
+        const refreshToken = generateRefreshToken(usr);
+        return res.status(200).json({
+            statusResponse: 200,
+            status: "success",
+            message: "Login successfully",
+            data:
+                usr,
+            accessToken: token,
+            refreshToken: refreshToken
+
+        })
+
+
+    } catch (error) {
+        logger.error(`Error in login function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
 export default {
     register,
     getUser,
-    setActivateUser
+    setActivateUser,
+    login
 }

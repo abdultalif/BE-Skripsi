@@ -1,6 +1,6 @@
 # Api Spec User
 
-## Register User
+## Register User API
 Endpoint: POST /api-public/users
 
 Request Body:
@@ -46,7 +46,7 @@ Response Body Error:
 }
 ```
 
-## Activate User
+## Activate User API
 
 Endpoint: GET api-public/users/activate/:email/:userId
 
@@ -78,7 +78,7 @@ Response Body Error:
 ```
 
 
-## Get User
+## Get User API
 
 Endpoint: GET /api-public/users
 
@@ -122,5 +122,43 @@ Response Body Error:
   "errors": "User is not found",
   "message": "",
   "data": null
+}
+```
+
+
+## Login User Api
+
+Request Body:
+```json
+{
+  "email": "abdultalif85@gmail.com",
+  "password": "Talif414!"
+}
+```
+
+Response Body Success:
+```json
+{
+  "statusResponse": 200,
+  "status": "success",
+  "message": "Login successfully",
+  "data": {
+    "name": "Abdul Talif",
+    "email": "abdultalif85@gmail.com"
+  },
+  "accessToken": "unique-token",
+  "refreshToken": "unique-token"
+}
+```
+
+Response Body Error:
+
+```json
+  {
+    "statusResponse": 401,
+    "status": "error",
+    "errors": "Email or password wrong",
+    "message": "Login Field",
+    "data": null
 }
 ```
