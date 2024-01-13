@@ -115,3 +115,308 @@ SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
     at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:280:10)
     at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:175:3)
     at router (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:47:12)
+ [LOGGER] 2024-01-13 08:29:35.216 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+    at async ConnectionManager.getConnection (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:197:7)
+    at async D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\sequelize.js:305:26
+    at async MySQLQueryInterface.tableExists (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\dialects\abstract\query-interface.js:102:17)
+    at async User.sync (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\model.js:939:21)
+    at async Sequelize.sync (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\sequelize\lib\sequelize.js:377:9)
+ [LOGGER] 2024-01-13 08:58:19.765 PM error : Error in register function: registerUserValidation is not a function
+ [LOGGER] 2024-01-13 08:58:19.768 PM error : TypeError: registerUserValidation is not a function
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 08:59:17.735 PM error : Error in register function: Cannot read properties of undefined (reading 'email')
+ [LOGGER] 2024-01-13 08:59:17.738 PM error : TypeError: Cannot read properties of undefined (reading 'email')
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:35:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:03:03.903 PM error : Error in register function: Register Field
+ [LOGGER] 2024-01-13 09:03:03.905 PM error : Error: Register Field
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:41:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:03:14.552 PM error : Error in register function: null
+ [LOGGER] 2024-01-13 09:03:14.553 PM error : Error: null
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:04:47.469 PM error : Error in register function: null
+ [LOGGER] 2024-01-13 09:04:47.470 PM error : Error: null
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:04:58.535 PM error : Error in register function: null
+ [LOGGER] 2024-01-13 09:04:58.535 PM error : Error: null
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:05:01.970 PM error : Error in register function: null
+ [LOGGER] 2024-01-13 09:05:01.971 PM error : Error: null
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:05:07.461 PM error : Error in register function: Register Field
+ [LOGGER] 2024-01-13 09:05:07.462 PM error : Error: Register Field
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:41:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:07:37.190 PM error : Error in register function: null
+ [LOGGER] 2024-01-13 09:07:37.190 PM error : Error: null
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:07:46.143 PM error : Error in register function: null
+ [LOGGER] 2024-01-13 09:07:46.144 PM error : Error: null
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:08:04.558 PM error : Error in register function: getaddrinfo ENOTFOUND smtp.gmail.com
+ [LOGGER] 2024-01-13 09:08:04.559 PM error : Error: getaddrinfo ENOTFOUND smtp.gmail.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:119:26)
+ [LOGGER] 2024-01-13 09:08:09.804 PM error : Error in register function: getaddrinfo ENOTFOUND smtp.gmail.com
+ [LOGGER] 2024-01-13 09:08:09.804 PM error : Error: getaddrinfo ENOTFOUND smtp.gmail.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:119:26)
+ [LOGGER] 2024-01-13 09:08:34.316 PM error : Error in register function: null
+ [LOGGER] 2024-01-13 09:08:34.317 PM error : Error: null
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:08:41.032 PM error : Error in register function: getaddrinfo ENOTFOUND smtp.gmail.com
+ [LOGGER] 2024-01-13 09:08:41.032 PM error : Error: getaddrinfo ENOTFOUND smtp.gmail.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:119:26)
+ [LOGGER] 2024-01-13 09:08:48.831 PM error : Error in register function: null
+ [LOGGER] 2024-01-13 09:08:48.831 PM error : Error: null
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:09:21.451 PM error : Error in register function: null
+ [LOGGER] 2024-01-13 09:09:21.451 PM error : Error: null
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:09:28.457 PM error : Error in register function: Register Field
+ [LOGGER] 2024-01-13 09:09:28.458 PM error : Error: Register Field
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:41:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:09:54.398 PM error : Error in register function: Register Field
+ [LOGGER] 2024-01-13 09:09:54.401 PM error : Error: Register Field
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:41:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:09:58.048 PM error : Error in register function: Register Field
+ [LOGGER] 2024-01-13 09:09:58.049 PM error : Error: Register Field
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:11:14.135 PM error : Error in register function: getaddrinfo ENOTFOUND smtp.gmail.com
+ [LOGGER] 2024-01-13 09:11:14.135 PM error : Error: getaddrinfo ENOTFOUND smtp.gmail.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:119:26)
+ [LOGGER] 2024-01-13 09:11:23.994 PM error : Error in register function: getaddrinfo ENOTFOUND smtp.gmail.com
+ [LOGGER] 2024-01-13 09:11:23.994 PM error : Error: getaddrinfo ENOTFOUND smtp.gmail.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:119:26)
+ [LOGGER] 2024-01-13 09:12:02.843 PM error : Error in register function: getaddrinfo ENOTFOUND smtp.gmail.com
+ [LOGGER] 2024-01-13 09:12:02.844 PM error : Error: getaddrinfo ENOTFOUND smtp.gmail.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:119:26)
+ [LOGGER] 2024-01-13 09:34:22.109 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:34:22.114 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:34:54.626 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:34:54.629 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:35:18.150 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:35:18.151 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:35:40.494 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:35:40.495 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:35:47.674 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:35:47.675 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:37:25.070 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:37:25.072 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:37:42.725 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:37:42.728 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:38:13.469 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:38:13.471 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:38:50.417 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:38:50.420 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:39:36.609 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:39:36.610 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:39:49.285 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:39:49.286 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:40:02.925 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:40:02.926 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:40:25.218 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:40:25.219 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:40:31.053 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:40:31.054 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:40:42.471 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:40:42.472 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:42:33.018 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:42:33.019 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:43:07.852 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:43:07.853 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 09:53:54.654 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-13 09:53:54.658 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:111:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:02:40.878 PM error : Error in register function: Email already activated
+ [LOGGER] 2024-01-13 10:02:40.879 PM error : Error: Email already activated
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:02:52.328 PM error : Error in register function: "email" must be a valid email
+ [LOGGER] 2024-01-13 10:02:52.330 PM error : Error: "email" must be a valid email
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:15:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:03:02.740 PM error : Error in register function: "email" must be a valid email. "password" is not allowed to be empty. "confirmPassword" must be [ref:password]
+ [LOGGER] 2024-01-13 10:03:02.744 PM error : Error: "email" must be a valid email. "password" is not allowed to be empty. "confirmPassword" must be [ref:password]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:15:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:05:05.690 PM error : Error in login function: Cannot read properties of undefined (reading 'email')
+ [LOGGER] 2024-01-13 10:05:05.691 PM error : TypeError: Cannot read properties of undefined (reading 'email')
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:142:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:10:09.718 PM error : Error in login function: Cannot read properties of undefined (reading 'email')
+ [LOGGER] 2024-01-13 10:10:09.720 PM error : TypeError: Cannot read properties of undefined (reading 'email')
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:142:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:10:17.432 PM error : Error in login function: Cannot read properties of undefined (reading 'email')
+ [LOGGER] 2024-01-13 10:10:17.438 PM error : TypeError: Cannot read properties of undefined (reading 'email')
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:142:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:10:18.574 PM error : Error in login function: Cannot read properties of undefined (reading 'email')
+ [LOGGER] 2024-01-13 10:10:18.576 PM error : TypeError: Cannot read properties of undefined (reading 'email')
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:142:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:10:36.292 PM error : Error in login function: Cannot read properties of undefined (reading 'email')
+ [LOGGER] 2024-01-13 10:10:36.295 PM error : TypeError: Cannot read properties of undefined (reading 'email')
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:142:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:13:02.084 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-13 10:13:02.087 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:151:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:13:17.011 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-13 10:13:17.012 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:151:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:14:46.069 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-13 10:14:46.070 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:151:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-13 10:15:36.702 PM error : Error in refresh token function: Refresh token not found
+ [LOGGER] 2024-01-13 10:15:36.703 PM error : Error: Refresh token not found
+    at setRefreshToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:185:19)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:47:12)
+ [LOGGER] 2024-01-13 10:15:47.638 PM error : Error in refresh token function: Refresh token not found
+ [LOGGER] 2024-01-13 10:15:47.639 PM error : Error: Refresh token not found
+    at setRefreshToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:185:19)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:47:12)
+ [LOGGER] 2024-01-13 10:15:53.311 PM error : Error in refresh token function: Invalid refresh token
+ [LOGGER] 2024-01-13 10:15:53.312 PM error : Error: Invalid refresh token
+    at setRefreshToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:190:19)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:47:12)
+ [LOGGER] 2024-01-13 10:17:41.389 PM error : Error in refresh token function: Refresh token not found
+ [LOGGER] 2024-01-13 10:17:41.391 PM error : Error: Refresh token not found
+    at setRefreshToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:185:19)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:47:12)
+ [LOGGER] 2024-01-13 10:17:46.051 PM error : Error in refresh token function: Invalid refresh token
+ [LOGGER] 2024-01-13 10:17:46.052 PM error : Error: Invalid refresh token
+    at setRefreshToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:190:19)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:47:12)
+ [LOGGER] 2024-01-13 10:20:56.301 PM error : Error in refresh token function: Invalid refresh token
+ [LOGGER] 2024-01-13 10:20:56.302 PM error : Error: Invalid refresh token
+    at setRefreshToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:190:19)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:47:12)
+ [LOGGER] 2024-01-13 10:20:59.849 PM error : Error in refresh token function: Refresh token not found
+ [LOGGER] 2024-01-13 10:20:59.850 PM error : Error: Refresh token not found
+    at setRefreshToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:185:19)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:47:12)

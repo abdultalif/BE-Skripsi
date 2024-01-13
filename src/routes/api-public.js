@@ -10,9 +10,5 @@ publicRouter.get('/api-public/users/activate/:email/:userId', userController.set
 publicRouter.post('/api-public/users/login', userController.login);
 publicRouter.get('/api-public/users/refresh', userController.setRefreshToken);
 
-publicRouter.use('*', (req, res) => {
-    throw new ResponseError(404, "Not Found");
-})
-
 
 export { publicRouter };

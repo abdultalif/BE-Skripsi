@@ -2,45 +2,31 @@ import sequelize from "../utils/db.js"
 import user from "../model/user-model.js"
 import { ResponseError } from "../error/response-error.js";
 import logger from "../middleware/logging-middleware.js";
-import { registerValidation } from "../validation/user-validation.js";
 import { sendMail } from "../utils/sendMail.js";
 import { Op } from "sequelize";
 import { compare } from "../utils/bcrypt.js";
 import { generateAccessToken, generateRefreshToken, parseJWT, verifyRefreshToken } from "../utils/jwt.js";
+import { loginUserValidation, registerUserValidation } from "../validation/users-validation.js";
+import { validate } from "../validation/validation.js";
 
 const register = async (req, res, next) => {
     const t = await sequelize.transaction();
-    const validation = {
-        name: "required",
-        email: "required,isEmail",
-        password: "required,isStrongPassword",
-        confirmPassword: "required",
-    }
-
     try {
-
-        const users = await registerValidation(validation, req.body);
-        if (users.data.password !== users.data.confirmPassword) {
-            users.message.push("Password does not match");
-            // throw new ResponseError(400, "error", users.message, "Register Field", null)
-        }
-        if (users.message.length > 0) {
-            throw new ResponseError(400, "error", users.message, "Register Field", null)
-        }
+        const users = await validate(registerUserValidation, req.body);
         const userExists = await user.findAll({
             where: {
-                email: users.data.email,
+                email: users.email,
             },
         });
 
         if (userExists.length > 0 && userExists[0].isActive) {
-            throw new ResponseError(400, "error", ["Email already activated"], "Register Field", null);
+            throw new ResponseError(400, false, ["Email already activated"], null);
         } else if (userExists.length > 0 && !userExists[0].isActive && Date.parse(userExists[0].expireTime) > new Date()) {
-            throw new ResponseError(400, "error", ["Email already registered, please check your email"], "Register Field", null);
+            throw new ResponseError(400, false, ["Email already registered, please check your email"], null);
         } else {
             user.destroy({
                 where: {
-                    email: users.data.email
+                    email: users.email
                 }
             },
                 {
@@ -49,7 +35,7 @@ const register = async (req, res, next) => {
         }
 
         const data = await user.create({
-            ...users.data,
+            ...users,
             expireTime: new Date()
         },
             {
@@ -61,15 +47,14 @@ const register = async (req, res, next) => {
         if (!result) {
 
             await t.rollback();
-            throw new ResponseError(500, "Error", "Resgister Failed")
+            throw new ResponseError(500, false, "Resgister Failed", null);
 
         } else {
 
             await t.commit();
             res.status(201).json({
+                status: true,
                 statusResponse: 201,
-                status: "success",
-                success: "Register Success",
                 message: "User created, please check your email",
                 data: {
                     id: data.id,
@@ -78,7 +63,6 @@ const register = async (req, res, next) => {
                     expireTime: data.expireTime
                 },
             });
-
         }
 
     } catch (error) {
@@ -94,12 +78,12 @@ const getUser = async (req, res, next) => {
         const data = await user.findAll();
 
         if (data.length === 0) {
-            throw new ResponseError(404, 'error', 'User is not found', null, null);
+            throw new ResponseError(404, false, 'User is not found', null);
         }
 
         res.status(200).json({
+            status: true,
             statusResponse: 200,
-            status: "success",
             message: "OK",
             data
         })
@@ -124,14 +108,14 @@ const setActivateUser = async (req, res, next) => {
         });
 
         if (!userActivate) {
-            throw new ResponseError(404, 'error', 'User not found or expired', 'Activate User Field', null);
+            throw new ResponseError(404, false, 'User not found or expired', null);
         } else {
             userActivate.isActive = true;
             userActivate.expireTime = null;
             await userActivate.save();
             res.status(200).json({
+                status: true,
                 statusResponse: 200,
-                status: "success",
                 message: "User Activated",
                 data: {
                     name: userActivate.name,
@@ -149,29 +133,22 @@ const setActivateUser = async (req, res, next) => {
 
 const login = async (req, res, next) => {
     try {
-        const valid = {
-            email: "required,isEmail",
-            password: "required",
-        }
-        const userLogin = await registerValidation(valid, req.body);
-        const data = userLogin.data;
 
-        if (userLogin.message.length > 0) {
-            throw new ResponseError(400, 'error', userLogin.message, 'Login Field', null);
-        }
+        const userLogin = await validate(loginUserValidation, req.body);
+
         const userExists = await user.findOne({
             where: {
-                email: data.email,
+                email: userLogin.email,
                 isActive: true
             }
         });
         if (!userExists) {
-            throw new ResponseError(401, 'error', 'Email or password wrong', 'Login Field', null)
+            throw new ResponseError(401, false, 'Email or password wrong', null)
         }
 
-        const isPasswordValid = compare(data.password, userExists.password);
+        const isPasswordValid = compare(userLogin.password, userExists.password);
         if (!isPasswordValid) {
-            throw new ResponseError(401, 'error', 'Email or password wrong', 'Login Field', null)
+            throw new ResponseError(401, false, 'Email or password wrong', null)
         }
 
         const usr = {
@@ -182,8 +159,8 @@ const login = async (req, res, next) => {
         const token = generateAccessToken(usr);
         const refreshToken = generateRefreshToken(usr);
         return res.status(200).json({
+            status: true,
             statusResponse: 200,
-            status: "success",
             message: "Login successfully",
             data:
                 usr,
@@ -205,12 +182,12 @@ const setRefreshToken = async (req, res, next) => {
         // const [bearer, token] = authHeader.split(' ');
         const token = authHeader && authHeader.split(" ")[1];
         if (!token) {
-            throw new ResponseError(401, "error", "Refresh token not found", "Refresh Field", null);
+            throw new ResponseError(401, false, "Refresh token not found", null);
         }
 
         const verify = verifyRefreshToken(token)
         if (!verify) {
-            throw new ResponseError(401, "error", "Invalid refresh token", "Refresh Field", null);
+            throw new ResponseError(401, false, "Invalid refresh token", null);
         }
         let data = parseJWT(token);
         console.log(data);
@@ -220,7 +197,7 @@ const setRefreshToken = async (req, res, next) => {
             }
         });
         if (!userLogin) {
-            throw new ResponseError(401, "erorr", "User not found", "Refresh failed", null);
+            throw new ResponseError(401, false, "User not found", null);
         } else {
             const usr = {
                 id: userLogin.id,
@@ -230,6 +207,7 @@ const setRefreshToken = async (req, res, next) => {
             const token = generateAccessToken(usr);
             const refreshToken = generateRefreshToken(usr);
             return res.status(200).json({
+                status: true,
                 statusResponse: 200,
                 data: usr,
                 accessToken: token,
@@ -243,10 +221,23 @@ const setRefreshToken = async (req, res, next) => {
     }
 }
 
+const updateUser = async (req, res, next) => {
+    try {
+        const { userId } = req.params;
+
+    } catch (error) {
+        logger.error(`Error in update user function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
 export default {
     register,
     getUser,
     setActivateUser,
     login,
-    setRefreshToken
+    setRefreshToken,
+    updateUser
+
 }

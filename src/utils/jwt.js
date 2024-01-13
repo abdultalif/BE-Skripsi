@@ -25,9 +25,17 @@ const parseJWT = token => {
     return JSON.parse(Buffer.from(token.split(".")[1], "base64").toString());
 }
 
+const verifyAccessToken = token => {
+    try {
+        return jsonWebToken.verify(token, process.env.JWT_SECERET);
+    } catch (error) {
+        return null;
+    }
+}
 export {
     generateAccessToken,
     generateRefreshToken,
     verifyRefreshToken,
-    parseJWT
+    parseJWT,
+    verifyAccessToken
 }
