@@ -6,7 +6,7 @@ import { registerValidation } from "../validation/user-validation.js";
 import { sendMail } from "../utils/sendMail.js";
 import { Op } from "sequelize";
 import { compare } from "../utils/bcrypt.js";
-import { generateAccessToken, generateRefreshToken } from "../utils/jwt.js";
+import { generateAccessToken, generateRefreshToken, parseJWT, verifyRefreshToken } from "../utils/jwt.js";
 
 const register = async (req, res, next) => {
     const t = await sequelize.transaction();
@@ -14,11 +14,16 @@ const register = async (req, res, next) => {
         name: "required",
         email: "required,isEmail",
         password: "required,isStrongPassword",
+        confirmPassword: "required",
     }
 
     try {
 
         const users = await registerValidation(validation, req.body);
+        if (users.data.password !== users.data.confirmPassword) {
+            users.message.push("Password does not match");
+            // throw new ResponseError(400, "error", users.message, "Register Field", null)
+        }
         if (users.message.length > 0) {
             throw new ResponseError(400, "error", users.message, "Register Field", null)
         }
@@ -170,6 +175,7 @@ const login = async (req, res, next) => {
         }
 
         const usr = {
+            id: userExists.id,
             name: userExists.name,
             email: userExists.email,
         }
@@ -186,9 +192,52 @@ const login = async (req, res, next) => {
 
         })
 
-
     } catch (error) {
         logger.error(`Error in login function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
+const setRefreshToken = async (req, res, next) => {
+    try {
+        const authHeader = req.headers["authorization"];
+        // const [bearer, token] = authHeader.split(' ');
+        const token = authHeader && authHeader.split(" ")[1];
+        if (!token) {
+            throw new ResponseError(401, "error", "Refresh token not found", "Refresh Field", null);
+        }
+
+        const verify = verifyRefreshToken(token)
+        if (!verify) {
+            throw new ResponseError(401, "error", "Invalid refresh token", "Refresh Field", null);
+        }
+        let data = parseJWT(token);
+        console.log(data);
+        const userLogin = await user.findOne({
+            where: {
+                email: data.email
+            }
+        });
+        if (!userLogin) {
+            throw new ResponseError(401, "erorr", "User not found", "Refresh failed", null);
+        } else {
+            const usr = {
+                id: userLogin.id,
+                name: userLogin.name,
+                email: userLogin.email,
+            }
+            const token = generateAccessToken(usr);
+            const refreshToken = generateRefreshToken(usr);
+            return res.status(200).json({
+                statusResponse: 200,
+                data: usr,
+                accessToken: token,
+                refreshToken: refreshToken
+            });
+        }
+    } catch (error) {
+        logger.error(`Error in refresh token function: ${error.message}`);
         logger.error(error.stack);
         next(error);
     }
@@ -198,5 +247,6 @@ export default {
     register,
     getUser,
     setActivateUser,
-    login
+    login,
+    setRefreshToken
 }
