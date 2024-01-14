@@ -157,3 +157,37 @@ Response Body Error:
     "data": null
 }
 ```
+
+## Update User API
+
+Request Body:
+```json
+{
+  "email": "abdultalif85@gmail.com",
+  "name": "Talif"
+}
+```
+
+Response Body Success:
+```json
+{
+  "status": true,
+  "statusResponse": 200,
+  "message": "user update successfully",
+  "data": {
+      "id": "4e4d7304-01e5-4785-a8a5-7ec4e224c020",
+      "name": "Talif",
+      "email": "abdultalif55@gmail.com"
+  }
+}
+```
+
+Response Body Error:
+```json
+{
+  "status": false,
+  "statusResponse": 404,
+  "message": "User is not found",
+  "data": null
+}
+```

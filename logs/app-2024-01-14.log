@@ -199,3 +199,11 @@
     at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:9:15)
     at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:237:28)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-14 09:18:30.955 AM error : Error in update user function: User is not found
+ [LOGGER] 2024-01-14 09:18:30.959 AM error : Error: User is not found
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:234:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-14 09:22:19.334 AM error : Error in update user function: User is not found
+ [LOGGER] 2024-01-14 09:22:19.335 AM error : Error: User is not found
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:234:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
