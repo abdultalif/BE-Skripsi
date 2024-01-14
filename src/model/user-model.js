@@ -3,7 +3,7 @@ import { Sequelize } from "sequelize";
 import { encript } from "../utils/bcrypt.js";
 import moment from "moment";
 
-const user = sequelize.define('User', {
+const User = sequelize.define('User', {
     id: {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4,
@@ -55,5 +55,5 @@ const user = sequelize.define('User', {
 sequelize.sync();
 
 
-export default user;
+export default User;
 

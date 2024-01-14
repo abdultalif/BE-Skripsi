@@ -1,19 +1,19 @@
 import sequelize from "../utils/db.js"
-import user from "../model/user-model.js"
+import User from "../model/user-model.js"
 import { ResponseError } from "../error/response-error.js";
 import logger from "../middleware/logging-middleware.js";
 import { sendMail } from "../utils/sendMail.js";
 import { Op } from "sequelize";
 import { compare } from "../utils/bcrypt.js";
 import { generateAccessToken, generateRefreshToken, parseJWT, verifyRefreshToken } from "../utils/jwt.js";
-import { loginUserValidation, registerUserValidation } from "../validation/users-validation.js";
+import { loginUserValidation, registerUserValidation, updateUserValidation } from "../validation/users-validation.js";
 import { validate } from "../validation/validation.js";
 
 const register = async (req, res, next) => {
     const t = await sequelize.transaction();
     try {
         const users = await validate(registerUserValidation, req.body);
-        const userExists = await user.findAll({
+        const userExists = await User.findAll({
             where: {
                 email: users.email,
             },
@@ -24,7 +24,7 @@ const register = async (req, res, next) => {
         } else if (userExists.length > 0 && !userExists[0].isActive && Date.parse(userExists[0].expireTime) > new Date()) {
             throw new ResponseError(400, false, ["Email already registered, please check your email"], null);
         } else {
-            user.destroy({
+            User.destroy({
                 where: {
                     email: users.email
                 }
@@ -34,7 +34,7 @@ const register = async (req, res, next) => {
                 });
         }
 
-        const data = await user.create({
+        const data = await User.create({
             ...users,
             expireTime: new Date()
         },
@@ -75,7 +75,7 @@ const register = async (req, res, next) => {
 
 const getUser = async (req, res, next) => {
     try {
-        const data = await user.findAll();
+        const data = await User.findAll();
 
         if (data.length === 0) {
             throw new ResponseError(404, false, 'User is not found', null);
@@ -96,7 +96,7 @@ const getUser = async (req, res, next) => {
 const setActivateUser = async (req, res, next) => {
     try {
         const { email, userId } = req.params;
-        const userActivate = await user.findOne({
+        const userActivate = await User.findOne({
             where: {
                 email: email,
                 id: userId,
@@ -136,7 +136,7 @@ const login = async (req, res, next) => {
 
         const userLogin = await validate(loginUserValidation, req.body);
 
-        const userExists = await user.findOne({
+        const userExists = await User.findOne({
             where: {
                 email: userLogin.email,
                 isActive: true
@@ -191,7 +191,7 @@ const setRefreshToken = async (req, res, next) => {
         }
         let data = parseJWT(token);
         console.log(data);
-        const userLogin = await user.findOne({
+        const userLogin = await User.findOne({
             where: {
                 email: data.email
             }
@@ -224,7 +224,42 @@ const setRefreshToken = async (req, res, next) => {
 const updateUser = async (req, res, next) => {
     try {
         const { userId } = req.params;
+        const user = await User.findOne({
+            where: {
+                id: userId
+            }
+        });
 
+        if (!user) {
+            throw new ResponseError(404, false, "User is not found", null);
+        }
+
+        const userUpdate = validate(updateUserValidation, req.body);
+        const result = await User.update(
+            {
+                ...userUpdate
+            },
+            {
+                where: {
+                    id: userId
+                }
+            }
+        );
+        const updatedUser = await User.findOne({
+            where: {
+                id: userId
+            }
+        });
+        return res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "user update successfully",
+            data: {
+                id: updatedUser.id,
+                name: updatedUser.name,
+                email: updatedUser.email,
+            },
+        });
     } catch (error) {
         logger.error(`Error in update user function: ${error.message}`);
         logger.error(error.stack);

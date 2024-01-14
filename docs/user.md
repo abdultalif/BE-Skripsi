@@ -18,10 +18,9 @@ Response Body Success:
 
 ```json
 {
+  "status": true,
   "statusResponse": 201,
-  "status": "success",
-  "success": "Register Success",
-  "message": "User created, please check your email"
+  "message": "User created, please check your email",
   "data": {
     "id": "1f0098ad-9ff1-4f5b-b811-7be320697ee7",
     "name": "Abdul Talif Parinduri",
@@ -36,12 +35,11 @@ Response Body Error:
 
 ```json
 {
+  "status": false,
   "statusResponse": 400,
-  "status": "error",
-  "errors": [
+  "message": [
     "Email already activated"
   ],
-  "message": "Register Field",
   "data": null
 }
 ```
@@ -54,8 +52,8 @@ Response Body Success:
 
 ```json
 {
+  "status": true,
     "statusResponse": 200,
-    "status": "success",
     "message": "User Activated",
     "data": {
         "name": "Abdul Talif Parinduri",
@@ -69,11 +67,10 @@ Response Body Error:
 
 ```json
 {
-    "statusResponse": 404,
-    "status": "error",
-    "errors": "User not found or expired",
-    "message": "Activate User Field",
-    "data": null
+  "status": false,
+  "statusResponse": 404,
+  "message": "User not found or expired",
+  "data": null
 }
 ```
 
@@ -85,8 +82,8 @@ Endpoint: GET /api-public/users
 Response Body Success:
 ```json
 {
+  "status": true,
   "statusResponse": 200,
-  "status": "success",
   "message": "OK",
   "data": [
     {
@@ -117,10 +114,9 @@ Response Body Success:
 Response Body Error:
 ```json
 {
+  "status": false,
   "statusResponse": 404,
-  "status": "error",
-  "errors": "User is not found",
-  "message": "",
+  "message": "User is not found",
   "data": null
 }
 ```
@@ -139,8 +135,8 @@ Request Body:
 Response Body Success:
 ```json
 {
+  "status": true,
   "statusResponse": 200,
-  "status": "success",
   "message": "Login successfully",
   "data": {
     "name": "Abdul Talif",
@@ -155,10 +151,9 @@ Response Body Error:
 
 ```json
   {
+    "status": false,
     "statusResponse": 401,
-    "status": "error",
-    "errors": "Email or password wrong",
-    "message": "Login Field",
+    "message": "Email or password wrong",
     "data": null
 }
 ```
