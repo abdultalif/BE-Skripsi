@@ -6,8 +6,9 @@ import { sendMail } from "../utils/sendMail.js";
 import { Op } from "sequelize";
 import { compare } from "../utils/bcrypt.js";
 import { generateAccessToken, generateRefreshToken, parseJWT, verifyRefreshToken } from "../utils/jwt.js";
-import { loginUserValidation, registerUserValidation, updateUserValidation } from "../validation/users-validation.js";
+import { changePasswordValidation, forgotPasswordValidation, loginUserValidation, registerUserValidation, updateUserValidation } from "../validation/users-validation.js";
 import { validate } from "../validation/validation.js";
+import { authentication } from "../middleware/auth-middleware.js"
 
 const register = async (req, res, next) => {
     const t = await sequelize.transaction();
@@ -73,11 +74,35 @@ const register = async (req, res, next) => {
     }
 }
 
-const getUser = async (req, res, next) => {
+const getUsers = async (req, res, next) => {
     try {
         const data = await User.findAll();
 
         if (data.length === 0) {
+            throw new ResponseError(404, false, 'User is not found', null);
+        }
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "OK",
+            data
+        })
+    } catch (error) {
+        next(error)
+    }
+}
+
+const getUser = async (req, res, next) => {
+    try {
+        const { userId } = req.params;
+        const data = await User.findOne({
+            where: {
+                id: userId
+            }
+        });
+
+        if (!data || data.isActive == 0) {
             throw new ResponseError(404, false, 'User is not found', null);
         }
 
@@ -133,7 +158,6 @@ const setActivateUser = async (req, res, next) => {
 
 const login = async (req, res, next) => {
     try {
-
         const userLogin = await validate(loginUserValidation, req.body);
 
         const userExists = await User.findOne({
@@ -155,6 +179,7 @@ const login = async (req, res, next) => {
             id: userExists.id,
             name: userExists.name,
             email: userExists.email,
+            password: userExists.password,
         }
         const token = generateAccessToken(usr);
         const refreshToken = generateRefreshToken(usr);
@@ -267,12 +292,104 @@ const updateUser = async (req, res, next) => {
     }
 }
 
+
+const changePassword = async (req, res, next) => {
+    try {
+        const userLogin = req.user;
+        const changePass = validate(changePasswordValidation, req.body);
+
+        const isCurrentPasswordValid = compare(changePass.curentPassword, userLogin.password);
+        if (!isCurrentPasswordValid) {
+            throw new ResponseError(400, false, "Current password is incorrect", null);
+        }
+        await User.update(
+            {
+                password: changePass.newPassword,
+            },
+            {
+                where: {
+                    id: userLogin.id
+                }
+            }
+        );
+        return res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "Change password successfully",
+            data: null
+        })
+
+    } catch (error) {
+        logger.error(`Error in change password fuction: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
+
+// const forgotPassword = async (req, res, next) => {
+// try {
+//     const user = validate(forgotPasswordValidation, req.body);
+//     const data = await User.findOne({
+//         where: {
+//             email: user.email,
+//         }
+//     });
+//     if (!data) {
+//         throw new ResponseError(404, false, "User is not found", null);
+//     }
+
+
+
+
+// } catch (error) {
+//     logger.error(`Error in forgot passwword function: ${error.message}`);
+//     logger.error(error.stack);
+//     next(error)
+// }
+// }
+
+const deleteUser = async (req, res, next) => {
+    try {
+        const userId = req.params.userId;
+        const user = await User.findOne({
+            where: {
+                id: userId
+            }
+        });
+        // console.log(userId);
+        if (!user || user.isActive == 0) {
+            throw new ResponseError(404, false, "User is not found", null);
+        }
+
+        await User.destroy({
+            where: {
+                id: userId
+            }
+        });
+        return res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "User delete successfully",
+            data: null
+        });
+    } catch (error) {
+        logger.error(`Eror in delete user function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
+
 export default {
     register,
-    getUser,
+    getUsers,
     setActivateUser,
     login,
     setRefreshToken,
-    updateUser
-
+    updateUser,
+    changePassword,
+    // forgotPassword,
+    getUser,
+    deleteUser
 }
