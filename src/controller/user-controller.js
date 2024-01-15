@@ -6,9 +6,8 @@ import { sendMail } from "../utils/sendMail.js";
 import { Op } from "sequelize";
 import { compare } from "../utils/bcrypt.js";
 import { generateAccessToken, generateRefreshToken, parseJWT, verifyRefreshToken } from "../utils/jwt.js";
-import { changePasswordValidation, forgotPasswordValidation, loginUserValidation, registerUserValidation, updateUserValidation } from "../validation/users-validation.js";
+import { changePasswordValidation, loginUserValidation, registerUserValidation, updateUserValidation } from "../validation/users-validation.js";
 import { validate } from "../validation/validation.js";
-import { authentication } from "../middleware/auth-middleware.js"
 
 const register = async (req, res, next) => {
     const t = await sequelize.transaction();
