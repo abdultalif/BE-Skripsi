@@ -1,5 +1,5 @@
-import sequelize from "../utils/db.js"
-import User from "../model/user-model.js"
+import sequelize from "../utils/db.js";
+import User from "../model/user-model.js";
 import { ResponseError } from "../error/response-error.js";
 import logger from "../middleware/logging-middleware.js";
 import { sendMail } from "../utils/sendMail.js";
@@ -42,7 +42,7 @@ const register = async (req, res, next) => {
                 transaction: t
             });
 
-        const result = await sendMail(data.name, data.email, data.id)
+        const result = await sendMail(data.name, data.email, data.id);
         console.log(data.id);
         if (!result) {
 
@@ -63,15 +63,16 @@ const register = async (req, res, next) => {
                     expireTime: data.expireTime
                 },
             });
+            logger.info(`User registered successfully: ${data.email}`);
         }
 
     } catch (error) {
-        t.rollback()
+        t.rollback();
         logger.error(`Error in register function: ${error.message}`);
         logger.error(error.stack);
         next(error);
     }
-}
+};
 
 const getUsers = async (req, res, next) => {
     try {
@@ -86,11 +87,11 @@ const getUsers = async (req, res, next) => {
             statusResponse: 200,
             message: "OK",
             data
-        })
+        });
     } catch (error) {
-        next(error)
+        next(error);
     }
-}
+};
 
 const getUser = async (req, res, next) => {
     try {
@@ -110,11 +111,11 @@ const getUser = async (req, res, next) => {
             statusResponse: 200,
             message: "OK",
             data
-        })
+        });
     } catch (error) {
-        next(error)
+        next(error);
     }
-}
+};
 
 
 const setActivateUser = async (req, res, next) => {
@@ -145,14 +146,14 @@ const setActivateUser = async (req, res, next) => {
                     name: userActivate.name,
                     email: userActivate.email,
                 }
-            })
+            });
         }
     } catch (error) {
         logger.error(`Error in setActivateUser function: ${error.message}`);
         logger.error(error.stack);
         next(error);
     }
-}
+};
 
 
 const login = async (req, res, next) => {
@@ -166,12 +167,12 @@ const login = async (req, res, next) => {
             }
         });
         if (!userExists) {
-            throw new ResponseError(401, false, 'Email or password wrong', null)
+            throw new ResponseError(401, false, 'Email or password wrong', null);
         }
 
         const isPasswordValid = compare(userLogin.password, userExists.password);
         if (!isPasswordValid) {
-            throw new ResponseError(401, false, 'Email or password wrong', null)
+            throw new ResponseError(401, false, 'Email or password wrong', null);
         }
 
         const usr = {
@@ -179,7 +180,7 @@ const login = async (req, res, next) => {
             name: userExists.name,
             email: userExists.email,
             password: userExists.password,
-        }
+        };
         const token = generateAccessToken(usr);
         const refreshToken = generateRefreshToken(usr);
         return res.status(200).json({
@@ -191,14 +192,14 @@ const login = async (req, res, next) => {
             accessToken: token,
             refreshToken: refreshToken
 
-        })
+        });
 
     } catch (error) {
         logger.error(`Error in login function: ${error.message}`);
         logger.error(error.stack);
         next(error);
     }
-}
+};
 
 const setRefreshToken = async (req, res, next) => {
     try {
@@ -209,11 +210,11 @@ const setRefreshToken = async (req, res, next) => {
             throw new ResponseError(401, false, "Refresh token not found", null);
         }
 
-        const verify = verifyRefreshToken(token)
+        const verify = verifyRefreshToken(token);
         if (!verify) {
             throw new ResponseError(401, false, "Invalid refresh token", null);
         }
-        let data = parseJWT(token);
+        const data = parseJWT(token);
         console.log(data);
         const userLogin = await User.findOne({
             where: {
@@ -227,7 +228,7 @@ const setRefreshToken = async (req, res, next) => {
                 id: userLogin.id,
                 name: userLogin.name,
                 email: userLogin.email,
-            }
+            };
             const token = generateAccessToken(usr);
             const refreshToken = generateRefreshToken(usr);
             return res.status(200).json({
@@ -243,7 +244,7 @@ const setRefreshToken = async (req, res, next) => {
         logger.error(error.stack);
         next(error);
     }
-}
+};
 
 const updateUser = async (req, res, next) => {
     try {
@@ -289,7 +290,7 @@ const updateUser = async (req, res, next) => {
         logger.error(error.stack);
         next(error);
     }
-}
+};
 
 
 const changePassword = async (req, res, next) => {
@@ -316,14 +317,14 @@ const changePassword = async (req, res, next) => {
             statusResponse: 200,
             message: "Change password successfully",
             data: null
-        })
+        });
 
     } catch (error) {
         logger.error(`Error in change password fuction: ${error.message}`);
         logger.error(error.stack);
         next(error);
     }
-}
+};
 
 
 // const forgotPassword = async (req, res, next) => {
@@ -377,7 +378,7 @@ const deleteUser = async (req, res, next) => {
         logger.error(error.stack);
         next(error);
     }
-}
+};
 
 
 export default {
@@ -391,4 +392,4 @@ export default {
     // forgotPassword,
     getUser,
     deleteUser
-}
+};

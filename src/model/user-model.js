@@ -28,7 +28,7 @@ const User = sequelize.define('User', {
         type: Sequelize.STRING,
         allowNull: false,
         set(value) {
-            this.setDataValue("password", encript(value))
+            this.setDataValue("password", encript(value));
         }
     },
     isActive: {

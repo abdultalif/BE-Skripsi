@@ -33,4 +33,4 @@ export {
     updateUserValidation,
     // forgotPasswordValidation,
     changePasswordValidation
-}
+};

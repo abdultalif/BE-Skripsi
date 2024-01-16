@@ -788,3 +788,12 @@ Error: Route.post() requires a callback function but got a [object Undefined]
     at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\index.js:280:10)
     at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/middleware/auth-middleware.js:18:5)
     at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\be\node_modules\express\lib\router\layer.js:95:5)
+ [LOGGER] 2024-01-15 11:10:33.697 PM error : Error in register function: Email already registered, please check your email
+ [LOGGER] 2024-01-15 11:10:33.700 PM error : Error: Email already registered, please check your email
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:25:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-15 11:10:44.883 PM error : Error in register function: [object Object]
+ [LOGGER] 2024-01-15 11:10:44.884 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/validation/validation.js:23:15)
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/be/src/controller/user-controller.js:15:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

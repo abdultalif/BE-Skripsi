@@ -12,4 +12,4 @@ router.put('/api/users/changePassword', userController.changePassword);
 
 export {
     router
-}
+};

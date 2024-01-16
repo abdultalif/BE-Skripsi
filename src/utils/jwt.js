@@ -5,13 +5,13 @@ const generateAccessToken = user => {
     return jsonWebToken.sign(user, process.env.JWT_SECERET, {
         expiresIn: process.env.JWT_EXPIRES_IN || '1800s',
     });
-}
+};
 
 const generateRefreshToken = user => {
     return jsonWebToken.sign(user, process.env.JWT_REFRESH_SECERET, {
         expiresIn: process.env.JWT_REFRESH_EXPIRES_IN || '86400s',
     });
-}
+};
 
 const verifyRefreshToken = token => {
     try {
@@ -19,11 +19,11 @@ const verifyRefreshToken = token => {
     } catch (error) {
         return null;
     }
-}
+};
 
 const parseJWT = token => {
     return JSON.parse(Buffer.from(token.split(".")[1], "base64").toString());
-}
+};
 
 const verifyAccessToken = token => {
     try {
@@ -31,11 +31,11 @@ const verifyAccessToken = token => {
     } catch (error) {
         return null;
     }
-}
+};
 export {
     generateAccessToken,
     generateRefreshToken,
     verifyRefreshToken,
     parseJWT,
     verifyAccessToken
-}
+};

@@ -55,22 +55,22 @@ const createEmail = (name, email, token) => {
             </table>
         `
     };
-}
+};
 
 const sendMail = (name, email, token) => {
     return new Promise((resolve, reject) => {
         transporter.sendMail(createEmail(name, email, token), (err, info) => {
             if (err) {
-                console.log(err)
-                reject(err)
+                console.log(err);
+                reject(err);
             } else {
                 console.log(`Email sent: ${info.response}`);
-                resolve(true)
+                resolve(true);
             }
-        })
-    })
-}
+        });
+    });
+};
 
 export {
     sendMail
-}
+};
