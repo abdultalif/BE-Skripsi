@@ -2,6 +2,7 @@ import sequelize from "../utils/db.js";
 import { Sequelize } from "sequelize";
 import { encript } from "../utils/bcrypt.js";
 import moment from "moment";
+import Contact from "./contact-model.js";
 
 const User = sequelize.define('User', {
     id: {
@@ -39,7 +40,7 @@ const User = sequelize.define('User', {
         type: Sequelize.DATE,
         set(value) {
             if (value !== null) {
-                this.setDataValue("expireTime", moment(value).add(1, "hours"));
+                this.setDataValue("expireTime", moment(value).add(1, "hour"));
             } else {
                 this.setDataValue("expireTime", null);
             }
@@ -52,7 +53,18 @@ const User = sequelize.define('User', {
         underscored: true
     });
 
-sequelize.sync();
+User.hasMany(Contact, {
+    foreignKey: 'userId',
+});
+
+Contact.belongsTo(User, {
+    foreignKey: 'userId',
+});
+
+
+(async () => {
+    await sequelize.sync();
+})();
 
 
 export default User;

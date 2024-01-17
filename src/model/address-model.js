@@ -1,59 +1,42 @@
 import sequelize from "../utils/db.js";
 import { Sequelize } from "sequelize";
-import contact from "./contact-model.js";
 
-
-const address = sequelize.define(
-    "Address",
-    {
-        id: {
-            type: Sequelize.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
-        addressType: {
-            type: Sequelize.STRING,
-            allowNull: false
-        },
-        street: {
-            type: Sequelize.STRING,
-            allowNull: false
-        },
-        city: {
-            type: Sequelize.STRING,
-        },
-        province: {
-            type: Sequelize.STRING,
-        },
-        country: {
-            type: Sequelize.STRING,
-        },
-        zipCode: {
-            type: Sequelize.STRING,
-        },
+const Address = sequelize.define('Address', {
+    id: {
+        type: Sequelize.UUID,
+        defaultValue: Sequelize.UUIDV4,
+        primaryKey: true,
+        allowNull: false
     },
+    addressType: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    street: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    city: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    province: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    country: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    zipCode: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+},
     {
         tableName: 'address',
         timestamps: true,
         underscored: true
-    }
-);
+    });
 
-
-contact.hasMany(address, {
-    foreignKey: 'id',
-    onUpdate: 'RESTRICT',
-    onDelete: 'RESTRICT',
-});
-
-address.hasMany(contact, {
-    foreignKey: 'contactId',
-    onUpdate: 'RESTRICT',
-    onDelete: 'RESTRICT',
-});
-
-
-sequelize.sync();
-
-export default address;
+export default Address;

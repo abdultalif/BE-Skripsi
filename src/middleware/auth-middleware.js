@@ -4,7 +4,7 @@ import { verifyAccessToken } from "../utils/jwt.js";
 const authentication = (req, res, next) => {
     const authHeader = req.headers["authorization"];
     const token = authHeader && authHeader.split(" ")[1];
-    // console.log(token)
+
     if (!token) {
         throw new ResponseError(401, false, "Unauthorized", null);
     }

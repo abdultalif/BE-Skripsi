@@ -1,60 +1,47 @@
 import sequelize from "../utils/db.js";
 import { Sequelize } from "sequelize";
-import user from "./user-model.js";
+import Address from "./address-model.js";
 
-const contact = sequelize.define('Contact', {
+const Contact = sequelize.define('Contact', {
     id: {
-        type: Sequelize.INTEGER,
-        autoIncrement: true,
+        type: Sequelize.UUID,
+        defaultValue: Sequelize.UUIDV4,
         primaryKey: true,
         allowNull: false
     },
     firstName: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
     },
     lastName: {
         type: Sequelize.STRING,
-        allowNull: true
-    },
-    fullName: {
-        get() {
-            return this.firstName + " " + this.lastName;
-        }
+        allowNull: false,
     },
     email: {
         type: Sequelize.STRING,
+        allowNull: false,
         validate: {
             isEmail: true
-        },
-        set(value) {
-            this.setDataValue("email", value.toLowerCase());
-        },
+        }
     },
     phone: {
         type: Sequelize.STRING,
-        allowNull: true
-    }
+        allowNull: false,
+    },
+    user_id: {
+        type: Sequelize.UUID,  // Sesuaikan dengan tipe data yang benar
+        allowNull: false,
+    },
 },
     {
         tableName: 'contacts',
-        underscored: true,
-        timestamps: true
-    }
-);
+        timestamps: true,
+        underscored: true
+    });
 
-user.hasMany(contact, {
-    foreignKey: 'id',
-    onUpdate: 'RESTRICT',
-    onDelete: 'RESTRICT',
+Contact.hasMany(Address, {
+    foreignKey: 'contactId',
+    as: 'addresses', // <--- Penambahan ini untuk memberikan alias pada relasi
 });
 
-contact.hasMany(user, {
-    foreignKey: 'userId',
-    onUpdate: 'RESTRICT',
-    onDelete: 'RESTRICT',
-});
-
-sequelize.sync();
-
-export default contact;
+export default Contact;
