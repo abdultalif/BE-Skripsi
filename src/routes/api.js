@@ -18,6 +18,7 @@ router.put('/api/users/changePassword', userController.changePassword);
 
 router.get('/api/menus/', menuController.getMenus);
 router.post('/api/menus/', uploadMenu.single('image'), menuController.createMenu);
+router.delete('/api/menus/:menuId', menuController.deleteMenu);
 router.get('/api/menus/:menuId', menuController.getMenu);
 
 export {
