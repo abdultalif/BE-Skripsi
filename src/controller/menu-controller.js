@@ -1,7 +1,7 @@
 import { ResponseError } from "../error/response-error.js";
 import logger from "../middleware/logging-middleware.js";
 import Menu from "../model/menu-model.js";
-import { createMenuValidation } from "../validation/menus-validation.js";
+import { createMenuValidation, updateMenuValidation } from "../validation/menus-validation.js";
 import { validate } from "../validation/validation.js";
 import fs from "fs";
 
@@ -130,9 +130,104 @@ const getMenu = async (req, res, next) => {
     }
 };
 
+const updateMenu = async (req, res, next) => {
+    try {
+        const { menuId } = req.params;
+        const menu = req.body;
+        const imageMenu = req.file;
+        menu.image = imageMenu;
+
+        const menuExists = await Menu.findByPk(menuId);
+        if (!menuExists) {
+            throw new ResponseError(404, false, "Menu is not found", null);
+        }
+
+        const menuUpdate = validate(updateMenuValidation, menu);
+
+        if (imageMenu) {
+            const filePath = `uploads/menu/${menuExists.image}`;
+            fs.unlinkSync(filePath);
+        }
+
+
+        if (imageMenu) {
+            menuUpdate.image = req.file.filename;
+        }
+        const result = await Menu.update({ ...menuUpdate }, { where: { id: menuId } });
+        return res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "Update menu successfully",
+            data: menuUpdate
+        });
+    } catch (error) {
+        if (req.file) {
+            const filePath = 'uploads/menu/' + req.file.filename;
+            fs.unlinkSync(filePath);
+        }
+        logger.error(`Error in update menu function ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
+
+
+// const updateMenu = async (req, res, next) => {
+//     try {
+//         const { menuId } = req.params;
+//         const menu = req.body;
+//         const imageMenu = req.file;
+
+//         const menuExists = await Menu.findByPk(menuId);
+//         if (!menuExists) {
+//             throw new ResponseError(404, false, "Menu tidak ditemukan", null);
+//         }
+
+//         // Periksa apakah gambar baru diunggah
+//         if (imageMenu) {
+//             // Hapus gambar lama jika ada
+//             if (menuExists.image) {
+//                 const filePath = `uploads/menu/${menuExists.image}`;
+//                 fs.unlinkSync(filePath);
+//             }
+//             // Tetapkan nama file gambar baru pada objek menu
+//             menu.image = req.file.filename;
+//         } else {
+//             // Jika tidak ada gambar baru, tetapkan nama file gambar lama
+//             menu.image = menuExists.image;
+//         }
+
+//         // Validasi menu yang diperbarui
+//         const menuUpdate = validate(updateMenuValidation, menu);
+
+//         // Perbarui menu di database
+//         const result = await Menu.update({ ...menuUpdate }, { where: { id: menuId } });
+
+//         return res.status(200).json({
+//             status: true,
+//             statusResponse: 200,
+//             message: "Menu berhasil diperbarui",
+//             data: menuUpdate
+//         });
+//     } catch (error) {
+//         // Jika terjadi kesalahan, hapus gambar yang baru diunggah (jika ada)
+//         if (req.file) {
+//             const filePath = 'uploads/menu/' + req.file.filename;
+//             fs.unlinkSync(filePath);
+//         }
+//         logger.error(`Kesalahan dalam fungsi pembaruan menu ${error.message}`);
+//         logger.error(error.stack);
+//         next(error);
+//     }
+// };
+
+
+
 export default {
     getMenus,
     getMenu,
     createMenu,
-    deleteMenu
+    deleteMenu,
+    updateMenu
 };

@@ -1,0 +1,45 @@
+ [LOGGER] 2024-01-18 12:03:17.665 AM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-18 12:03:17.668 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:151:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-18 12:34:05.511 AM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-18 12:34:05.513 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:151:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-18 12:35:35.194 AM error : Error in update menu function ENOENT: no such file or directory, unlink 'uploads/menu/1705512899662.png'
+ [LOGGER] 2024-01-18 12:35:35.197 AM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705512899662.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:147:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-18 12:43:04.967 AM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-18 12:43:04.968 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:155:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-18 12:48:04.046 AM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-18 12:48:04.048 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:156:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-18 12:49:00.827 AM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-18 12:49:00.828 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:156:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-18 12:54:21.592 AM error : Kesalahan dalam fungsi pembaruan menu [object Object]
+ [LOGGER] 2024-01-18 12:54:21.593 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:203:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-18 12:54:39.080 AM error : Kesalahan dalam fungsi pembaruan menu ENOENT: no such file or directory, unlink 'uploads/menu/1705513997687.png'
+ [LOGGER] 2024-01-18 12:54:39.081 AM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705513997687.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:193:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-18 12:55:30.004 AM error : Kesalahan dalam fungsi pembaruan menu ENOENT: no such file or directory, unlink 'uploads/menu/1705513997687.png'
+ [LOGGER] 2024-01-18 12:55:30.006 AM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705513997687.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:193:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

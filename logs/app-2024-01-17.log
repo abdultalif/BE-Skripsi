@@ -901,3 +901,231 @@ Error: Route.delete() requires a callback function but got a [object Undefined]
  [LOGGER] 2024-01-17 10:37:04.064 PM error : ReferenceError: menuCreate is not defined
     at deleteMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:100:37)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 10:50:46.200 PM error : uncaughtException: Route.put() requires a callback function but got a [object Undefined]
+Error: Route.put() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as put] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as put] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:521:19)
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/routes/api.js:23:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-01-17 10:53:35.094 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-17 10:53:35.097 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:150:41)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+    at param (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:421:3)
+ [LOGGER] 2024-01-17 11:03:58.437 PM error : Error in update menu function Menu is not found
+ [LOGGER] 2024-01-17 11:03:58.441 PM error : Error: Menu is not found
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:142:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:12:25.264 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-17 11:12:25.306 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:145:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:13:29.406 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-17 11:13:29.408 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:145:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:14:22.867 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-17 11:14:22.870 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:145:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:14:53.501 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-17 11:14:53.504 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:145:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:14:55.204 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-17 11:14:55.204 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:145:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:17:04.852 PM error : uncaughtException: Schema can only contain plain objects
+Error: Schema can only contain plain objects
+    at new module.exports (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\@hapi\hoek\lib\error.js:23:19)
+    at module.exports (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\@hapi\hoek\lib\assert.js:21:11)
+    at internals.schema (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\joi\lib\compile.js:88:5)
+    at exports.schema (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\joi\lib\compile.js:17:26)
+    at internals.Base.$_compile (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\joi\lib\base.js:646:24)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\joi\lib\types\keys.js:262:92
+    at exports.tryWithPath (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\joi\lib\common.js:176:16)
+    at internals.Base.method [as keys] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\joi\lib\types\keys.js:262:32)
+    at internals.schema (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\joi\lib\compile.js:90:25)
+    at exports.schema (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\joi\lib\compile.js:17:26)
+ [LOGGER] 2024-01-17 11:18:33.095 PM error : Error in update menu function string violation: image cannot be an array or an object
+ [LOGGER] 2024-01-17 11:18:33.098 PM error : SequelizeValidationError: string violation: image cannot be an array or an object
+    at InstanceValidator._validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async Menu.update (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1933:26)
+    at async updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:146:24)
+ [LOGGER] 2024-01-17 11:19:43.688 PM error : Error in update menu function string violation: image cannot be an array or an object
+ [LOGGER] 2024-01-17 11:19:43.691 PM error : SequelizeValidationError: string violation: image cannot be an array or an object
+    at InstanceValidator._validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async Menu.update (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1933:26)
+    at async updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:146:24)
+ [LOGGER] 2024-01-17 11:30:40.240 PM error : Error in update menu function Cannot read properties of undefined (reading 'filename')
+ [LOGGER] 2024-01-17 11:30:40.243 PM error : TypeError: Cannot read properties of undefined (reading 'filename')
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:31:44.726 PM error : Error in update menu function ENOENT: no such file or directory, unlink 'uploads/menu/1705509024312.png'
+ [LOGGER] 2024-01-17 11:31:44.728 PM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705509024312.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:147:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:31:58.731 PM error : Error in update menu function ENOENT: no such file or directory, unlink 'uploads/menu/1705509024312.png'
+ [LOGGER] 2024-01-17 11:31:58.733 PM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705509024312.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:147:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:33:03.514 PM error : Error in create menu function Menu already exist
+ [LOGGER] 2024-01-17 11:33:03.515 PM error : Error: Menu already exist
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:33:24.457 PM error : Error in update menu function ENOENT: no such file or directory, unlink 'uploads/menu/1705509024312.png'
+ [LOGGER] 2024-01-17 11:33:24.458 PM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705509024312.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:147:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:33:52.162 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-17 11:33:52.163 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:151:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:34:04.693 PM error : Error in update menu function ENOENT: no such file or directory, unlink 'uploads/menu/1705509178625.png'
+ [LOGGER] 2024-01-17 11:34:04.693 PM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705509178625.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:147:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:34:15.216 PM error : Error in update menu function ENOENT: no such file or directory, unlink 'uploads/menu/1705509178625.png'
+ [LOGGER] 2024-01-17 11:34:15.217 PM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705509178625.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:147:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:34:50.301 PM error : Error in create menu function Menu already exist
+ [LOGGER] 2024-01-17 11:34:50.302 PM error : Error: Menu already exist
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:36:52.075 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-17 11:36:52.078 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:151:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:38:56.088 PM error : Error in update menu function ENOENT: no such file or directory, unlink 'uploads/menu/1705509318268.png'
+ [LOGGER] 2024-01-17 11:38:56.092 PM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705509318268.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:147:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:39:27.864 PM error : Error in delete menu function ENOENT: no such file or directory, unlink 'uploads/menu/1705509318268.png'
+ [LOGGER] 2024-01-17 11:39:27.867 PM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705509318268.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at deleteMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:86:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:40:19.129 PM error : Error in delete menu function ENOENT: no such file or directory, unlink 'uploads/menu/1705509318268.png'
+ [LOGGER] 2024-01-17 11:40:19.132 PM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705509318268.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at deleteMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:86:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:43:45.953 PM error : Error in update menu function Menu is not found
+ [LOGGER] 2024-01-17 11:43:45.954 PM error : Error: Menu is not found
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:142:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:43:58.122 PM error : Error in update menu function path is not defined
+ [LOGGER] 2024-01-17 11:43:58.124 PM error : ReferenceError: path is not defined
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:151:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:44:39.998 PM error : uncaughtException: fs is not defined
+ReferenceError: fs is not defined
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:169:13)
+ [LOGGER] 2024-01-17 11:45:34.663 PM error : Error in update menu function ENOENT: no such file or directory, unlink 'D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\uploads\menu\1705509800797.png'
+ [LOGGER] 2024-01-17 11:45:34.665 PM error : Error: ENOENT: no such file or directory, unlink 'D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\uploads\menu\1705509800797.png'
+ [LOGGER] 2024-01-17 11:47:27.792 PM error : Error in update menu function ENOENT: no such file or directory, unlink 'uploads/menu/1705509800797.png'
+ [LOGGER] 2024-01-17 11:47:27.795 PM error : Error: ENOENT: no such file or directory, unlink 'uploads/menu/1705509800797.png'
+    at Object.unlinkSync (node:fs:1883:3)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:147:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:48:10.063 PM error : Error in create menu function Menu already exist
+ [LOGGER] 2024-01-17 11:48:10.064 PM error : Error: Menu already exist
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:48:51.455 PM error : Error in delete menu function Menu is not found
+ [LOGGER] 2024-01-17 11:48:51.456 PM error : Error: Menu is not found
+    at deleteMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:81:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:49:43.817 PM error : Error in update menu function Menu is not found
+ [LOGGER] 2024-01-17 11:49:43.819 PM error : Error: Menu is not found
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:142:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:49:55.076 PM error : Error in update menu function Menu is not found
+ [LOGGER] 2024-01-17 11:49:55.076 PM error : Error: Menu is not found
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:142:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:50:18.131 PM error : Error in update menu function Menu is not found
+ [LOGGER] 2024-01-17 11:50:18.132 PM error : Error: Menu is not found
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:142:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:50:48.765 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-17 11:50:48.766 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:151:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:51:42.824 PM error : Error in create menu function Table 'rest_api.menus' doesn't exist
+ [LOGGER] 2024-01-17 11:51:42.827 PM error : Error
+    at Query.run (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Menu.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1140:21)
+    at async Menu.findOne (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1240:12)
+    at async createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:17:28)
+ [LOGGER] 2024-01-17 11:52:15.180 PM error : Error in get menus function Table 'rest_api.menus' doesn't exist
+ [LOGGER] 2024-01-17 11:52:15.181 PM error : Error
+    at Query.run (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Menu.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1140:21)
+    at async getMenus (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:52:29)
+ [LOGGER] 2024-01-17 11:53:52.060 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-17 11:53:52.061 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:151:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:54:20.363 PM error : Error in update menu function Cannot read properties of undefined (reading 'filename')
+ [LOGGER] 2024-01-17 11:54:20.363 PM error : TypeError: Cannot read properties of undefined (reading 'filename')
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-17 11:56:23.148 PM error : Error in update menu function Cannot read properties of undefined (reading 'name')
+ [LOGGER] 2024-01-17 11:56:23.151 PM error : TypeError: Cannot read properties of undefined (reading 'name')
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:137:36)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-17 11:56:46.620 PM error : Error in update menu function Cannot read properties of undefined (reading 'filename')
+ [LOGGER] 2024-01-17 11:56:46.624 PM error : TypeError: Cannot read properties of undefined (reading 'filename')
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:137:36)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)

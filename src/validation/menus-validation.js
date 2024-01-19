@@ -10,14 +10,13 @@ const createMenuValidation = Joi.object({
 });
 
 const updateMenuValidation = Joi.object({
-    id: Joi.allow(),
-    name: Joi.string().max(100).optional(),
+    name: Joi.string().max(100),
     description: Joi.string().optional(),
-    price: Joi.string().max(100).optional(),
-    stok: Joi.string().max(100).optional(),
-    image: Joi.string().max(100).optional(),
-    category: Joi.string().max(100).optional(),
-});
+    price: Joi.number(),
+    stok: Joi.number(),
+    image: Joi.optional(),
+    category: Joi.string().max(100),
+}).min(1);
 
 
 export {

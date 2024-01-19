@@ -20,6 +20,7 @@ router.get('/api/menus/', menuController.getMenus);
 router.post('/api/menus/', uploadMenu.single('image'), menuController.createMenu);
 router.delete('/api/menus/:menuId', menuController.deleteMenu);
 router.get('/api/menus/:menuId', menuController.getMenu);
+router.put('/api/menus/:menuId', uploadMenu.single('image'), menuController.updateMenu);
 
 export {
     router

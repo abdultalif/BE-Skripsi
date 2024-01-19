@@ -19,9 +19,9 @@ const register = async (req, res, next) => {
             },
         });
 
-        if (userExists.length > 0 && userExists[0].isActive) {
+        if (userExists[0].isActive) {
             throw new ResponseError(400, false, ["Email already activated"], null);
-        } else if (userExists.length > 0 && !userExists[0].isActive && Date.parse(userExists[0].expireTime) > new Date()) {
+        } else if (!userExists[0].isActive && Date.parse(userExists[0].expireTime) > new Date()) {
             throw new ResponseError(400, false, ["Email already registered, please check your email"], null);
         } else {
             User.destroy({
@@ -187,8 +187,7 @@ const login = async (req, res, next) => {
             status: true,
             statusResponse: 200,
             message: "Login successfully",
-            data:
-                usr,
+            data: usr,
             accessToken: token,
             refreshToken: refreshToken
 
