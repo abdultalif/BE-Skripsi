@@ -10,7 +10,7 @@ publicRouter.get('/api-public/users', userController.getUsers);
 publicRouter.get('/api-public/users/activate/:email/:userId', userController.setActivateUser);
 publicRouter.post('/api-public/users/login', userController.login);
 publicRouter.get('/api-public/users/refresh', userController.setRefreshToken);
-// publicRouter.post('/api-public/users/forgot-password/', userController.forgotPassword);
+publicRouter.post('/api-public/users/forgot-password/', userController.forgotPassword);
 
 publicRouter.get('/api-public/menus', menuController.getMenus);
 export { publicRouter };

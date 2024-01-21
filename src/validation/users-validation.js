@@ -17,9 +17,9 @@ const updateUserValidation = Joi.object({
     name: Joi.string().max(100),
 }).min(1);
 
-// const forgotPasswordValidation = Joi.object({
-//     email: Joi.string().email().required().max(100),
-// });
+const forgotPasswordValidation = Joi.object({
+    email: Joi.string().email().required().max(100),
+});
 
 const changePasswordValidation = Joi.object({
     curentPassword: Joi.string().required().min(8),
@@ -31,6 +31,6 @@ export {
     registerUserValidation,
     loginUserValidation,
     updateUserValidation,
-    // forgotPasswordValidation,
+    forgotPasswordValidation,
     changePasswordValidation
 };

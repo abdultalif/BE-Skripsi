@@ -2,12 +2,13 @@ import sequelize from "../utils/db.js";
 import User from "../model/user-model.js";
 import { ResponseError } from "../error/response-error.js";
 import logger from "../middleware/logging-middleware.js";
-import { sendMail } from "../utils/sendMail.js";
+import { sendMail, sendMailForgotPassword } from "../utils/sendMail.js";
 import { Op } from "sequelize";
 import { compare } from "../utils/bcrypt.js";
 import { generateAccessToken, generateRefreshToken, parseJWT, verifyRefreshToken } from "../utils/jwt.js";
-import { changePasswordValidation, loginUserValidation, registerUserValidation, updateUserValidation } from "../validation/users-validation.js";
+import { changePasswordValidation, forgotPasswordValidation, loginUserValidation, registerUserValidation, updateUserValidation } from "../validation/users-validation.js";
 import { validate } from "../validation/validation.js";
+import { v4 as tokenForgot } from 'uuid';
 
 const register = async (req, res, next) => {
     const t = await sequelize.transaction();
@@ -21,7 +22,7 @@ const register = async (req, res, next) => {
 
         if (userExists[0] && userExists[0].isActive) {
             throw new ResponseError(400, false, ["Email already activated"], null);
-        } else if (!userExists[0].isActive && Date.parse(userExists[0].expireTime) > new Date()) {
+        } else if (userExists[0] && !userExists[0].isActive && Date.parse(userExists[0].expireTime) > new Date()) {
             throw new ResponseError(400, false, ["Email already registered, please check your email"], null);
         } else {
             User.destroy({
@@ -183,13 +184,24 @@ const login = async (req, res, next) => {
         };
         const token = generateAccessToken(usr);
         const refreshToken = generateRefreshToken(usr);
+        usr.loginToken = token;
+        await User.update(
+            {
+                loginToken: token
+            },
+            {
+                where: {
+                    email: userExists.email
+                }
+            }
+        );
         return res.status(200).json({
             status: true,
             statusResponse: 200,
             message: "Login successfully",
             data: usr,
-            accessToken: token,
-            refreshToken: refreshToken
+            // accessToken: token,
+            // refreshToken: refreshToken
 
         });
 
@@ -326,27 +338,47 @@ const changePassword = async (req, res, next) => {
 };
 
 
-// const forgotPassword = async (req, res, next) => {
-// try {
-//     const user = validate(forgotPasswordValidation, req.body);
-//     const data = await User.findOne({
-//         where: {
-//             email: user.email,
-//         }
-//     });
-//     if (!data) {
-//         throw new ResponseError(404, false, "User is not found", null);
-//     }
+const forgotPassword = async (req, res, next) => {
+    try {
+        const user = validate(forgotPasswordValidation, req.body);
+        const data = await User.findOne({
+            where: {
+                email: user.email,
+            }
+        });
+        if (!data) {
+            throw new ResponseError(404, false, "Email not registered", null);
+        }
 
+        const token = tokenForgot();
+        const mailFogot = sendMailForgotPassword(data.name, data.email, token);
+        if (!mailFogot) {
+            throw new ResponseError(500, false, "Error in sending email", null);
+        }
+        await User.update(
+            {
+                forgotToken: token
+            },
+            {
+                where: {
+                    email: data.email
+                }
+            }
+        );
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "Check your email to reset password",
+            data: null
+        });
+        logger.info("Check your email to reset password");
 
-
-
-// } catch (error) {
-//     logger.error(`Error in forgot passwword function: ${error.message}`);
-//     logger.error(error.stack);
-//     next(error)
-// }
-// }
+    } catch (error) {
+        logger.error(`Error in forgot passwword function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
 
 const deleteUser = async (req, res, next) => {
     try {
@@ -380,6 +412,8 @@ const deleteUser = async (req, res, next) => {
 };
 
 
+
+
 export default {
     register,
     getUsers,
@@ -388,7 +422,7 @@ export default {
     setRefreshToken,
     updateUser,
     changePassword,
-    // forgotPassword,
+    forgotPassword,
     getUser,
     deleteUser
 };

@@ -45,6 +45,14 @@ const User = sequelize.define('User', {
                 this.setDataValue("expireTime", null);
             }
         }
+    },
+    loginToken: {
+        allowNull: true,
+        type: Sequelize.TEXT,
+    },
+    forgotToken: {
+        allowNull: true,
+        type: Sequelize.TEXT,
     }
 },
     {
