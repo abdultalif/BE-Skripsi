@@ -356,3 +356,31 @@
     at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
     at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:145:28)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-19 10:44:30.970 PM error : Error in register function: Cannot read properties of undefined (reading 'isActive')
+ [LOGGER] 2024-01-19 10:44:30.973 PM error : TypeError: Cannot read properties of undefined (reading 'isActive')
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:22:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-19 10:46:00.510 PM error : Error in register function: Email already activated
+ [LOGGER] 2024-01-19 10:46:00.511 PM error : Error: Email already activated
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-19 10:50:38.037 PM error : Error in register function: Email already registered, please check your email
+ [LOGGER] 2024-01-19 10:50:38.041 PM error : Error: Email already registered, please check your email
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:25:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-19 11:01:46.693 PM error : Error in register function: Email already registered, please check your email
+ [LOGGER] 2024-01-19 11:01:46.694 PM error : Error: Email already registered, please check your email
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:25:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-19 11:02:25.856 PM error : Error in register function: Cannot read properties of undefined (reading 'isActive')
+ [LOGGER] 2024-01-19 11:02:25.858 PM error : TypeError: Cannot read properties of undefined (reading 'isActive')
+    at register (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:22:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-19 11:05:34.043 PM error : Error in get menu function Menu is not found
+ [LOGGER] 2024-01-19 11:05:34.045 PM error : Error: Menu is not found
+    at getMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:117:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-19 11:09:07.698 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-19 11:09:07.701 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:136:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

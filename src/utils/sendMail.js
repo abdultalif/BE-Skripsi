@@ -36,9 +36,9 @@ const createEmail = (name, email, token) => {
                                                                 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;Margin:0;Margin-bottom:15px">Hi ${name},</p>
                                                                 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;Margin:0;Margin-bottom:15px">Thanks for signing up for Pizza21!  We want to make sure that we got your email right.</p>
                                                                 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;Margin:0;Margin-bottom:15px">Please verify your email by clicking the link below:</p>
-                                                                <p><a style="color:#0079f2;text-decoration:none;font-weight:bold" href="${baseUrl}/api-public/users/activate/${email}/${token}" target="_blank">Verify Now</a></p>
+                                                                <p><a style="color:#0079f2;text-decoration:none;font-weight:bold" href="http://127.0.0.1:5500/activate.html?email=${email}&token=${token}" target="_blank">Verify Now</a></p>
                                                                 <p>If you can't click on the link, copy and paste the following URL into a new tab in your browser:</p>
-                                                                <p><a href="${baseUrl}/api-public/users/activate/${email}/${token}" target="_blank">${baseUrl}/api-public/users/activate/${email}/${token}</a></p>
+                                                                <p><a href="http://127.0.0.1:5500/activate.html?email=${email}&token=${token}" target="_blank">http://127.0.0.1:5500/activate.html?email=${email}&token=${token}</a></p>
                                                                 <p>Happy coding!</p>
                                                             </td>
                                                         </tr>

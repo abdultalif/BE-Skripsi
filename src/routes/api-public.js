@@ -1,6 +1,7 @@
 import express from "express";
 import userController from "../controller/user-controller.js";
 import { ResponseError } from "../error/response-error.js";
+import menuController from "../controller/menu-controller.js";
 
 const publicRouter = express.Router();
 
@@ -11,4 +12,5 @@ publicRouter.post('/api-public/users/login', userController.login);
 publicRouter.get('/api-public/users/refresh', userController.setRefreshToken);
 // publicRouter.post('/api-public/users/forgot-password/', userController.forgotPassword);
 
+publicRouter.get('/api-public/menus', menuController.getMenus);
 export { publicRouter };

@@ -24,14 +24,15 @@ const createMenu = async (req, res, next) => {
         }
 
         menuCreate.image = req.file.filename;
-        await Menu.create({
-            ...menuCreate
+        const result = await Menu.create({
+            ...menuCreate,
+            userId: req.user.id
         });
         res.status(201).json({
             status: true,
             statusResponse: 201,
             message: "Created menu successfully",
-            data: menuCreate
+            data: result
         });
 
         logger.info(`Created menu ${menuCreate.name} successfully`);
@@ -172,62 +173,10 @@ const updateMenu = async (req, res, next) => {
 };
 
 
-
-// const updateMenu = async (req, res, next) => {
-//     try {
-//         const { menuId } = req.params;
-//         const menu = req.body;
-//         const imageMenu = req.file;
-
-//         const menuExists = await Menu.findByPk(menuId);
-//         if (!menuExists) {
-//             throw new ResponseError(404, false, "Menu tidak ditemukan", null);
-//         }
-
-//         // Periksa apakah gambar baru diunggah
-//         if (imageMenu) {
-//             // Hapus gambar lama jika ada
-//             if (menuExists.image) {
-//                 const filePath = `uploads/menu/${menuExists.image}`;
-//                 fs.unlinkSync(filePath);
-//             }
-//             // Tetapkan nama file gambar baru pada objek menu
-//             menu.image = req.file.filename;
-//         } else {
-//             // Jika tidak ada gambar baru, tetapkan nama file gambar lama
-//             menu.image = menuExists.image;
-//         }
-
-//         // Validasi menu yang diperbarui
-//         const menuUpdate = validate(updateMenuValidation, menu);
-
-//         // Perbarui menu di database
-//         const result = await Menu.update({ ...menuUpdate }, { where: { id: menuId } });
-
-//         return res.status(200).json({
-//             status: true,
-//             statusResponse: 200,
-//             message: "Menu berhasil diperbarui",
-//             data: menuUpdate
-//         });
-//     } catch (error) {
-//         // Jika terjadi kesalahan, hapus gambar yang baru diunggah (jika ada)
-//         if (req.file) {
-//             const filePath = 'uploads/menu/' + req.file.filename;
-//             fs.unlinkSync(filePath);
-//         }
-//         logger.error(`Kesalahan dalam fungsi pembaruan menu ${error.message}`);
-//         logger.error(error.stack);
-//         next(error);
-//     }
-// };
-
-
-
 export default {
     getMenus,
     getMenu,
     createMenu,
     deleteMenu,
-    updateMenu
+    updateMenu,
 };

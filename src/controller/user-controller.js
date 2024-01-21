@@ -19,7 +19,7 @@ const register = async (req, res, next) => {
             },
         });
 
-        if (userExists[0].isActive) {
+        if (userExists[0] && userExists[0].isActive) {
             throw new ResponseError(400, false, ["Email already activated"], null);
         } else if (!userExists[0].isActive && Date.parse(userExists[0].expireTime) > new Date()) {
             throw new ResponseError(400, false, ["Email already registered, please check your email"], null);
@@ -141,7 +141,7 @@ const setActivateUser = async (req, res, next) => {
             res.status(200).json({
                 status: true,
                 statusResponse: 200,
-                message: "User Activated",
+                message: `User ${userActivate.name} Activated`,
                 data: {
                     name: userActivate.name,
                     email: userActivate.email,
