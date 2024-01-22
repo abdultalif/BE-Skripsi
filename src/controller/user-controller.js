@@ -6,7 +6,7 @@ import { sendMail, sendMailForgotPassword } from "../utils/sendMail.js";
 import { Op } from "sequelize";
 import { compare } from "../utils/bcrypt.js";
 import { generateAccessToken, generateRefreshToken, parseJWT, verifyRefreshToken } from "../utils/jwt.js";
-import { changePasswordValidation, forgotPasswordValidation, loginUserValidation, registerUserValidation, updateUserValidation } from "../validation/users-validation.js";
+import { changePasswordValidation, forgotPasswordValidation, loginUserValidation, registerUserValidation, resetPasswordValidation, updateUserValidation } from "../validation/users-validation.js";
 import { validate } from "../validation/validation.js";
 import { v4 as tokenForgot } from 'uuid';
 
@@ -412,6 +412,58 @@ const deleteUser = async (req, res, next) => {
 };
 
 
+const validToken = async (req, res, next) => {
+    try {
+        const token = req.params.token;
+        const userExists = await User.findOne({
+            where: {
+                forgotToken: token
+            }
+        });
+        if (!userExists) {
+            throw new ResponseError(404, false, 'Invalid Token or Expired', null);
+        }
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "Token valid",
+            data: null
+        });
+    } catch (error) {
+        logger.error(`Eror in valid token function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
+const resetPassword = async (req, res, next) => {
+    try {
+        const { token } = req.params;
+        const userExists = await User.findOne({
+            where: {
+                forgotToken: token
+            }
+        });
+        if (!userExists) {
+            throw new ResponseError(404, false, 'Invalid Token or Expired', null);
+        }
+        console.log(req.body);
+        const resetPasswordUser = validate(resetPasswordValidation, req.body);
+        const resetpass = await User.update({ forgotToken: null, password: resetPasswordUser.newPassword }, { where: { forgotToken: token } });
+        return res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "Thank you for resetting your password!",
+            data: resetpass
+        });
+    } catch (error) {
+        logger.error(`Error in valid reset password function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
+
 
 
 export default {
@@ -424,5 +476,7 @@ export default {
     changePassword,
     forgotPassword,
     getUser,
-    deleteUser
+    deleteUser,
+    validToken,
+    resetPassword
 };

@@ -11,6 +11,8 @@ publicRouter.get('/api-public/users/activate/:email/:userId', userController.set
 publicRouter.post('/api-public/users/login', userController.login);
 publicRouter.get('/api-public/users/refresh', userController.setRefreshToken);
 publicRouter.post('/api-public/users/forgot-password/', userController.forgotPassword);
+publicRouter.get('/api-public/users/valid-token/:token', userController.validToken);
+publicRouter.patch('/api-public/users/reset-password/:token', userController.resetPassword);
 
 publicRouter.get('/api-public/menus', menuController.getMenus);
 export { publicRouter };

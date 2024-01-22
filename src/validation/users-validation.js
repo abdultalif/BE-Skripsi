@@ -18,11 +18,16 @@ const updateUserValidation = Joi.object({
 }).min(1);
 
 const forgotPasswordValidation = Joi.object({
-    email: Joi.string().email().required().max(100),
+    email: Joi.string().email().required()
 });
 
 const changePasswordValidation = Joi.object({
     curentPassword: Joi.string().required().min(8),
+    newPassword: Joi.string().min(8).max(100).required(),
+    confirmPassword: Joi.string().min(8).valid(Joi.ref('newPassword')).required().strict(),
+});
+
+const resetPasswordValidation = Joi.object({
     newPassword: Joi.string().min(8).max(100).required(),
     confirmPassword: Joi.string().min(8).valid(Joi.ref('newPassword')).required().strict(),
 });
@@ -32,5 +37,6 @@ export {
     loginUserValidation,
     updateUserValidation,
     forgotPasswordValidation,
-    changePasswordValidation
+    changePasswordValidation,
+    resetPasswordValidation
 };
