@@ -1,0 +1,12 @@
+ [LOGGER] 2024-01-23 12:00:50.345 AM error : uncaughtException: fileURLToPath is not defined
+ReferenceError: fileURLToPath is not defined
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/index.js:30:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-01-23 12:02:14.388 AM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-23 12:02:14.391 AM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:176:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-23 12:15:57.239 AM error : uncaughtException: authentication is not defined
+ReferenceError: authentication is not defined
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/routes/api.js:9:12
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)

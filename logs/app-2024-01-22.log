@@ -486,3 +486,67 @@ TypeError: Joi.string.min is not a function
  [LOGGER] 2024-01-22 05:49:33.818 PM error : Error: Email or password wrong
     at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:176:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:55:26.766 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-22 05:55:26.767 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:176:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 06:01:45.625 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+ [LOGGER] 2024-01-22 06:01:45.629 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+ [LOGGER] 2024-01-22 10:53:51.615 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+ [LOGGER] 2024-01-22 10:53:51.625 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+ [LOGGER] 2024-01-22 10:57:41.204 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-22 10:57:41.206 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:176:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 11:50:29.850 PM error : uncaughtException: path is not defined
+ReferenceError: path is not defined
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/index.js:29:41
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-01-22 11:56:13.004 PM error : uncaughtException: path is not defined
+ReferenceError: path is not defined
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/index.js:29:41
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-01-22 11:56:31.235 PM error : uncaughtException: __dirname is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+ReferenceError: __dirname is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/index.js:30:51
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-01-22 11:56:47.134 PM error : uncaughtException: __dirname is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+ReferenceError: __dirname is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/index.js:30:51
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-01-22 11:57:56.986 PM error : uncaughtException: __dirname is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+ReferenceError: __dirname is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/index.js:30:51
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-01-22 11:58:26.030 PM error : uncaughtException: __dirname is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+ReferenceError: __dirname is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/index.js:30:51
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
