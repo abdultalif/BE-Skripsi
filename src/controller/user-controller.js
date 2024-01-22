@@ -212,6 +212,31 @@ const login = async (req, res, next) => {
     }
 };
 
+const logoutUser = async (req, res, next) => {
+    try {
+        const email = req.user.email;
+        await User.update(
+            {
+                loginToken: null
+            },
+            {
+                where: {
+                    email: email
+                }
+            }
+        );
+        return res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "Logout successfully"
+        });
+    } catch (error) {
+        logger.error(`Error in logoutUser function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
 const setRefreshToken = async (req, res, next) => {
     try {
         const authHeader = req.headers["authorization"];
@@ -471,6 +496,7 @@ export default {
     getUsers,
     setActivateUser,
     login,
+    logoutUser,
     setRefreshToken,
     updateUser,
     changePassword,

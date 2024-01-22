@@ -15,6 +15,7 @@ app.use(cors({
     credentials: true,
     preflightContinue: false,
     methods: "GET, POST, PUT, PATCH, DELETE, HEAD",
+    allowedHeaders: "Content-Type, Authorization, Origin, X-Requested-With, Accept",
 }));
 
 app.options("*", cors());

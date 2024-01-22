@@ -12,6 +12,7 @@ router.get('/api/users/:userId', userController.getUser);
 router.patch('/api/users/:userId', userController.updateUser);
 router.delete('/api/users/:userId', userController.deleteUser);
 router.put('/api/users/changePassword', userController.changePassword);
+router.post('/api/users/logout', userController.logoutUser);
 
 
 // router.post('/api/contacts/', contactController.createContact);

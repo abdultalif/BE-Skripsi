@@ -426,3 +426,63 @@ TypeError: Joi.string.min is not a function
  [LOGGER] 2024-01-22 03:35:28.137 PM error : Error: Invalid Token or Expired
     at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:424:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 04:49:47.929 PM error : Error in forgot passwword function: Email not registered
+ [LOGGER] 2024-01-22 04:49:47.931 PM error : Error: Email not registered
+    at forgotPassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:350:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 04:50:02.546 PM error : Error in forgot passwword function: Email not registered
+ [LOGGER] 2024-01-22 04:50:02.547 PM error : Error: Email not registered
+    at forgotPassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:350:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 04:50:23.639 PM error : Eror in valid token function: Invalid Token or Expired
+ [LOGGER] 2024-01-22 04:50:23.640 PM error : Error: Invalid Token or Expired
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:424:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 04:57:49.718 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-22 04:57:49.720 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:171:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:01:26.797 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-22 05:01:26.800 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:176:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:01:31.567 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-22 05:01:31.568 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:176:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:07:31.976 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-22 05:07:31.978 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:171:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:16:01.713 PM error : Error in setActivateUser function: User not found or expired
+ [LOGGER] 2024-01-22 05:16:01.714 PM error : Error: User not found or expired
+    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:137:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:16:20.593 PM error : Eror in valid token function: Invalid Token or Expired
+ [LOGGER] 2024-01-22 05:16:20.594 PM error : Error: Invalid Token or Expired
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:424:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:16:29.713 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-22 05:16:29.713 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:171:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:18:28.542 PM error : Eror in valid token function: Invalid Token or Expired
+ [LOGGER] 2024-01-22 05:18:28.544 PM error : Error: Invalid Token or Expired
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:424:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:30:37.467 PM error : Eror in delete user function: User is not found
+ [LOGGER] 2024-01-22 05:30:37.470 PM error : Error: User is not found
+    at deleteUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:418:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:39:33.223 PM error : Eror in delete user function: User is not found
+ [LOGGER] 2024-01-22 05:39:33.226 PM error : Error: User is not found
+    at deleteUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:418:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:46:52.750 PM error : Eror in valid token function: Invalid Token or Expired
+ [LOGGER] 2024-01-22 05:46:52.756 PM error : Error: Invalid Token or Expired
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:449:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-22 05:49:33.816 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-22 05:49:33.818 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:176:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
