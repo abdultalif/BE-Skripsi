@@ -81,6 +81,7 @@ const createEmailForgotPassword = (name, email, token) => {
                                                                 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;Margin:0;Margin-bottom:15px">Hi ${name},</p>
                                                                 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;Margin:0;Margin-bottom:15px">You have requested to reset your password for Pizza21. Please follow the link below to reset your password:</p>
                                                                 <p><a style="color:#0079f2;text-decoration:none;font-weight:bold" href="http://127.0.0.1:5500/reset-password.html?token=${token}" target="_blank">Reset Password</a></p>
+                                                                <p style="color:red; font-weight:bold; Margin:0; Margin-bottom:15px">Note: This link is valid for 30 minutes. If not used within this time, the token will expire.</p>
                                                                 <p>If you didn't request a password reset, please ignore this email.</p>
                                                                 <p>If you can't click on the link, copy and paste the following URL into a new tab in your browser:</p>
                                                                 <p><a href="http://127.0.0.1:5500/reset-password.html?token=${token}" target="_blank">http://127.0.0.1:5500/reset-password.html?token=${token}</a></p>
@@ -99,6 +100,7 @@ const createEmailForgotPassword = (name, email, token) => {
                     </tr>
                 </tbody>
             </table>
+
         `
     };
 };

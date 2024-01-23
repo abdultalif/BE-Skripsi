@@ -1,0 +1,56 @@
+ [LOGGER] 2024-01-24 12:01:07.218 AM error : Eror in valid token function: Invalid Token
+ [LOGGER] 2024-01-24 12:01:08.984 AM error : Error: Invalid Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:449:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:01:13.599 AM error : Eror in valid token function: Invalid Token
+ [LOGGER] 2024-01-24 12:01:13.601 AM error : Error: Invalid Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:449:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:02:30.875 AM error : Eror in valid token function: Invalid Token
+ [LOGGER] 2024-01-24 12:02:30.876 AM error : Error: Invalid Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:449:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:02:31.439 AM error : Eror in valid token function: Invalid Token
+ [LOGGER] 2024-01-24 12:02:31.440 AM error : Error: Invalid Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:449:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:02:54.235 AM error : Eror in valid token function: Expired Token
+ [LOGGER] 2024-01-24 12:02:54.236 AM error : Error: Expired Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:456:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:03:06.616 AM error : Eror in valid token function: Expired Token
+ [LOGGER] 2024-01-24 12:03:06.629 AM error : Error: Expired Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:456:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:03:31.120 AM error : Eror in valid token function: Expired Token
+ [LOGGER] 2024-01-24 12:03:31.122 AM error : Error: Expired Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:456:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:03:57.582 AM error : Eror in valid token function: Expired Token
+ [LOGGER] 2024-01-24 12:03:57.589 AM error : Error: Expired Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:456:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:05:15.818 AM error : Eror in valid token function: Expired Token
+ [LOGGER] 2024-01-24 12:05:15.822 AM error : Error: Expired Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:458:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:08:13.430 AM error : Eror in valid token function: Expired Token
+ [LOGGER] 2024-01-24 12:08:13.436 AM error : Error: Expired Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:458:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:08:13.455 AM error : Eror in valid token function: Expired Token
+ [LOGGER] 2024-01-24 12:08:13.459 AM error : Error: Expired Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:458:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:08:21.080 AM error : Eror in valid token function: Expired Token
+ [LOGGER] 2024-01-24 12:08:21.083 AM error : Error: Expired Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:456:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:08:44.946 AM error : Eror in valid token function: Expired Token
+ [LOGGER] 2024-01-24 12:08:44.949 AM error : Error: Expired Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:456:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-24 12:10:41.606 AM error : Eror in valid token function: Expired Token
+ [LOGGER] 2024-01-24 12:10:41.611 AM error : Error: Expired Token
+    at validToken (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:456:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

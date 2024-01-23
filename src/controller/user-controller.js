@@ -4,11 +4,11 @@ import { ResponseError } from "../error/response-error.js";
 import logger from "../middleware/logging-middleware.js";
 import { sendMail, sendMailForgotPassword } from "../utils/sendMail.js";
 import { Op } from "sequelize";
+import { v4 as tokenForgot } from 'uuid';
 import { compare } from "../utils/bcrypt.js";
 import { generateAccessToken, generateRefreshToken, parseJWT, verifyRefreshToken } from "../utils/jwt.js";
 import { changePasswordValidation, forgotPasswordValidation, loginUserValidation, registerUserValidation, resetPasswordValidation, updateUserValidation } from "../validation/users-validation.js";
 import { validate } from "../validation/validation.js";
-import { v4 as tokenForgot } from 'uuid';
 
 const register = async (req, res, next) => {
     const t = await sequelize.transaction();
@@ -390,6 +390,7 @@ const forgotPassword = async (req, res, next) => {
                 }
             }
         );
+
         res.status(200).json({
             status: true,
             statusResponse: 200,
@@ -445,9 +446,16 @@ const validToken = async (req, res, next) => {
                 forgotToken: token
             }
         });
-        if (!userExists) {
-            throw new ResponseError(404, false, 'Invalid Token or Expired', null);
-        }
+        if (!userExists) throw new ResponseError(404, false, 'Invalid Token', null);
+
+        const currentTimestamp = new Date();
+        const tokenTimestamp = new Date(userExists.updatedAt);
+        const timeDifference = (currentTimestamp - tokenTimestamp) / 60000; // diubah ke menit
+        console.log(timeDifference);
+
+        // token hanya berlaku di 30 menit
+        if (timeDifference > 30) throw new ResponseError(404, false, "Expired Token", null);
+
         res.status(200).json({
             status: true,
             statusResponse: 200,
@@ -487,9 +495,6 @@ const resetPassword = async (req, res, next) => {
         next(error);
     }
 };
-
-
-
 
 export default {
     register,

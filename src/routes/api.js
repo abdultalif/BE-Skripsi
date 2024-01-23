@@ -27,7 +27,7 @@ router.get('/api-public/users', userController.getUsers);
 router.get('/api-public/users/activate/:email/:userId', userController.setActivateUser);
 router.post('/api-public/users/login', userController.login);
 router.get('/api-public/users/refresh', userController.setRefreshToken);
-router.post('/api-public/users/forgot-password/', userController.forgotPassword);
+router.post('/api-public/users/forgot-password', userController.forgotPassword);
 router.get('/api-public/users/valid-token/:token', userController.validToken);
 router.patch('/api-public/users/reset-password/:token', userController.resetPassword);
 
