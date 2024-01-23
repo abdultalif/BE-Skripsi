@@ -1,6 +1,5 @@
 import express from "express";
 import dotenv from "dotenv/config";
-import { publicRouter } from "./src/routes/api-public.js";
 import { router } from "./src/routes/api.js";
 import { errorMiddleware } from "./src/middleware/error-middleware.js";
 import "./src/middleware/logging-middleware.js";
@@ -25,7 +24,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-app.use(publicRouter);
 app.use(router);
 app.use(errorMiddleware);
 const __filename = fileURLToPath(import.meta.url);

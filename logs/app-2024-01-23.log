@@ -10,3 +10,19 @@ ReferenceError: fileURLToPath is not defined
 ReferenceError: authentication is not defined
     at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/routes/api.js:9:12
     at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-01-23 12:35:46.610 AM error : uncaughtException: publicRouter is not defined
+ReferenceError: publicRouter is not defined
+    at file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/routes/api.js:28:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-01-23 09:50:05.584 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+ [LOGGER] 2024-01-23 09:50:05.600 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
