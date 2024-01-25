@@ -16,7 +16,7 @@ const updateMenuValidation = Joi.object({
     stok: Joi.number(),
     image: Joi.optional(),
     category: Joi.string().max(100),
-}).min(1);
+});
 
 
 export {

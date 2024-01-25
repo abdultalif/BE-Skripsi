@@ -2,7 +2,8 @@ import userController from "../controller/user-controller.js";
 import { authentication } from "../middleware/auth-middleware.js";
 import express from "express";
 import menuController from "../controller/menu-controller.js";
-import { uploadMenu } from "../middleware/upload-middleware.js";
+import { uploadMenu, uploadTestimonial } from "../middleware/upload-middleware.js";
+import testimonialController from "../controller/testimonial-controller.js";
 
 const router = express.Router();
 // router.use(authentication);
@@ -34,6 +35,16 @@ router.patch('/api-public/users/reset-password/:token', userController.resetPass
 
 // Menus
 router.get('/api-public/menus', menuController.getMenus);
+
+
+
+// Testimonials
+router.get('/api/testimonials', testimonialController.getTestimonials);
+router.post('/api/testimonial', uploadTestimonial.single('image'), testimonialController.createTestimonial);
+router.get('/api/testimonial/:testimonialId', testimonialController.getTestimonial);
+router.delete('/api/testimonial/:testimonialId', testimonialController.deleteTestimonial);
+router.patch('/api/testimonial/:testimonialId', uploadTestimonial.single('image'), testimonialController.updateTestimonial);
+
 
 export {
     router

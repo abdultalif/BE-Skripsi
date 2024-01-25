@@ -4,9 +4,9 @@ import User from "./user-model.js";
 
 const Menu = sequelize.define("Menu", {
     id: {
-        type: Sequelize.INTEGER,
-        autoIncrement: true,
-        primaryKey: true
+        type: Sequelize.UUID,
+        primaryKey: true,
+        defaultValue: Sequelize.UUIDV4
     },
     name: {
         type: Sequelize.STRING,

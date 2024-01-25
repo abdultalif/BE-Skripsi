@@ -450,7 +450,8 @@ const validToken = async (req, res, next) => {
 
         const currentTimestamp = new Date();
         const tokenTimestamp = new Date(userExists.updatedAt);
-        const timeDifference = (currentTimestamp - tokenTimestamp) / 60000; // diubah ke menit
+        // diubah ke menit karena dalam milidetik
+        const timeDifference = (currentTimestamp - tokenTimestamp) / 60000;
         console.log(timeDifference);
 
         // token hanya berlaku di 30 menit

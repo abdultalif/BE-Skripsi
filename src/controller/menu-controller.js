@@ -56,12 +56,13 @@ const getMenus = async (req, res, next) => {
             throw new ResponseError(404, false, "Menu is not found", null);
         }
 
-        return res.status(200).json({
+        res.status(200).json({
             status: true,
             statusResponse: 200,
             message: "OK",
             data: menusExists
         });
+        logger.info(`Get menus successfully`);
     } catch (error) {
         logger.error(`Error in get menus function ${error.message}`);
         logger.error(error.stack);
@@ -92,12 +93,14 @@ const deleteMenu = async (req, res, next) => {
                 id: menuId
             }
         });
-        return res.status(200).json({
+        res.status(200).json({
             status: true,
             statusResponse: 200,
             message: "OK",
             data: null
         });
+        logger.info(`Delete menu ${menuExists.name} successfully`);
+
     } catch (error) {
         logger.error(`Error in delete menu function ${error.message}`);
         logger.error(error.stack);
@@ -118,12 +121,15 @@ const getMenu = async (req, res, next) => {
             throw new ResponseError(404, false, "Menu is not found", null);
         }
 
-        return res.status(200).json({
+        res.status(200).json({
             status: true,
             statusResponse: 200,
             message: "OK",
             data: menuExists
         });
+
+        logger.info(`Get menu ${menuExists.name} successfully`);
+
     } catch (error) {
         logger.error(`Error in get menu function ${error.message}`);
         logger.error(error.stack);
@@ -154,13 +160,18 @@ const updateMenu = async (req, res, next) => {
         if (imageMenu) {
             menuUpdate.image = req.file.filename;
         }
-        const result = await Menu.update({ ...menuUpdate }, { where: { id: menuId } });
-        return res.status(200).json({
+        await Menu.update({ ...menuUpdate }, { where: { id: menuId } });
+        const result = await Menu.findByPk(menuId);
+
+        res.status(200).json({
             status: true,
             statusResponse: 200,
             message: "Update menu successfully",
-            data: menuUpdate
+            data: result
         });
+
+        logger.info(`Update menu ${menuUpdate.name} successfully`);
+
     } catch (error) {
         if (req.file) {
             const filePath = 'uploads/menu/' + req.file.filename;

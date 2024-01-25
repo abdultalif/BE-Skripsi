@@ -1,9 +1,9 @@
 export default [
     {
         "rules": {
-            "semi": "error",
-            "prefer-const": "error",
-            "require-await": "error"
+            "semi": "warn",
+            "prefer-const": "warn",
+            "require-await": "warn"
 
         }
     }
