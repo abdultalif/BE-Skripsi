@@ -1,5 +1,6 @@
 import { ResponseError } from "../error/response-error.js";
 import { verifyAccessToken } from "../utils/jwt.js";
+import logger from "./logging-middleware.js";
 
 const authentication = (req, res, next) => {
     const authHeader = req.headers["authorization"];
@@ -18,6 +19,14 @@ const authentication = (req, res, next) => {
     next();
 };
 
+const isAdmin = (req, res, next) => {
+    if (!req.user.isAdmin) {
+        throw new ResponseError(403, false, "Forbidden", null);
+    }
+    next();
+};
+
 export {
-    authentication
+    authentication,
+    isAdmin
 };

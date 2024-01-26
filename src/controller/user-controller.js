@@ -181,6 +181,7 @@ const login = async (req, res, next) => {
             name: userExists.name,
             email: userExists.email,
             password: userExists.password,
+            isAdmin: userExists.isAdmin
         };
         const token = generateAccessToken(usr);
         const refreshToken = generateRefreshToken(usr);

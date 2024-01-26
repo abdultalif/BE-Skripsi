@@ -36,6 +36,10 @@ const User = sequelize.define('User', {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
     },
+    isAdmin: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false,
+    },
     expireTime: {
         type: Sequelize.DATE,
         set(value) {

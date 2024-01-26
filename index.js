@@ -29,7 +29,7 @@ app.use(errorMiddleware);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use('/uploads/menu', express.static(path.join(__dirname, 'uploads', 'menu')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.listen(port, () => {
     console.log(`App berjalan di http://localhost:${port}`);
