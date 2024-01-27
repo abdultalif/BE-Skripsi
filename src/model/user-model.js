@@ -32,6 +32,14 @@ const User = sequelize.define('User', {
             this.setDataValue("password", encript(value));
         }
     },
+    phone: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    image: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
     isActive: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,

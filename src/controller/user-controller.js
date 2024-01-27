@@ -37,6 +37,7 @@ const register = async (req, res, next) => {
 
         const data = await User.create({
             ...users,
+            image: 'default.jpg',
             expireTime: new Date()
         },
             {
@@ -61,6 +62,8 @@ const register = async (req, res, next) => {
                     id: data.id,
                     name: data.name,
                     email: data.email,
+                    phone: data.phone,
+                    image: data.image,
                     expireTime: data.expireTime
                 },
             });
@@ -180,6 +183,8 @@ const login = async (req, res, next) => {
             id: userExists.id,
             name: userExists.name,
             email: userExists.email,
+            phone: userExists.phone,
+            image: userExists.image,
             password: userExists.password,
             isAdmin: userExists.isAdmin
         };
