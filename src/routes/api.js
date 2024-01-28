@@ -14,6 +14,7 @@ router.patch('/api/users/:userId', authentication, userController.updateUser);
 router.delete('/api/users/:userId', authentication, userController.deleteUser);
 router.put('/api/users/changePassword', authentication, userController.changePassword);
 router.post('/api/users/logout', authentication, userController.logoutUser);
+router.get('/api/users/get-login', authentication, userController.getLogin);
 
 // Menus Admin
 router.get('/api/menus/', authentication, isAdmin, menuController.getMenus);

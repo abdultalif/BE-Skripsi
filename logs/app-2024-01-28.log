@@ -88,3 +88,71 @@
  [LOGGER] 2024-01-28 01:56:42.449 AM error : Error: Email not registered
     at forgotPassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:379:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 04:38:09.232 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-28 04:38:09.233 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:179:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 05:46:31.961 PM error : Error in get login function: User is not found
+ [LOGGER] 2024-01-28 05:46:31.968 PM error : Error: User is not found
+    at getLogin (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:131:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 05:47:05.963 PM error : Error in get login function: User not found
+ [LOGGER] 2024-01-28 05:47:05.967 PM error : Error: User not found
+    at getLogin (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:131:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 05:48:28.741 PM error : Error in get login function: User not found
+ [LOGGER] 2024-01-28 05:48:28.747 PM error : Error: User not found
+    at getLogin (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:131:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 05:50:17.638 PM error : Error in get login function: User not found
+ [LOGGER] 2024-01-28 05:50:17.642 PM error : Error: User not found
+    at getLogin (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:132:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 05:52:36.176 PM error : Error in get login function: User not found
+ [LOGGER] 2024-01-28 05:52:36.178 PM error : Error: User not found
+    at getLogin (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:132:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:42:12.917 PM error : Error in get login function: User not found
+ [LOGGER] 2024-01-28 06:42:12.921 PM error : Error: User not found
+    at getLogin (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:130:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:42:14.544 PM error : Error in get login function: User not found
+ [LOGGER] 2024-01-28 06:42:14.544 PM error : Error: User not found
+    at getLogin (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:130:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:42:14.975 PM error : Error in get login function: User not found
+ [LOGGER] 2024-01-28 06:42:14.975 PM error : Error: User not found
+    at getLogin (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:130:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:42:17.209 PM error : Error in get login function: User not found
+ [LOGGER] 2024-01-28 06:42:17.211 PM error : Error: User not found
+    at getLogin (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:130:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:44:31.968 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-28 06:44:31.969 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:196:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:44:38.946 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-28 06:44:38.946 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:196:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:44:47.970 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-28 06:44:47.970 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:196:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:45:03.371 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-28 06:45:03.372 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:196:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:45:22.833 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-28 06:45:22.833 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:196:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:45:51.018 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-28 06:45:51.018 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:196:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-28 06:45:57.273 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-28 06:45:57.274 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:196:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

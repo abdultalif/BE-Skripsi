@@ -121,6 +121,28 @@ const getUser = async (req, res, next) => {
     }
 };
 
+const getLogin = async (req, res, next) => {
+    try {
+        const email = req.user.email;
+
+        const data = await User.findOne({ where: { email: email } });
+        if (!data || data.isActive == 0) {
+            throw new ResponseError(404, false, 'User not found', null);
+        }
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "OK",
+            data: data
+        });
+    } catch (error) {
+        logger.error(`Error in get login function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
 
 const setActivateUser = async (req, res, next) => {
     try {
@@ -237,7 +259,7 @@ const logoutUser = async (req, res, next) => {
             message: "Logout successfully"
         });
     } catch (error) {
-        logger.error(`Error in logoutUser function: ${error.message}`);
+        logger.error(`Error in logout user function: ${error.message}`);
         logger.error(error.stack);
         next(error);
     }
@@ -516,5 +538,6 @@ export default {
     getUser,
     deleteUser,
     validToken,
-    resetPassword
+    resetPassword,
+    getLogin
 };
