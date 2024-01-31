@@ -1,0 +1,408 @@
+ [LOGGER] 2024-01-31 12:11:32.820 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-31 12:11:32.822 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:201:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 12:13:15.826 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-31 12:13:15.827 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:201:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 03:44:34.501 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-01-31 03:44:34.501 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:201:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 03:45:32.667 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 03:45:32.668 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 03:45:45.922 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 03:45:45.923 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 03:46:04.965 PM error : Error in create menu function Menu already exist
+ [LOGGER] 2024-01-31 03:46:04.965 PM error : Error: Menu already exist
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 03:46:06.058 PM error : Error in create menu function Menu already exist
+ [LOGGER] 2024-01-31 03:46:06.058 PM error : Error: Menu already exist
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 03:46:16.341 PM error : Error in create menu function Menu already exist
+ [LOGGER] 2024-01-31 03:46:16.342 PM error : Error: Menu already exist
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 03:46:33.215 PM error : Error in create menu function Menu already exist
+ [LOGGER] 2024-01-31 03:46:33.217 PM error : Error: Menu already exist
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 04:09:41.517 PM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-01-31 04:09:41.518 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-01-31 04:09:46.051 PM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-01-31 04:09:46.051 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-01-31 04:09:52.062 PM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-01-31 04:09:52.063 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-01-31 04:32:28.514 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:32:28.515 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 04:32:38.115 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:32:38.116 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 04:32:41.780 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:32:41.780 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 04:32:42.741 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:32:42.742 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 04:35:29.940 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:35:29.940 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 04:41:06.639 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:41:06.640 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 04:42:29.679 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:42:29.680 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 04:42:35.023 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:42:35.024 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 04:42:38.629 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:42:38.630 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 04:42:45.648 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:42:45.649 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 04:42:51.138 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:42:51.139 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:526:35)
+    at finish (node:internal/streams/writable:748:10)
+ [LOGGER] 2024-01-31 04:42:56.880 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:42:56.881 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:526:35)
+    at finish (node:internal/streams/writable:748:10)
+ [LOGGER] 2024-01-31 04:43:01.685 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:43:01.690 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:526:35)
+    at finish (node:internal/streams/writable:748:10)
+ [LOGGER] 2024-01-31 04:43:06.829 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:43:06.835 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:526:35)
+    at finish (node:internal/streams/writable:748:10)
+ [LOGGER] 2024-01-31 04:43:16.284 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 04:43:16.285 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:526:35)
+    at finish (node:internal/streams/writable:748:10)
+ [LOGGER] 2024-01-31 04:45:34.846 PM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-01-31 04:45:34.846 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-01-31 04:45:39.703 PM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-01-31 04:45:39.703 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-01-31 04:45:41.692 PM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-01-31 04:45:41.692 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-01-31 04:45:44.950 PM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-01-31 04:45:44.951 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-01-31 04:45:50.442 PM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-01-31 04:45:50.442 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-01-31 04:48:51.872 PM error : Error in create menu function Menu already exist
+ [LOGGER] 2024-01-31 04:48:51.873 PM error : Error: Menu already exist
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 04:49:36.002 PM error : Error in create menu function Menu already exist
+ [LOGGER] 2024-01-31 04:49:36.003 PM error : Error: Menu already exist
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:23:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:14:44.197 PM error : Error in create menu function [object Object]
+ [LOGGER] 2024-01-31 05:14:44.198 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:15:34)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-01-31 05:19:52.965 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:19:52.965 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:19:52.975 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:19:52.976 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:20:16.675 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:20:16.676 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:20:16.686 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:20:16.687 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:23:30.918 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:23:30.919 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:23:30.923 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:23:30.925 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:23:30.930 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:23:30.930 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:23:30.934 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:23:30.936 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:23:30.944 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:23:30.948 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:23:30.958 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:23:30.959 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:43:07.588 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:43:07.589 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-01-31 05:43:20.093 PM error : Error in update menu function [object Object]
+ [LOGGER] 2024-01-31 05:43:20.094 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:152:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

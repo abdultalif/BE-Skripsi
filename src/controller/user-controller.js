@@ -362,7 +362,7 @@ const changePassword = async (req, res, next) => {
         const userLogin = req.user;
         const changePass = validate(changePasswordValidation, req.body);
 
-        const isCurrentPasswordValid = compare(changePass.curentPassword, userLogin.password);
+        const isCurrentPasswordValid = compare(changePass.currentPassword, userLogin.password);
         if (!isCurrentPasswordValid) {
             throw new ResponseError(400, false, "Current password is incorrect", null);
         }

@@ -24,9 +24,9 @@ const forgotPasswordValidation = Joi.object({
 });
 
 const changePasswordValidation = Joi.object({
-    curentPassword: Joi.string().required().min(8),
+    currentPassword: Joi.string().required().min(8),
     newPassword: Joi.string().min(8).max(100).required(),
-    confirmPassword: Joi.string().min(8).valid(Joi.ref('newPassword')).required().strict(),
+    confirmPassword: Joi.string().required().min(8).valid(Joi.ref('newPassword')).strict(),
 });
 
 const resetPasswordValidation = Joi.object({
