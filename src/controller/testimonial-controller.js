@@ -1,13 +1,20 @@
 import { ResponseError } from "../error/response-error.js";
 import logger from "../middleware/logging-middleware.js";
 import Testimonial from "../model/testimonial-model.js";
+import User from "../model/user-model.js";
 import { createTestimonialValidation, updateTestimonialValidation } from "../validation/testimonials-validation.js";
 import { validate } from "../validation/validation.js";
 import fs from "fs";
 
 const getTestimonials = async (req, res, next) => {
     try {
-        const testimonials = await Testimonial.findAll();
+        const testimonials = await Testimonial.findAll({
+            include: {
+                model: User,
+                attributes: ['name', 'image'],
+            },
+            attributes: ['id', 'description', 'rating']
+        });
 
         if (testimonials.length === 0) {
             throw new ResponseError(404, false, "Tesimoni is not found", null);
@@ -28,14 +35,10 @@ const getTestimonials = async (req, res, next) => {
 
 const createTestimonial = async (req, res, next) => {
     try {
-        const image = req.file;
-        const testimonial = req.body;
-        testimonial.image = image;
 
-        const testimonialCreate = validate(createTestimonialValidation, testimonial);
+        const testimonialCreate = validate(createTestimonialValidation, req.body);
 
-        testimonialCreate.image = req.file.filename;
-        const result = await Testimonial.create({ ...testimonialCreate });
+        const result = await Testimonial.create({ ...testimonialCreate, userId: req.user.id });
         res.status(201).json({
             status: true,
             statusResponse: 201,
@@ -45,10 +48,6 @@ const createTestimonial = async (req, res, next) => {
 
         logger.info(`Created testimonial ${result.name} successfully`);
     } catch (error) {
-        if (req.file) {
-            const filePath = 'uploads/testimonial/' + req.file.filename;
-            fs.unlinkSync(filePath);
-        }
         logger.error(`Error in create testimonial function ${error.message}`);
         logger.error(error.stack);
         next(error);
@@ -83,10 +82,7 @@ const deleteTestimonial = async (req, res, next) => {
         const { testimonialId } = req.params;
         const testimonialExist = await Testimonial.findByPk(testimonialId);
         if (!testimonialExist) throw new ResponseError(404, false, 'Testimonial is not found', null);
-        if (testimonialExist) {
-            const filePath = `uploads/testimonial/${testimonialExist.image}`;
-            fs.unlinkSync(filePath);
-        }
+
         await Testimonial.destroy({ where: { id: testimonialId } });
         res.status(200).json({
             status: true,
@@ -106,7 +102,6 @@ const updateTestimonial = async (req, res, next) => {
     try {
         const { testimonialId } = req.params;
         const data = req.body;
-        data.image = req.file;
 
         const testimonialExist = await Testimonial.findByPk(testimonialId);
 
@@ -114,13 +109,6 @@ const updateTestimonial = async (req, res, next) => {
 
         const testimonialUpdate = validate(updateTestimonialValidation, data);
 
-        if (testimonialUpdate.image) {
-            const filePath = `uploads/testimonial/${testimonialExist.image}`;
-            fs.unlinkSync(filePath);
-        }
-        if (req.file) {
-            testimonialUpdate.image = req.file.filename;
-        }
         await Testimonial.update({ ...testimonialUpdate }, { where: { id: testimonialId } });
         const result = await Testimonial.findByPk(testimonialId);
         res.status(200).json({
@@ -131,10 +119,6 @@ const updateTestimonial = async (req, res, next) => {
         });
         logger.info(`Update Testimoni Successfully`);
     } catch (error) {
-        if (req.file) {
-            const filePath = 'uploads/testimonial/' + req.file.filename;
-            fs.unlinkSync(filePath);
-        }
         logger.error(`Error in update testimonial function: ${error.message}`);
         logger.error(error.stack);
         next(error);

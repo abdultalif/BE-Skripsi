@@ -1,5 +1,6 @@
 import sequelize from "../utils/db.js";
 import { Sequelize } from "sequelize";
+import User from "./user-model.js";
 
 const Testimonial = sequelize.define('Testimonial', {
     id: {
@@ -8,27 +9,35 @@ const Testimonial = sequelize.define('Testimonial', {
         allowNull: false,
         defaultValue: Sequelize.UUIDV4,
     },
-    name: {
-        allowNull: false,
-        type: Sequelize.STRING,
-    },
+
     description: {
         allowNull: false,
         type: Sequelize.TEXT
     },
-    image: {
-        allowNull: false,
-        type: Sequelize.STRING
-    },
     rating: {
         allowNull: false,
         type: Sequelize.STRING
+    },
+    userId: {
+        type: Sequelize.UUID,
+        allowNull: false,
     },
 },
     {
         tableName: 'testimonials',
         timestamps: true,
     });
+
+
+Testimonial.belongsTo(User, {
+    foreignKey: 'userId'
+});
+
+User.hasMany(Testimonial, {
+    foreignKey: 'userId',
+    onUpdate: 'RESTRICT',
+    onDelete: 'RESTRICT'
+});
 
 (async () => {
     await sequelize.sync();
