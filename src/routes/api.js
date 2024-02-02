@@ -2,7 +2,7 @@ import userController from "../controller/user-controller.js";
 import { authentication, isAdmin } from "../middleware/auth-middleware.js";
 import express from "express";
 import menuController from "../controller/menu-controller.js";
-import { uploadMenu } from "../middleware/upload-middleware.js";
+import { uploadMenu, uploadUser } from "../middleware/upload-middleware.js";
 import testimonialController from "../controller/testimonial-controller.js";
 
 const router = express.Router();
@@ -11,7 +11,7 @@ const router = express.Router();
 // Users
 router.get('/api/users/get-login', authentication, userController.getLogin);
 router.get('/api/users/:userId', authentication, userController.getUser);
-router.patch('/api/users/:userId', authentication, userController.updateUser);
+router.patch('/api/users/:userId', authentication, uploadUser.single('image'), userController.updateUser);
 router.delete('/api/users/:userId', authentication, userController.deleteUser);
 router.put('/api/users/changePassword', authentication, userController.changePassword);
 router.post('/api/users/logout', authentication, userController.logoutUser);

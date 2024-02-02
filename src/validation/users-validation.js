@@ -11,13 +11,14 @@ const registerUserValidation = Joi.object({
 
 const loginUserValidation = Joi.object({
     email: Joi.string().max(100).required().email(),
-    password: Joi.string().max(100).required()
+    password: Joi.string().max(100).required(),
 });
 
 const updateUserValidation = Joi.object({
     email: Joi.string().max(100).email(),
     name: Joi.string().max(100),
-}).min(1);
+    phone: Joi.string().max(13).min(11),
+});
 
 const forgotPasswordValidation = Joi.object({
     email: Joi.string().email().required()

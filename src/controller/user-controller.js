@@ -9,6 +9,7 @@ import { compare } from "../utils/bcrypt.js";
 import { generateAccessToken, generateRefreshToken, parseJWT, verifyRefreshToken } from "../utils/jwt.js";
 import { changePasswordValidation, forgotPasswordValidation, loginUserValidation, registerUserValidation, resetPasswordValidation, updateUserValidation } from "../validation/users-validation.js";
 import { validate } from "../validation/validation.js";
+import fs from "fs";
 
 const register = async (req, res, next) => {
     const t = await sequelize.transaction();
@@ -324,7 +325,18 @@ const updateUser = async (req, res, next) => {
         }
 
         const userUpdate = validate(updateUserValidation, req.body);
-        const result = await User.update(
+
+        if (req.file) {
+            const filePath = `uploads/user/${user.image}`;
+            if (user.image !== 'default.jpg') {
+                fs.unlinkSync(filePath);
+            }
+        }
+
+        if (req.file) {
+            userUpdate.image = req.file.filename;
+        }
+        await User.update(
             {
                 ...userUpdate
             },
@@ -350,6 +362,10 @@ const updateUser = async (req, res, next) => {
             },
         });
     } catch (error) {
+        if (req.file) {
+            const filePath = `uploads/user/${req.file.filename}`;
+            fs.unlinkSync(filePath);
+        }
         logger.error(`Error in update user function: ${error.message}`);
         logger.error(error.stack);
         next(error);

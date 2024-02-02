@@ -119,3 +119,170 @@
  [LOGGER] 2024-02-02 12:29:34.416 AM error : Error: Menu already exist
     at createMenu (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/menu-controller.js:23:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 12:40:55.847 AM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-02-02 12:40:55.849 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-02 12:40:58.387 AM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-02-02 12:40:58.388 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-02 12:41:01.177 AM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-02-02 12:41:01.178 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-02 12:41:05.599 AM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-02-02 12:41:05.599 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-02 12:41:10.937 AM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-02-02 12:41:10.938 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-02 12:41:15.647 AM error : Error in change password fuction: [object Object]
+ [LOGGER] 2024-02-02 12:41:15.648 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at changePassword (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:363:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-02 04:17:35.925 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-02-02 04:17:35.928 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:201:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 04:17:44.132 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-02-02 04:17:44.133 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:201:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 05:19:49.947 PM error : Error in update user function: [object Object]
+ [LOGGER] 2024-02-02 05:19:49.950 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:326:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 05:20:55.106 PM error : Error in update user function: imageMenu is not defined
+ [LOGGER] 2024-02-02 05:20:55.108 PM error : ReferenceError: imageMenu is not defined
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:328:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 05:31:45.100 PM error : Error in update user function: menuExists is not defined
+ [LOGGER] 2024-02-02 05:31:45.103 PM error : ReferenceError: menuExists is not defined
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:329:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 05:31:46.460 PM error : Error in update user function: menuExists is not defined
+ [LOGGER] 2024-02-02 05:31:46.461 PM error : ReferenceError: menuExists is not defined
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:329:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 05:31:47.888 PM error : Error in update user function: menuExists is not defined
+ [LOGGER] 2024-02-02 05:31:47.888 PM error : ReferenceError: menuExists is not defined
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:329:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 05:31:56.600 PM error : Error in update user function: menuExists is not defined
+ [LOGGER] 2024-02-02 05:31:56.601 PM error : ReferenceError: menuExists is not defined
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:329:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 05:37:30.075 PM error : Error in get login function: Operation timeout
+ [LOGGER] 2024-02-02 05:37:30.077 PM error : SequelizeConnectionAcquireTimeoutError: Operation timeout
+    at ConnectionManager.getConnection (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:206:15)
+    at async D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\sequelize.js:305:26
+    at async MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async User.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1140:21)
+    at async User.findOne (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1240:12)
+    at async getLogin (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:128:22)
+ [LOGGER] 2024-02-02 05:37:52.363 PM error : Error in update user function: fs is not defined
+ [LOGGER] 2024-02-02 05:37:52.368 PM error : ReferenceError: fs is not defined
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:331:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 05:38:55.012 PM error : uncaughtException: fs is not defined
+ReferenceError: fs is not defined
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:366:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 05:42:19.177 PM error : Error in login function: [object Object]
+ [LOGGER] 2024-02-02 05:42:19.178 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:188:33)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:175:3)
+ [LOGGER] 2024-02-02 05:42:35.644 PM error : Error in login function: [object Object]
+ [LOGGER] 2024-02-02 05:42:35.644 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:188:33)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:175:3)
+ [LOGGER] 2024-02-02 05:42:55.002 PM error : Error in login function: [object Object]
+ [LOGGER] 2024-02-02 05:42:55.003 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:188:33)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:175:3)
+ [LOGGER] 2024-02-02 05:44:38.594 PM error : Error in update user function: [object Object]
+ [LOGGER] 2024-02-02 05:44:38.596 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:327:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-02 05:44:47.241 PM error : Error in update user function: [object Object]
+ [LOGGER] 2024-02-02 05:44:47.242 PM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at updateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:327:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
