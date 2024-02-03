@@ -14,7 +14,9 @@ router.get('/api/users/:userId', authentication, userController.getUser);
 router.patch('/api/users/:userId', authentication, uploadUser.single('image'), userController.updateUser);
 router.delete('/api/users/:userId', authentication, userController.deleteUser);
 router.put('/api/users/changePassword', authentication, userController.changePassword);
+router.put('/api/users/:userId', authentication, userController.activatedUser);
 router.post('/api/users/logout', authentication, userController.logoutUser);
+router.get('/api/users', authentication, userController.getUsers);
 
 // Menus Admin
 router.get('/api/menus/', authentication, isAdmin, menuController.getMenus);
@@ -25,7 +27,6 @@ router.put('/api/menus/:menuId', authentication, isAdmin, uploadMenu.single('ima
 
 // Auth
 router.post('/api-public/users', userController.register);
-router.get('/api-public/users', userController.getUsers);
 router.get('/api-public/users/activate/:email/:userId', userController.setActivateUser);
 router.post('/api-public/users/login', userController.login);
 router.get('/api-public/users/refresh', userController.setRefreshToken);

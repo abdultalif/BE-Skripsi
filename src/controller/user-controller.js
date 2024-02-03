@@ -468,12 +468,19 @@ const deleteUser = async (req, res, next) => {
                 id: userId
             }
         });
-        return res.status(200).json({
+
+        if (user.image && user.image !== 'default.jpg') {
+            const userImagePath = `uploads/user/${user.image}`;
+            fs.unlinkSync(userImagePath);
+        }
+
+        res.status(200).json({
             status: true,
             statusResponse: 200,
             message: "User delete successfully",
             data: null
         });
+        logger.info("User delete successfully");
     } catch (error) {
         logger.error(`Eror in delete user function: ${error.message}`);
         logger.error(error.stack);
@@ -541,6 +548,32 @@ const resetPassword = async (req, res, next) => {
     }
 };
 
+const activatedUser = async (req, res, next) => {
+    const { userId } = req.params;
+
+    try {
+        const user = await User.findByPk(userId);
+
+        if (!user) throw new ResponseError(404, false, 'User not found', null);
+
+        user.isActive = !user.isActive;
+
+        await user.save();
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "User activation status updated successfully",
+            data: null
+        });
+        logger.info("User activation status updated successfully");
+    } catch (error) {
+        logger.error(`Error in Active User function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
 export default {
     register,
     getUsers,
@@ -555,5 +588,6 @@ export default {
     deleteUser,
     validToken,
     resetPassword,
-    getLogin
+    getLogin,
+    activatedUser
 };

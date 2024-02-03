@@ -1,0 +1,16 @@
+ [LOGGER] 2024-02-04 12:15:23.233 AM error : Error in Active User function: User.save is not a function
+ [LOGGER] 2024-02-04 12:15:23.234 AM error : TypeError: User.save is not a function
+    at activatedUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:565:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-04 12:15:24.337 AM error : Error in Active User function: User.save is not a function
+ [LOGGER] 2024-02-04 12:15:24.337 AM error : TypeError: User.save is not a function
+    at activatedUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:565:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-04 12:15:32.015 AM error : Error in Active User function: User.save is not a function
+ [LOGGER] 2024-02-04 12:15:32.016 AM error : TypeError: User.save is not a function
+    at activatedUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:565:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-04 12:16:42.938 AM error : Error in Active User function: User.save is not a function
+ [LOGGER] 2024-02-04 12:16:42.939 AM error : TypeError: User.save is not a function
+    at activatedUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:565:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
