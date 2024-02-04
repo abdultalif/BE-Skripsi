@@ -1,0 +1,828 @@
+ [LOGGER] 2024-02-05 01:17:41.963 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:17:42.017 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:18:55.958 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:18:55.959 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:50:44.134 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:50:44.135 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:51:13.855 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:51:13.856 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:53:00.855 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:53:00.855 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:54:00.155 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:54:00.156 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:54:38.794 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:54:38.795 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:54:43.212 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:54:43.212 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:54:54.215 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:54:54.216 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:57:36.335 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:57:36.339 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:58:06.654 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:58:06.655 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 01:58:41.756 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 01:58:41.763 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:00:12.114 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:00:12.117 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:01:53.138 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:01:53.142 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:02:09.231 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:02:09.232 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:03:17.943 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:03:17.944 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:03:49.567 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:03:49.568 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:04:04.689 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:04:04.690 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:05:25.240 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:05:25.241 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:05:48.100 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:05:48.101 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:10:08.342 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:10:08.344 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:10:15.423 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:10:15.428 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:10:32.405 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:10:32.406 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:11:01.264 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:11:01.267 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:11:07.343 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:11:07.344 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:11:08.193 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:11:08.194 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:11:08.463 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:11:08.464 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:11:13.000 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:11:13.001 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:11:21.021 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:11:21.021 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:11:26.545 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:11:26.546 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:11:31.122 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:11:31.123 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:11:35.291 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:11:35.291 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:12:03.403 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:12:03.403 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:12:18.380 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:12:18.381 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:12:40.757 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:12:40.760 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:12:44.839 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:12:44.840 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:12:52.926 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:12:52.927 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:12:54.899 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:12:54.900 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:12:55.661 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:12:55.662 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:12:58.722 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:12:58.723 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:13:08.731 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:13:08.731 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:13:37.083 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:13:37.083 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:14:02.408 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:14:02.411 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:14:06.930 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:14:06.931 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:14:24.214 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:14:24.217 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:14:37.777 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:14:37.780 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:14:39.363 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:14:39.364 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:14:44.509 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:14:44.510 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:15:01.026 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:15:01.027 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:15:05.772 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:15:05.773 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:15:27.260 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:15:27.263 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:15:32.473 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:15:32.474 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:15:38.632 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:15:38.632 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:15:56.951 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:15:56.952 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:16:05.372 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:16:05.373 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:16:48.035 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:16:48.036 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:16:57.339 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:16:57.340 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:17:06.635 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:17:06.636 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:17:12.233 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:17:12.233 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:17:13.302 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:17:13.303 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:17:18.346 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:17:18.347 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:17:28.170 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:17:28.170 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:580:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:18:24.232 AM error : Eror in delete user function: User is not found
+ [LOGGER] 2024-02-05 02:18:24.233 AM error : Error: User is not found
+    at deleteUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:463:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-05 02:18:37.934 AM error : Eror in delete user function: User is not found
+ [LOGGER] 2024-02-05 02:18:37.934 AM error : Error: User is not found
+    at deleteUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:463:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-05 02:23:50.837 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:23:50.840 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:582:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:23:56.811 AM error : Error in create user function: Email already registered
+ [LOGGER] 2024-02-05 02:23:56.811 AM error : Error: Email already registered
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:589:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-05 02:24:27.442 AM error : Error in create user function: Email already registered
+ [LOGGER] 2024-02-05 02:24:27.443 AM error : Error: Email already registered
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:589:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-05 02:24:50.362 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:24:50.362 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:582:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:24:58.456 AM error : Error in create user function: Email already registered
+ [LOGGER] 2024-02-05 02:24:58.458 AM error : Error: Email already registered
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:589:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-05 02:26:03.446 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:26:03.447 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:582:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:26:49.946 AM error : Error in create user function: Email already registered
+ [LOGGER] 2024-02-05 02:26:49.948 AM error : Error: Email already registered
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:589:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-05 02:29:03.759 AM error : Error in create user function: [object Object]
+ [LOGGER] 2024-02-05 02:29:03.759 AM error : Error: [object Object]
+    at validate (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/validation/validation.js:23:15)
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:582:28)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-02-05 02:29:13.009 AM error : Error in create user function: Email already registered
+ [LOGGER] 2024-02-05 02:29:13.011 AM error : Error: Email already registered
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:589:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-05 02:29:20.024 AM error : Error in create user function: Email already registered
+ [LOGGER] 2024-02-05 02:29:20.025 AM error : Error: Email already registered
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:589:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-05 02:29:39.763 AM error : Error in create user function: Email already registered
+ [LOGGER] 2024-02-05 02:29:39.763 AM error : Error: Email already registered
+    at createUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:589:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

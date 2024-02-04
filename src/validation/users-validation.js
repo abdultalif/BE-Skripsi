@@ -6,7 +6,6 @@ const registerUserValidation = Joi.object({
     confirmPassword: Joi.string().min(8).valid(Joi.ref('password')).required().strict(),
     name: Joi.string().max(100).required(),
     phone: Joi.string().required().max(13).min(11),
-
 });
 
 const loginUserValidation = Joi.object({
@@ -35,11 +34,32 @@ const resetPasswordValidation = Joi.object({
     confirmPassword: Joi.string().min(8).valid(Joi.ref('newPassword')).required().strict(),
 });
 
+const createUserValidation = Joi.object({
+    email: Joi.string().max(50).required().email().messages({
+        'string.base': 'Email harus berupa teks',
+        'string.email': 'Format email tidak valid',
+        'string.max': 'Email tidak boleh lebih dari 100 karakter',
+        'any.required': 'Email wajib diisi'
+    }),
+
+    name: Joi.string().max(30).required(),
+
+
+    phone: Joi.number().required().min(11).messages({
+        'number.base': 'Nomor telepon harus berupa angka',
+        'number.min': 'Nomor telepon minimal {#limit} karakter',
+        'number.max': 'Nomor telepon tidak boleh lebih dari {#limit} karakter',
+        'any.required': 'Nomor telepon wajib diisi'
+    }),
+    isAdmin: Joi.boolean().required()
+});
+
 export {
     registerUserValidation,
     loginUserValidation,
     updateUserValidation,
     forgotPasswordValidation,
     changePasswordValidation,
-    resetPasswordValidation
+    resetPasswordValidation,
+    createUserValidation
 };

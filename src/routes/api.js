@@ -17,6 +17,7 @@ router.put('/api/users/changePassword', authentication, userController.changePas
 router.put('/api/users/:userId', authentication, userController.activatedUser);
 router.post('/api/users/logout', authentication, userController.logoutUser);
 router.get('/api/users', authentication, userController.getUsers);
+router.post('/api/users', authentication, userController.createUser);
 
 // Menus Admin
 router.get('/api/menus/', authentication, isAdmin, menuController.getMenus);
@@ -33,7 +34,6 @@ router.get('/api-public/users/refresh', userController.setRefreshToken);
 router.post('/api-public/users/forgot-password', userController.forgotPassword);
 router.get('/api-public/users/valid-token/:token', userController.validToken);
 router.patch('/api-public/users/reset-password/:token', userController.resetPassword);
-
 
 // Menus public
 router.get('/api-public/menus', menuController.getMenus);

@@ -7,7 +7,7 @@ import { Op } from "sequelize";
 import { v4 as tokenForgot } from 'uuid';
 import { compare } from "../utils/bcrypt.js";
 import { generateAccessToken, generateRefreshToken, parseJWT, verifyRefreshToken } from "../utils/jwt.js";
-import { changePasswordValidation, forgotPasswordValidation, loginUserValidation, registerUserValidation, resetPasswordValidation, updateUserValidation } from "../validation/users-validation.js";
+import { changePasswordValidation, createUserValidation, forgotPasswordValidation, loginUserValidation, registerUserValidation, resetPasswordValidation, updateUserValidation } from "../validation/users-validation.js";
 import { validate } from "../validation/validation.js";
 import fs from "fs";
 
@@ -81,7 +81,9 @@ const register = async (req, res, next) => {
 
 const getUsers = async (req, res, next) => {
     try {
-        const data = await User.findAll();
+        const data = await User.findAll({
+            order: [['createdAt', 'ASC']]
+        });
 
         if (data.length === 0) {
             throw new ResponseError(404, false, 'User is not found', null);
@@ -560,15 +562,47 @@ const activatedUser = async (req, res, next) => {
 
         await user.save();
 
+
         res.status(200).json({
             status: true,
             statusResponse: 200,
             message: "User activation status updated successfully",
-            data: null
+            data: user.name
         });
         logger.info("User activation status updated successfully");
     } catch (error) {
         logger.error(`Error in Active User function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
+const createUser = async (req, res, next) => {
+    try {
+        const userCreate = validate(createUserValidation, req.body);
+        const userExist = await User.findOne({
+            where: {
+                email: userCreate.email
+            }
+        });
+
+        if (userExist) throw new ResponseError(400, false, 'Email sudah terdaftar', null);
+
+        const result = await User.create({
+            ...userCreate,
+            password: 'Pizza21!',
+            image: 'default.jpg'
+        });
+
+        res.status(201).json({
+            status: true,
+            statusResponse: 201,
+            message: "Created account user successfully",
+            data: result
+        });
+        logger.info(`create account ${userCreate.name} successfuly`);
+    } catch (error) {
+        logger.error(`Error in create user function: ${error.message}`);
         logger.error(error.stack);
         next(error);
     }
@@ -589,5 +623,6 @@ export default {
     validToken,
     resetPassword,
     getLogin,
-    activatedUser
+    activatedUser,
+    createUser
 };
