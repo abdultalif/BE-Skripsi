@@ -17,6 +17,7 @@ const updateUserValidation = Joi.object({
     email: Joi.string().max(100).email(),
     name: Joi.string().max(100),
     phone: Joi.string().max(13).min(11),
+    isAdmin: Joi.boolean().required()
 });
 
 const forgotPasswordValidation = Joi.object({
@@ -45,10 +46,10 @@ const createUserValidation = Joi.object({
     name: Joi.string().max(30).required(),
 
 
-    phone: Joi.number().required().min(11).messages({
-        'number.base': 'Nomor telepon harus berupa angka',
-        'number.min': 'Nomor telepon minimal {#limit} karakter',
-        'number.max': 'Nomor telepon tidak boleh lebih dari {#limit} karakter',
+    phone: Joi.string().required().min(11).messages({
+        'string.base': 'Nomor telepon harus berupa angka',
+        'string.min': 'Nomor telepon minimal {#limit} karakter',
+        'string.max': 'Nomor telepon tidak boleh lebih dari {#limit} karakter',
         'any.required': 'Nomor telepon wajib diisi'
     }),
     isAdmin: Joi.boolean().required()

@@ -12,12 +12,12 @@ const router = express.Router();
 router.get('/api/users/get-login', authentication, userController.getLogin);
 router.get('/api/users/:userId', authentication, userController.getUser);
 router.patch('/api/users/:userId', authentication, uploadUser.single('image'), userController.updateUser);
-router.delete('/api/users/:userId', authentication, userController.deleteUser);
+router.delete('/api/users/:userId', authentication, isAdmin, userController.deleteUser);
 router.put('/api/users/changePassword', authentication, userController.changePassword);
 router.put('/api/users/:userId', authentication, userController.activatedUser);
 router.post('/api/users/logout', authentication, userController.logoutUser);
-router.get('/api/users', authentication, userController.getUsers);
-router.post('/api/users', authentication, userController.createUser);
+router.get('/api/users', authentication, isAdmin, userController.getUsers);
+router.post('/api/users', authentication, isAdmin, userController.createUser);
 
 // Menus Admin
 router.get('/api/menus/', authentication, isAdmin, menuController.getMenus);

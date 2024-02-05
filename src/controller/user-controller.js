@@ -109,7 +109,7 @@ const getUser = async (req, res, next) => {
             }
         });
 
-        if (!data || data.isActive == 0) {
+        if (!data) {
             throw new ResponseError(404, false, 'User is not found', null);
         }
 
@@ -353,7 +353,7 @@ const updateUser = async (req, res, next) => {
                 id: userId
             }
         });
-        return res.status(200).json({
+        res.status(200).json({
             status: true,
             statusResponse: 200,
             message: "user update successfully",
@@ -361,8 +361,11 @@ const updateUser = async (req, res, next) => {
                 id: updatedUser.id,
                 name: updatedUser.name,
                 email: updatedUser.email,
+                isAdmin: updatedUser.isAdmin
             },
         });
+
+        logger.info(`User ${updatedUser} updated successfuly`);
     } catch (error) {
         if (req.file) {
             const filePath = `uploads/user/${req.file.filename}`;
