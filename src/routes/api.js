@@ -4,6 +4,7 @@ import express from "express";
 import menuController from "../controller/menu-controller.js";
 import { uploadMenu, uploadUser } from "../middleware/upload-middleware.js";
 import testimonialController from "../controller/testimonial-controller.js";
+import cartController from "../controller/cart-controller.js";
 
 const router = express.Router();
 // router.use(authentication);
@@ -24,7 +25,7 @@ router.get('/api/menus/', authentication, isAdmin, menuController.getMenus);
 router.post('/api/menus/', authentication, isAdmin, uploadMenu.single('image'), menuController.createMenu);
 router.delete('/api/menus/:menuId', authentication, isAdmin, menuController.deleteMenu);
 router.get('/api/menus/:menuId', authentication, isAdmin, menuController.getMenu);
-router.put('/api/menus/:menuId', authentication, isAdmin, uploadMenu.single('image'), menuController.updateMenu);
+router.patch('/api/menus/:menuId', authentication, isAdmin, uploadMenu.single('image'), menuController.updateMenu);
 
 // Auth
 router.post('/api-public/users', userController.register);
@@ -34,6 +35,9 @@ router.get('/api-public/users/refresh', userController.setRefreshToken);
 router.post('/api-public/users/forgot-password', userController.forgotPassword);
 router.get('/api-public/users/valid-token/:token', userController.validToken);
 router.patch('/api-public/users/reset-password/:token', userController.resetPassword);
+
+// Carts
+router.get('/api/carts', authentication, cartController.getCarts);
 
 // Menus public
 router.get('/api-public/menus', menuController.getMenus);
@@ -47,6 +51,7 @@ router.post('/api/testimonial', authentication, testimonialController.createTest
 router.get('/api/testimonial/:testimonialId', authentication, testimonialController.getTestimonial);
 router.delete('/api/testimonial/:testimonialId', authentication, testimonialController.deleteTestimonial);
 router.patch('/api/testimonial/:testimonialId', authentication, testimonialController.updateTestimonial);
+
 
 
 export {

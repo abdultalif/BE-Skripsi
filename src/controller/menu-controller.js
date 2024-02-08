@@ -50,7 +50,9 @@ const createMenu = async (req, res, next) => {
 
 const getMenus = async (req, res, next) => {
     try {
-        const menusExists = await Menu.findAll();
+        const menusExists = await Menu.findAll({
+            order: [['createdAt', 'DESC']]
+        });
 
         if (menusExists.length === 0) {
             throw new ResponseError(404, false, "Menu is not found", null);
