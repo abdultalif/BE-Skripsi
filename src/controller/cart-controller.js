@@ -79,9 +79,7 @@ const createCart = async (req, res, next) => {
             attributes: ['id', 'quantity', 'total', 'createdAt', 'updatedAt']
 
         });
-        if (!existingCart) {
-            throw new ResponseError(404, false, "Menu is not found", null);
-        } else if (existingCart) {
+        if (existingCart) {
             const total = existingCart.total + (newQuantity * existingCart.Menu.price);
             const quantity = existingCart.quantity + newQuantity;
 
@@ -124,10 +122,35 @@ const createCart = async (req, res, next) => {
     }
 };
 
+const deleteCart = async (req, res, next) => {
+    try {
+        const { cartId } = req.params;
+        const cartExist = await Cart.findByPk(cartId);
+        if (!cartExist) throw new ResponseError(404, false, "Cart is not found", null);
+        await Cart.destroy({
+            where: {
+                id: cartId
+            }
+        });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "OK",
+            data: null
+        });
+        logger.info(`Delete cart successfully`);
+    } catch (error) {
+        logger.error(`Error in delete cart function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
 
 
 export default {
     getCarts,
     getCart,
-    createCart
+    createCart,
+    deleteCart
 };

@@ -213,3 +213,23 @@
  [LOGGER] 2024-02-09 02:53:00.204 AM error : Error: Menu is not found
     at createCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:83:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-09 03:22:34.442 AM error : Error in delete cart function: Cart is not found
+ [LOGGER] 2024-02-09 03:22:34.444 AM error : Error: Cart is not found
+    at deleteCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:131:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-09 03:30:44.104 AM error : Error in get cart function Cart is not found
+ [LOGGER] 2024-02-09 03:30:44.106 AM error : Error: Cart is not found
+    at getCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:56:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-09 03:33:24.032 AM error : Error in delete cart function: Cart is not found
+ [LOGGER] 2024-02-09 03:33:24.033 AM error : Error: Cart is not found
+    at deleteCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:131:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-09 03:33:58.574 AM error : Error in create cart function: Menu is not found
+ [LOGGER] 2024-02-09 03:33:58.576 AM error : Error: Menu is not found
+    at createCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:83:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-09 03:34:06.429 AM error : Error in create cart function: Menu is not found
+ [LOGGER] 2024-02-09 03:34:06.429 AM error : Error: Menu is not found
+    at createCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:83:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
