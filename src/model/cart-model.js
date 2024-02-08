@@ -13,7 +13,7 @@ const Cart = sequelize.define('Cart', {
         type: Sequelize.INTEGER,
         allowNull: false,
     },
-    subTotal: {
+    total: {
         type: Sequelize.INTEGER,
         allowNull: false
     },

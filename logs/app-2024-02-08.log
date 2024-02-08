@@ -665,3 +665,15 @@ Error
     at async MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
     at async Cart.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1140:21)
     at async getCarts (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:8:23)
+ [LOGGER] 2024-02-08 09:57:23.713 PM error : Error in get cart function Cart is not found
+ [LOGGER] 2024-02-08 09:57:23.718 PM error : Error: Cart is not found
+    at getCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:54:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-08 09:57:27.170 PM error : Error in get cart function Cart is not found
+ [LOGGER] 2024-02-08 09:57:27.171 PM error : Error: Cart is not found
+    at getCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:54:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-08 09:58:35.557 PM error : Error in get cart function Cart is not found
+ [LOGGER] 2024-02-08 09:58:35.558 PM error : Error: Cart is not found
+    at getCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:54:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
