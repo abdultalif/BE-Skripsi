@@ -39,6 +39,8 @@ router.patch('/api-public/users/reset-password/:token', userController.resetPass
 // Carts
 router.get('/api/carts', authentication, cartController.getCarts);
 router.post('/api/carts', authentication, cartController.createCart);
+router.get('/api/carts/count', authentication, cartController.countCart);
+router.put('/api/carts/:cartId', authentication, cartController.updateCart);
 router.get('/api/carts/:cartId', authentication, cartController.getCart);
 router.delete('/api/carts/:cartId', authentication, cartController.deleteCart);
 

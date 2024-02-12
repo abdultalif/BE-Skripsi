@@ -3,12 +3,13 @@ import logger from "../middleware/logging-middleware.js";
 import Cart from "../model/cart-model.js";
 import Menu from "../model/menu-model.js";
 import User from "../model/user-model.js";
-import { createCartValidation } from "../validation/carts-validation.js";
+import { createCartValidation, updateCartValidation } from "../validation/carts-validation.js";
 import { validate } from "../validation/validation.js";
 
 const getCarts = async (req, res, next) => {
     try {
         const carts = await Cart.findAll({
+            where: { userId: req.user.id },
             order: [['createdAt', 'ASC']],
             include: [
                 {
@@ -17,7 +18,7 @@ const getCarts = async (req, res, next) => {
                 },
                 {
                     model: Menu,
-                    attributes: ['name', 'price', 'image']
+                    attributes: ['name', 'price', 'image', 'category']
                 },
             ],
             attributes: ['id', 'quantity', 'total', 'createdAt', 'updatedAt']
@@ -147,10 +148,54 @@ const deleteCart = async (req, res, next) => {
 };
 
 
+const countCart = async (req, res, next) => {
+    try {
+        const count = await Cart.count({ where: { userId: req.user.id } });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "OK",
+            data: count
+        });
+        logger.info(`Count cart successfully`);
+    } catch (error) {
+        logger.error(`Error in count cart function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
+const updateCart = async (req, res, next) => {
+    try {
+        const cartExists = await Cart.findByPk(req.params.cartId);
+        if (!cartExists) {
+            throw new ResponseError(404, false, "Cart is not found", null);
+        }
+        const update = validate(updateCartValidation, req.body);
+        await Cart.update({ ...update }, { where: { id: req.params.cartId } });
+        const result = await Cart.findByPk(req.params.cartId);
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "Updated Cart Successfuly",
+            data: result
+        });
+        logger.info(`Updated cart successfully`);
+
+    } catch (error) {
+        logger.error(`Error in update cart function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+
+    }
+};
+
 
 export default {
     getCarts,
     getCart,
     createCart,
-    deleteCart
+    deleteCart,
+    countCart,
+    updateCart
 };
