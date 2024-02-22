@@ -2,7 +2,6 @@ import sequelize from "../utils/db.js";
 import { Sequelize } from "sequelize";
 import { encript } from "../utils/bcrypt.js";
 import moment from "moment";
-import Contact from "./contact-model.js";
 
 const User = sequelize.define('User', {
     id: {
@@ -71,15 +70,6 @@ const User = sequelize.define('User', {
         tableName: 'users',
         timestamps: true,
     });
-
-User.hasMany(Contact, {
-    foreignKey: 'userId',
-});
-
-Contact.belongsTo(User, {
-    foreignKey: 'userId',
-});
-
 
 (async () => {
     await sequelize.sync();

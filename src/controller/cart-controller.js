@@ -18,12 +18,11 @@ const getCarts = async (req, res, next) => {
                 },
                 {
                     model: Menu,
-                    attributes: ['name', 'price', 'image', 'category']
+                    attributes: ['id', 'name', 'price', 'image', 'category']
                 },
             ],
             attributes: ['id', 'quantity', 'total', 'createdAt', 'updatedAt']
         });
-        if (carts.length === 0) throw new ResponseError(404, false, "Cart is not found", null);
         res.status(200).json({
             status: true,
             statusResponse: 200,

@@ -1,0 +1,147 @@
+ [LOGGER] 2024-02-22 01:59:08.700 AM error : Error in create order function: notNull Violation: order.responseMidtrans cannot be null
+ [LOGGER] 2024-02-22 01:59:08.703 AM error : SequelizeValidationError: notNull Violation: order.responseMidtrans cannot be null
+    at InstanceValidator._validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:2426:7)
+    at async order.create (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1362:12)
+    at async createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:48:9)
+ [LOGGER] 2024-02-22 02:02:23.464 AM error : Error in create order function: notNull Violation: order.responseMidtrans cannot be null
+ [LOGGER] 2024-02-22 02:02:23.467 AM error : SequelizeValidationError: notNull Violation: order.responseMidtrans cannot be null
+    at InstanceValidator._validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:2426:7)
+    at async order.create (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1362:12)
+    at async createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:49:9)
+ [LOGGER] 2024-02-22 02:03:18.061 AM error : Error in create order function: notNull Violation: order.responseMidtrans cannot be null
+ [LOGGER] 2024-02-22 02:03:18.061 AM error : SequelizeValidationError: notNull Violation: order.responseMidtrans cannot be null
+    at InstanceValidator._validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:2426:7)
+    at async order.create (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1362:12)
+    at async createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:49:9)
+ [LOGGER] 2024-02-22 02:03:28.411 AM error : Error in create order function: notNull Violation: order.responseMidtrans cannot be null
+ [LOGGER] 2024-02-22 02:03:28.412 AM error : SequelizeValidationError: notNull Violation: order.responseMidtrans cannot be null
+    at InstanceValidator._validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:2426:7)
+    at async order.create (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1362:12)
+    at async createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:49:9)
+ [LOGGER] 2024-02-22 02:04:37.755 AM error : Error in create order function: notNull Violation: order.responseMidtrans cannot be null
+ [LOGGER] 2024-02-22 02:04:37.758 AM error : SequelizeValidationError: notNull Violation: order.responseMidtrans cannot be null
+    at InstanceValidator._validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:2426:7)
+    at async order.create (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1362:12)
+    at async createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:54:9)
+ [LOGGER] 2024-02-22 02:04:50.579 AM error : Error in create order function: notNull Violation: order.responseMidtrans cannot be null
+ [LOGGER] 2024-02-22 02:04:50.610 AM error : SequelizeValidationError: notNull Violation: order.responseMidtrans cannot be null
+    at InstanceValidator._validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:2426:7)
+    at async order.create (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1362:12)
+    at async createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:54:9)
+ [LOGGER] 2024-02-22 02:07:55.245 AM error : Error in create order function: notNull Violation: order.responseMidtrans cannot be null
+ [LOGGER] 2024-02-22 02:07:55.248 AM error : SequelizeValidationError: notNull Violation: order.responseMidtrans cannot be null
+    at InstanceValidator._validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:2426:7)
+    at async order.create (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1362:12)
+    at async createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:54:9)
+ [LOGGER] 2024-02-22 02:11:56.659 AM error : Error in create order function: Cannot add or update a child row: a foreign key constraint fails (`rest_api`.`orders_items`, CONSTRAINT `orders_items_ibfk_2` FOREIGN KEY (`orderId`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+ [LOGGER] 2024-02-22 02:11:56.666 AM error : Error
+    at Query.run (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.bulkInsert (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:346:21)
+    at async recursiveBulkCreate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1697:25)
+    at async orders_items.bulkCreate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1786:12)
+    at async createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:70:9)
+ [LOGGER] 2024-02-22 02:15:25.629 AM error : Error in create order function: Cannot add or update a child row: a foreign key constraint fails (`rest_api`.`orders_items`, CONSTRAINT `orders_items_ibfk_2` FOREIGN KEY (`orderId`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+ [LOGGER] 2024-02-22 02:15:25.634 AM error : Error
+    at Query.run (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.bulkInsert (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:346:21)
+    at async recursiveBulkCreate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1697:25)
+    at async orders_items.bulkCreate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1786:12)
+    at async createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:70:9)
+ [LOGGER] 2024-02-22 08:39:24.696 AM error : Error in create order function: transactionToken is not defined
+ [LOGGER] 2024-02-22 08:39:24.698 AM error : ReferenceError: transactionToken is not defined
+    at createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:58:20)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:346:12)
+ [LOGGER] 2024-02-22 08:56:47.802 AM error : Error in create order function: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["transaction_details.gross_amount is not equal to the sum of item_details"]}
+ [LOGGER] 2024-02-22 08:56:47.806 AM error : MidtransError: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["transaction_details.gross_amount is not equal to the sum of item_details"]}
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\midtrans-client\lib\httpClient.js:85:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-22 08:56:55.123 AM error : Error in create order function: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["transaction_details.gross_amount is not equal to the sum of item_details"]}
+ [LOGGER] 2024-02-22 08:56:55.124 AM error : MidtransError: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["transaction_details.gross_amount is not equal to the sum of item_details"]}
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\midtrans-client\lib\httpClient.js:85:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-22 08:57:08.043 AM error : Error in create order function: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["transaction_details.gross_amount is not a number","transaction_details.gross_amount is not equal to the sum of item_details"]}
+ [LOGGER] 2024-02-22 08:57:08.044 AM error : MidtransError: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["transaction_details.gross_amount is not a number","transaction_details.gross_amount is not equal to the sum of item_details"]}
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\midtrans-client\lib\httpClient.js:85:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-22 08:57:13.350 AM error : Error in create order function: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["transaction_details.gross_amount is not a number","transaction_details.gross_amount is not equal to the sum of item_details"]}
+ [LOGGER] 2024-02-22 08:57:13.351 AM error : MidtransError: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["transaction_details.gross_amount is not a number","transaction_details.gross_amount is not equal to the sum of item_details"]}
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\midtrans-client\lib\httpClient.js:85:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-22 09:00:56.540 AM error : Error in create order function: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["item_details Price is not a number","transaction_details.gross_amount is not equal to the sum of item_details"]}
+ [LOGGER] 2024-02-22 09:00:56.541 AM error : MidtransError: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["item_details Price is not a number","transaction_details.gross_amount is not equal to the sum of item_details"]}
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\midtrans-client\lib\httpClient.js:85:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-22 09:00:58.045 AM error : Error in create order function: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["item_details Price is not a number","transaction_details.gross_amount is not equal to the sum of item_details"]}
+ [LOGGER] 2024-02-22 09:00:58.046 AM error : MidtransError: Midtrans API is returning API error. HTTP status code: 400. API response: {"error_messages":["item_details Price is not a number","transaction_details.gross_amount is not equal to the sum of item_details"]}
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\midtrans-client\lib\httpClient.js:85:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-22 10:00:51.979 AM error : Error in update cart function: Operation timeout
+ [LOGGER] 2024-02-22 10:00:51.984 AM error : SequelizeConnectionAcquireTimeoutError: Operation timeout
+    at ConnectionManager.getConnection (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:206:15)
+    at async D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\sequelize.js:305:26
+    at async MySQLQueryInterface.select (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Cart.findAll (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1140:21)
+    at async Cart.findOne (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1240:12)
+    at async Cart.findByPk (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1221:12)
+    at async updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:169:28)
+ [LOGGER] 2024-02-22 12:27:38.385 PM error : uncaughtException: transactionToken is not defined
+ReferenceError: transactionToken is not defined
+    at createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:78:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-22 12:28:16.099 PM error : Error in create order function: Cannot add or update a child row: a foreign key constraint fails (`rest_api`.`orders_items`, CONSTRAINT `orders_items_ibfk_2` FOREIGN KEY (`orderId`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+ [LOGGER] 2024-02-22 12:28:16.100 PM error : Error
+    at Query.run (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.bulkInsert (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:346:21)
+    at async recursiveBulkCreate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1697:25)
+    at async orders_items.bulkCreate (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\sequelize\lib\model.js:1786:12)
+    at async createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:72:9)
+ [LOGGER] 2024-02-22 12:31:05.260 PM error : uncaughtException: transactionToken is not defined
+ReferenceError: transactionToken is not defined
+    at createOrder (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/order-cotroller.js:78:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-22 12:33:44.046 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-02-22 12:33:44.048 PM error : Error: Email or password wrong
+    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:204:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

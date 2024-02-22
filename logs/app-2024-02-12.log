@@ -34,3 +34,47 @@ SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
  [LOGGER] 2024-02-12 03:22:29.692 PM error : Error: Cart is not found
     at getCarts (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:26:39)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:02:26.635 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:02:26.637 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:06:07.410 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:06:07.411 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:07:55.404 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:07:55.405 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:08:49.792 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:08:49.793 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:10:36.984 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:10:36.984 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:10:37.807 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:10:37.808 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:10:38.836 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:10:38.836 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:10:38.922 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:10:38.922 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:10:42.565 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:10:42.565 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:10:42.693 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:10:42.694 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-02-12 06:10:42.934 PM error : Error in update cart function: Cart is not found
+ [LOGGER] 2024-02-12 06:10:42.935 PM error : Error: Cart is not found
+    at updateCart (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/cart-controller.js:172:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

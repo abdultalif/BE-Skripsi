@@ -5,9 +5,17 @@ import menuController from "../controller/menu-controller.js";
 import { uploadMenu, uploadUser } from "../middleware/upload-middleware.js";
 import testimonialController from "../controller/testimonial-controller.js";
 import cartController from "../controller/cart-controller.js";
+import orderCotroller from "../controller/order-cotroller.js";
 
 const router = express.Router();
 // router.use(authentication);
+
+// Menus Admin
+router.get('/api/menus/', authentication, isAdmin, menuController.getMenus);
+router.post('/api/menus/', authentication, isAdmin, uploadMenu.single('image'), menuController.createMenu);
+router.delete('/api/menus/:menuId', authentication, isAdmin, menuController.deleteMenu);
+router.get('/api/menus/:menuId', authentication, isAdmin, menuController.getMenu);
+router.patch('/api/menus/:menuId', authentication, isAdmin, uploadMenu.single('image'), menuController.updateMenu);
 
 // Users
 router.get('/api/users/get-login', authentication, userController.getLogin);
@@ -20,13 +28,6 @@ router.post('/api/users/logout', authentication, userController.logoutUser);
 router.get('/api/users', authentication, isAdmin, userController.getUsers);
 router.post('/api/users', authentication, isAdmin, userController.createUser);
 
-// Menus Admin
-router.get('/api/menus/', authentication, isAdmin, menuController.getMenus);
-router.post('/api/menus/', authentication, isAdmin, uploadMenu.single('image'), menuController.createMenu);
-router.delete('/api/menus/:menuId', authentication, isAdmin, menuController.deleteMenu);
-router.get('/api/menus/:menuId', authentication, isAdmin, menuController.getMenu);
-router.patch('/api/menus/:menuId', authentication, isAdmin, uploadMenu.single('image'), menuController.updateMenu);
-
 // Auth
 router.post('/api-public/users', userController.register);
 router.get('/api-public/users/activate/:email/:userId', userController.setActivateUser);
@@ -35,6 +36,12 @@ router.get('/api-public/users/refresh', userController.setRefreshToken);
 router.post('/api-public/users/forgot-password', userController.forgotPassword);
 router.get('/api-public/users/valid-token/:token', userController.validToken);
 router.patch('/api-public/users/reset-password/:token', userController.resetPassword);
+
+
+// order cart
+router.post('/api/order', authentication, orderCotroller.createOrder);
+
+
 
 // Carts
 router.get('/api/carts', authentication, cartController.getCarts);
