@@ -19,10 +19,6 @@ const Menu = sequelize.define("Menu", {
         type: Sequelize.INTEGER,
         allowNull: false
     },
-    stok: {
-        type: Sequelize.INTEGER,
-        allowNull: false
-    },
     image: {
         type: Sequelize.STRING,
         allowNull: false

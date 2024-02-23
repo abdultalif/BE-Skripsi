@@ -53,6 +53,7 @@ router.delete('/api/carts/:cartId', authentication, cartController.deleteCart);
 
 // Menus public
 router.get('/api-public/menus', menuController.getMenus);
+router.get('/api-public/cari-menu', menuController.cariMenu);
 
 // Testimonial public
 router.get('/api-public/testimonial', testimonialController.getTestimonials);

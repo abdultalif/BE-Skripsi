@@ -5,7 +5,6 @@ import { v4 as order_id } from 'uuid';
 import Order from "../model/order-model.js";
 import OrdersItems from "../model/order-item-model.js";
 import Cart from "../model/cart-model.js";
-
 let snap = new midtransClient.Snap({
     isProduction: false,
     serverKey: process.env.SERVER_KEY,
@@ -35,6 +34,10 @@ const createOrder = async (req, res, next) => {
                 email: req.user.email,
                 phone: req.user.phone
             },
+            expiry: {
+                unit: "minutes",
+                duration: 10
+            },
             callbacks: {
                 finish: `http://127.0.0.1:5500/index.html`,
                 error: `http://127.0.0.1:5500/index.html`,
@@ -58,7 +61,7 @@ const createOrder = async (req, res, next) => {
             userId: req.user.id,
             totalPrice: req.body.total,
             token: transactionToken,
-            status: 'pending',
+            status: '',
             responseMidtrans: JSON.stringify(transaction)
         });
 
@@ -75,7 +78,6 @@ const createOrder = async (req, res, next) => {
         await Cart.destroy({ where: { userId: req.user.id } });
 
         logger.info(`Create order successfully`);
-        // transaction token
 
     } catch (error) {
         logger.error(`Error in create order function: ${error.message}`);

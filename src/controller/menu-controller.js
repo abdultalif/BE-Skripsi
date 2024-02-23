@@ -1,3 +1,4 @@
+import { Op } from "sequelize";
 import { ResponseError } from "../error/response-error.js";
 import logger from "../middleware/logging-middleware.js";
 import Menu from "../model/menu-model.js";
@@ -185,11 +186,38 @@ const updateMenu = async (req, res, next) => {
     }
 };
 
+const cariMenu = async (req, res, next) => {
+    try {
+        const menus = await Menu.findAll({
+            where: {
+                name: {
+                    [Op.like]: `%${req.query.cari}%`
+                },
+                // category: {
+                //     [Op.like]: `%${req.query.cari}%`
+                // }
+            }
+        });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "OK",
+            data: menus
+        });
+        logger.info(`Cari menu successfully`);
+    } catch (error) {
+        logger.error(`Error in cari menu function ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
 
 export default {
     getMenus,
     getMenu,
     createMenu,
     deleteMenu,
+    cariMenu,
     updateMenu,
 };
