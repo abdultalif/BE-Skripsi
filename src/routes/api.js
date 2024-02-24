@@ -40,7 +40,7 @@ router.patch('/api-public/users/reset-password/:token', userController.resetPass
 
 // order cart
 router.post('/api/order', authentication, orderCotroller.createOrder);
-
+router.post('/api/midtransWebhook', orderCotroller.midtransWebhook);
 
 
 // Carts

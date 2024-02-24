@@ -188,14 +188,14 @@ const updateMenu = async (req, res, next) => {
 
 const cariMenu = async (req, res, next) => {
     try {
+        if (!req.query.cari) {
+            throw new ResponseError(404, false, "Menu is not found", null);
+        }
         const menus = await Menu.findAll({
             where: {
                 name: {
                     [Op.like]: `%${req.query.cari}%`
                 },
-                // category: {
-                //     [Op.like]: `%${req.query.cari}%`
-                // }
             }
         });
         res.status(200).json({
