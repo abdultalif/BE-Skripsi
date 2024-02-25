@@ -7,6 +7,9 @@ import OrdersItems from "../model/order-item-model.js";
 import Cart from "../model/cart-model.js";
 import { ResponseError } from "../error/response-error.js";
 import crypto from "crypto";
+import User from "../model/user-model.js";
+import { Op } from "sequelize";
+import Menu from "../model/menu-model.js";
 
 
 const snap = new midtransClient.Snap({
@@ -64,7 +67,7 @@ const createOrder = async (req, res, next) => {
             userId: req.user.id,
             totalPrice: req.body.total,
             token: transactionToken,
-            status: 'pending',
+            status: 'Pending',
             responseMidtrans: JSON.stringify(transaction)
         });
 
@@ -109,18 +112,18 @@ const midtransWebhook = async (req, res, next) => {
             switch (midtransStatus) {
                 case 'capture':
                 case 'settlement':
-                    order.status = 'paid';
+                    order.status = 'Paid';
                     break;
                 case 'pending':
                 case 'deny':
-                    order.status = 'pending';
+                    order.status = 'Pending';
                     break;
                 case 'cancel':
                 case 'expire':
-                    order.status = 'cancelled';
+                    order.status = 'Cancelled';
                     break;
                 case 'refund':
-                    order.status = 'refunded';
+                    order.status = 'Refunded';
                     break;
                 default:
                     throw new ResponseError(400, false, 'Invalid transaction status', null);
@@ -148,8 +151,46 @@ const midtransWebhook = async (req, res, next) => {
     }
 }
 
+const getCheckout = async (req, res, next) => {
+    try {
+        const filterCheckout = await Order.findAll({
+            // where: { userId: req.user.id },
+            where: {
+                status: {
+                    [Op.like]: `%${req.query.status}%`
+                },
+            },
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'name', 'email', 'phone']
+                },
+                {
+                    model: OrdersItems,
+                    attributes: ['id', 'quantity', 'subtotal'],
+                    include: [{
+                        model: Menu,
+                        attributes: ['id', 'name', 'price', 'image', 'description']
+                    }]
+                }],
+            attributes: ['id', 'totalPrice', 'status']
+        });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: `History Transaction ${req.query.status} `,
+            data: filterCheckout
+        })
+    } catch (error) {
+        logger.error(`Error in processing Get Checkout : ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
 
 export default {
     createOrder,
-    midtransWebhook
+    midtransWebhook,
+    getCheckout
 };
