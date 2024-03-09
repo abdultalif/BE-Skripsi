@@ -83,7 +83,7 @@ const deleteMenu = async (req, res, next) => {
             }
         });
         if (!menuExists) {
-            throw new ResponseError(404, false, "Menu is not found", null);
+            throw new ResponseError(404, false, "Menu not found", null);
         }
 
         if (menuExists.image) {

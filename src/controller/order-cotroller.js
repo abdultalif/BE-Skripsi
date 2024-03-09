@@ -46,9 +46,9 @@ const createOrder = async (req, res, next) => {
                 duration: 10
             },
             callbacks: {
-                finish: `http://127.0.0.1:5500/index.html`,
-                error: `http://127.0.0.1:5500/index.html`,
-                pending: `http://127.0.0.1:5500/index.html`,
+                finish: `http://127.0.0.1:5500/history-transaksi.html`,
+                error: `http://127.0.0.1:5500/history-transaksi.html`,
+                pending: `http://127.0.0.1:5500/history-transaksi.html`,
             },
         };
 
@@ -112,7 +112,7 @@ const midtransWebhook = async (req, res, next) => {
             switch (midtransStatus) {
                 case 'capture':
                 case 'settlement':
-                    order.status = 'Paid';
+                    order.status = 'Success';
                     break;
                 case 'pending':
                 case 'deny':
@@ -151,14 +151,15 @@ const midtransWebhook = async (req, res, next) => {
     }
 }
 
-const getCheckout = async (req, res, next) => {
+const getCheckoutFilter = async (req, res, next) => {
     try {
         const filterCheckout = await Order.findAll({
-            // where: { userId: req.user.id },
+            order: [['createdAt', 'DESC']],
             where: {
                 status: {
                     [Op.like]: `%${req.query.status}%`
                 },
+                userId: req.user.id
             },
             include: [
                 {
@@ -170,10 +171,10 @@ const getCheckout = async (req, res, next) => {
                     attributes: ['id', 'quantity', 'subtotal'],
                     include: [{
                         model: Menu,
-                        attributes: ['id', 'name', 'price', 'image', 'description']
+                        attributes: ['id', 'name', 'price', 'image', 'category']
                     }]
                 }],
-            attributes: ['id', 'totalPrice', 'status']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'updatedAt']
         });
         res.status(200).json({
             status: true,
@@ -181,6 +182,79 @@ const getCheckout = async (req, res, next) => {
             message: `History Transaction ${req.query.status} `,
             data: filterCheckout
         })
+    } catch (error) {
+        logger.error(`Error in processing Get Checkout Filter : ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
+const getCheckout = async (req, res, next) => {
+    try {
+        const orderExist = await Order.findByPk(req.params.orderId);
+        if (!orderExist) throw new ResponseError(404, false, 'Checkout not found', null);
+
+        const checkout = await Order.findOne({
+            where: { id: req.params.orderId },
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'name', 'email', 'phone']
+                },
+                {
+                    model: OrdersItems,
+                    attributes: ['id', 'quantity', 'subtotal'],
+                    include: [{
+                        model: Menu,
+                        attributes: ['id', 'name', 'price', 'image', 'category']
+                    }]
+                }],
+            attributes: ['id', 'totalPrice', 'status', 'token', 'updatedAt']
+        });
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: `Data order dengan id: ${req.params.orderId}`,
+            data: checkout
+        });
+        logger.info('Get order Successfuly');
+    } catch (error) {
+        logger.error(`Error in processing Get Checkout : ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
+const getCheckouts = async (req, res, next) => {
+    try {
+        const checkout = await Order.findAll({
+            order: [['updatedAt', 'DESC']],
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'name', 'email', 'phone']
+                },
+                {
+                    model: OrdersItems,
+                    attributes: ['id', 'quantity', 'subtotal'],
+                    include: [{
+                        model: Menu,
+                        attributes: ['id', 'name', 'price', 'image', 'category']
+                    }]
+                }],
+            attributes: ['id', 'totalPrice', 'status', 'token', 'updatedAt']
+        });
+
+        if (checkout.length === 0) throw new ResponseError(404, false, 'Order not found', null);
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'ok',
+            data: checkout
+        })
+        logger.info('Get order Successfuly');
     } catch (error) {
         logger.error(`Error in processing Get Checkout : ${error.message}`);
         logger.error(error.stack);
@@ -192,5 +266,7 @@ const getCheckout = async (req, res, next) => {
 export default {
     createOrder,
     midtransWebhook,
-    getCheckout
+    getCheckoutFilter,
+    getCheckout,
+    getCheckouts
 };

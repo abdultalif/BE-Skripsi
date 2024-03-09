@@ -39,7 +39,9 @@ router.patch('/api-public/users/reset-password/:token', userController.resetPass
 
 
 // order cart
-router.get('/api/order', authentication, orderCotroller.getCheckout);
+router.get('/api/order', authentication, isAdmin, orderCotroller.getCheckouts);
+router.get('/api/order/:orderId', authentication, orderCotroller.getCheckout);
+router.get('/api/orderfilter', authentication, orderCotroller.getCheckoutFilter);
 router.post('/api/order', authentication, orderCotroller.createOrder);
 router.post('/api/midtransWebhook', orderCotroller.midtransWebhook);
 

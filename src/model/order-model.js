@@ -20,7 +20,7 @@ const Order = sequelize.define('order', {
         allowNull: false
     },
     status: {
-        type: Sequelize.ENUM('Paid', 'Pending', 'Cancelled', 'Refunded'),
+        type: Sequelize.ENUM('Success', 'Pending', 'Cancelled', 'Refunded'),
         allowNull: false,
     },
     token: {

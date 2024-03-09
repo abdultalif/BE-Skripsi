@@ -21,7 +21,7 @@ const authentication = (req, res, next) => {
 
 const isAdmin = (req, res, next) => {
     if (!req.user.isAdmin) {
-        throw new ResponseError(403, false, "Forbidden", null);
+        throw new ResponseError(403, false, "Forbidden.. Kamu bukan admin", null);
     }
     next();
 };

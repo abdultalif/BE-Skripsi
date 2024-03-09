@@ -1,4 +1,0 @@
- [LOGGER] 2024-02-17 08:48:06.456 PM error : Error in setActivateUser function: User not found or expired
- [LOGGER] 2024-02-17 08:48:06.472 PM error : Error: User not found or expired
-    at setActivateUser (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:165:19)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
