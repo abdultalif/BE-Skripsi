@@ -10,6 +10,7 @@ import crypto from "crypto";
 import User from "../model/user-model.js";
 import { Op } from "sequelize";
 import Menu from "../model/menu-model.js";
+import axios from "axios";
 
 
 const snap = new midtransClient.Snap({
@@ -41,10 +42,10 @@ const createOrder = async (req, res, next) => {
                 email: req.user.email,
                 phone: req.user.phone
             },
-            expiry: {
-                unit: "minutes",
-                duration: 10
-            },
+            // expiry: {
+            //     unit: "minutes",
+            //     duration: 10
+            // },
             callbacks: {
                 finish: `http://127.0.0.1:5500/history-transaksi.html`,
                 error: `http://127.0.0.1:5500/history-transaksi.html`,
@@ -253,7 +254,7 @@ const getCheckouts = async (req, res, next) => {
             statusResponse: 200,
             message: 'ok',
             data: checkout
-        })
+        });
         logger.info('Get order Successfuly');
     } catch (error) {
         logger.error(`Error in processing Get Checkout : ${error.message}`);
@@ -263,10 +264,49 @@ const getCheckouts = async (req, res, next) => {
 }
 
 
+const cancelTransaction = async (req, res, next) => {
+    try {
+        const url = `https://api.sandbox.midtrans.com/v2/${req.body.transaction_id}/cancel`;
+        const headers = {
+            'Content-Type': 'application/json',
+            'Authorization': 'Basic ' + Buffer.from(process.env.SERVER_KEY + ':').toString('base64')
+        }
+        const data = {
+            transaction_id: req.body.transaction_id
+        };
+
+        const response = await axios.post(url, data, { headers });
+
+        if (response.data.transaction_status == 'cancel') {
+            await Order.update({ status: 'Cancelled' }, { where: { id: req.body.transaction_id } });
+
+        }
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: response.data.status_message,
+            data: response.data,
+        });
+        logger.info('Cancel order Successfuly');
+
+
+    } catch (error) {
+        logger.error(`Error in processing Cancel Transaction : ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
+
+
+
+
 export default {
     createOrder,
     midtransWebhook,
     getCheckoutFilter,
     getCheckout,
-    getCheckouts
+    getCheckouts,
+    cancelTransaction,
 };

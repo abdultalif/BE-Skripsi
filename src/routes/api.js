@@ -38,8 +38,9 @@ router.get('/api-public/users/valid-token/:token', userController.validToken);
 router.patch('/api-public/users/reset-password/:token', userController.resetPassword);
 
 
-// order cart
+// order
 router.get('/api/order', authentication, isAdmin, orderCotroller.getCheckouts);
+router.post('/api/cancel-transaction', authentication, orderCotroller.cancelTransaction);
 router.get('/api/order/:orderId', authentication, orderCotroller.getCheckout);
 router.get('/api/orderfilter', authentication, orderCotroller.getCheckoutFilter);
 router.post('/api/order', authentication, orderCotroller.createOrder);
