@@ -59,16 +59,6 @@ router.delete('/api/carts/:cartId', authentication, cartController.deleteCart);
 router.get('/api-public/menus', menuController.getMenus);
 router.get('/api-public/cari-menu', menuController.cariMenu);
 
-// Testimonial public
-router.get('/api-public/testimonial', testimonialController.getTestimonials);
-
-// Testimonials
-router.get('/api/testimonial', authentication, testimonialController.getTestimonials);
-router.post('/api/testimonial', authentication, testimonialController.createTestimonial);
-router.get('/api/testimonial/:testimonialId', authentication, testimonialController.getTestimonial);
-router.delete('/api/testimonial/:testimonialId', authentication, testimonialController.deleteTestimonial);
-router.patch('/api/testimonial/:testimonialId', authentication, testimonialController.updateTestimonial);
-
 
 
 export {
