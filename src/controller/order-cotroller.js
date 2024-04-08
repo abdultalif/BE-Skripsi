@@ -229,8 +229,13 @@ const getCheckout = async (req, res, next) => {
 
 const getCheckouts = async (req, res, next) => {
     try {
-        const checkout = await Order.findAll({
-            order: [['updatedAt', 'DESC']],
+        const filterCheckout = await Order.findAll({
+            order: [['createdAt', 'DESC']],
+            where: {
+                status: {
+                    [Op.like]: `%${req.query.status}%`
+                },
+            },
             include: [
                 {
                     model: User,
@@ -246,14 +251,11 @@ const getCheckouts = async (req, res, next) => {
                 }],
             attributes: ['id', 'totalPrice', 'status', 'token', 'updatedAt']
         });
-
-        if (checkout.length === 0) throw new ResponseError(404, false, 'Order not found', null);
-
         res.status(200).json({
             status: true,
             statusResponse: 200,
-            message: 'ok',
-            data: checkout
+            message: `History Transaction ${req.query.status} `,
+            data: filterCheckout
         });
         logger.info('Get order Successfuly');
     } catch (error) {
