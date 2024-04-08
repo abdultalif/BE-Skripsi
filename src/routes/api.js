@@ -3,7 +3,6 @@ import { authentication, isAdmin } from "../middleware/auth-middleware.js";
 import express from "express";
 import menuController from "../controller/menu-controller.js";
 import { uploadMenu, uploadUser } from "../middleware/upload-middleware.js";
-import testimonialController from "../controller/testimonial-controller.js";
 import cartController from "../controller/cart-controller.js";
 import orderCotroller from "../controller/order-cotroller.js";
 
