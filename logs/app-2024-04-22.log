@@ -1,0 +1,78 @@
+ [LOGGER] 2024-04-22 01:40:58.780 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+ [LOGGER] 2024-04-22 01:40:58.800 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+ [LOGGER] 2024-04-22 01:40:58.878 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+ [LOGGER] 2024-04-22 01:40:58.915 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+ [LOGGER] 2024-04-22 01:40:58.978 PM error : uncaughtException: connect ECONNREFUSED ::1:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+ [LOGGER] 2024-04-22 01:49:47.530 PM error : uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as get] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\index.js:521:19)
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/routes/api.js:64:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-04-22 09:45:08.397 PM error : uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\index.js:521:19)
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/routes/api.js:66:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-04-22 09:45:19.285 PM error : uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\index.js:521:19)
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/routes/api.js:66:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-04-22 09:50:19.448 PM error : uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\index.js:521:19)
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/routes/api.js:66:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-04-22 09:57:00.330 PM error : uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\index.js:521:19)
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/routes/api.js:66:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-04-22 09:57:24.131 PM error : uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\index.js:521:19)
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/routes/api.js:66:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-04-22 10:01:13.368 PM error : uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\index.js:521:19)
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/routes/api.js:66:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-04-22 10:01:21.860 PM error : uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\index.js:521:19)
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/routes/api.js:66:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)

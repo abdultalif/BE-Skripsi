@@ -5,6 +5,7 @@ import menuController from "../controller/menu-controller.js";
 import { uploadMenu, uploadUser } from "../middleware/upload-middleware.js";
 import cartController from "../controller/cart-controller.js";
 import orderCotroller from "../controller/order-cotroller.js";
+import ongkirController from "../controller/ongkir-controller.js";
 
 const router = express.Router();
 // router.use(authentication);
@@ -57,6 +58,12 @@ router.delete('/api/carts/:cartId', authentication, cartController.deleteCart);
 // Menus public
 router.get('/api-public/menus', menuController.getMenus);
 router.get('/api-public/cari-menu', menuController.cariMenu);
+
+
+// Raja Ongkir
+router.get('/api/provinsi', ongkirController.province);
+router.get('/api/city/', ongkirController.city);
+router.post('/api/ongkir', ongkirController.ongkir);
 
 
 

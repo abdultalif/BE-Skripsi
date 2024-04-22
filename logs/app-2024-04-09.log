@@ -66,3 +66,7 @@
     at next (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:280:10)
     at Function.handle (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:175:3)
     at router (D:\belajar\JavaScript\rest api\Pojok Code\3. rest-api\fullstack-skripsi\BE\node_modules\express\lib\router\index.js:47:12)
+ [LOGGER] 2024-04-09 02:20:57.134 AM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-04-09 02:20:57.136 AM error : Error: Email or password wrong
+    at login (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/be/src/controller/user-controller.js:204:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

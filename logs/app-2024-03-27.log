@@ -1,4 +1,0 @@
- [LOGGER] 2024-03-27 01:26:48.635 AM error : Error in login function: Email or password wrong
- [LOGGER] 2024-03-27 01:26:48.637 AM error : Error: Email or password wrong
-    at login (file:///D:/belajar/JavaScript/rest%20api/Pojok%20Code/3.%20rest-api/fullstack-skripsi/BE/src/controller/user-controller.js:204:19)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
