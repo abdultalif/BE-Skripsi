@@ -39,10 +39,10 @@ router.patch('/api-public/users/reset-password/:token', userController.resetPass
 
 
 // order
-router.get('/api/order', authentication, isAdmin, orderCotroller.getCheckouts);
-router.post('/api/cancel-transaction', authentication, orderCotroller.cancelTransaction);
 router.get('/api/order/:orderId', authentication, orderCotroller.getCheckout);
-router.get('/api/orderfilter', authentication, orderCotroller.getCheckoutFilter);
+router.get('/api/orderfilters', authentication, isAdmin, orderCotroller.getFilterCheckouts);
+router.post('/api/cancel-transaction', authentication, orderCotroller.cancelTransaction);
+router.get('/api/orderfilter', authentication, orderCotroller.getFilterCheckoutById);
 router.post('/api/order', authentication, orderCotroller.createOrder);
 router.post('/api/midtransWebhook', orderCotroller.midtransWebhook);
 
@@ -62,8 +62,8 @@ router.get('/api-public/cari-menu', menuController.cariMenu);
 
 // Raja Ongkir
 router.get('/api/provinsi', ongkirController.province);
-router.get('/api/city/', ongkirController.city);
-router.post('/api/ongkir', ongkirController.ongkir);
+router.get('/api/city/:provinceId', ongkirController.city);
+router.post('/api/ongkir', authentication, ongkirController.ongkir);
 
 
 

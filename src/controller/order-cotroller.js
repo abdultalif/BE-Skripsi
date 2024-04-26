@@ -152,7 +152,7 @@ const midtransWebhook = async (req, res, next) => {
     }
 }
 
-const getCheckoutFilter = async (req, res, next) => {
+const getFilterCheckoutById = async (req, res, next) => {
     try {
         const filterCheckout = await Order.findAll({
             order: [['createdAt', 'DESC']],
@@ -183,8 +183,48 @@ const getCheckoutFilter = async (req, res, next) => {
             message: `History Transaction ${req.query.status} `,
             data: filterCheckout
         })
+        logger.info(`Get checkout filter status ${req.query.status} successfully`);
     } catch (error) {
         logger.error(`Error in processing Get Checkout Filter : ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
+
+const getFilterCheckouts = async (req, res, next) => {
+    try {
+        const filterCheckout = await Order.findAll({
+            order: [['createdAt', 'DESC']],
+            where: {
+                status: {
+                    [Op.like]: `%${req.query.status}%`
+                },
+            },
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'name', 'email', 'phone']
+                },
+                {
+                    model: OrdersItems,
+                    attributes: ['id', 'quantity', 'subtotal'],
+                    include: [{
+                        model: Menu,
+                        attributes: ['id', 'name', 'price', 'image', 'category']
+                    }]
+                }],
+            attributes: ['id', 'totalPrice', 'status', 'token', 'updatedAt']
+        });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: `Get all orders Successfuly`,
+            data: filterCheckout
+        });
+        logger.info('Get all orders Successfuly');
+    } catch (error) {
+        logger.error(`Error in processing Get Checkout : ${error.message}`);
         logger.error(error.stack);
         next(error);
     }
@@ -218,44 +258,6 @@ const getCheckout = async (req, res, next) => {
             statusResponse: 200,
             message: `Data order dengan id: ${req.params.orderId}`,
             data: checkout
-        });
-        logger.info('Get order Successfuly');
-    } catch (error) {
-        logger.error(`Error in processing Get Checkout : ${error.message}`);
-        logger.error(error.stack);
-        next(error);
-    }
-}
-
-const getCheckouts = async (req, res, next) => {
-    try {
-        const filterCheckout = await Order.findAll({
-            order: [['createdAt', 'DESC']],
-            where: {
-                status: {
-                    [Op.like]: `%${req.query.status}%`
-                },
-            },
-            include: [
-                {
-                    model: User,
-                    attributes: ['id', 'name', 'email', 'phone']
-                },
-                {
-                    model: OrdersItems,
-                    attributes: ['id', 'quantity', 'subtotal'],
-                    include: [{
-                        model: Menu,
-                        attributes: ['id', 'name', 'price', 'image', 'category']
-                    }]
-                }],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'updatedAt']
-        });
-        res.status(200).json({
-            status: true,
-            statusResponse: 200,
-            message: `History Transaction ${req.query.status} `,
-            data: filterCheckout
         });
         logger.info('Get order Successfuly');
     } catch (error) {
@@ -307,8 +309,8 @@ const cancelTransaction = async (req, res, next) => {
 export default {
     createOrder,
     midtransWebhook,
-    getCheckoutFilter,
-    getCheckout,
-    getCheckouts,
+    getFilterCheckoutById,
+    getFilterCheckouts,
     cancelTransaction,
+    getCheckout
 };

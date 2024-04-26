@@ -19,10 +19,26 @@ const Order = sequelize.define('order', {
         type: Sequelize.INTEGER,
         allowNull: false
     },
+    // subtotal: {
+    //     type: Sequelize.INTEGER,
+    //     allowNull: true
+    // },
+    // shippingPrice: {
+    //     type: Sequelize.INTEGER,
+    //     allowNull: true
+    // },
     status: {
         type: Sequelize.ENUM('Success', 'Pending', 'Cancelled', 'Refunded'),
         allowNull: false,
     },
+    // shippingstatus: {
+    //     type: Sequelize.ENUM('Processing', 'Delivered'),
+    //     allowNull: true,
+    // },
+    // address: {
+    //     type: Sequelize.TEXT,
+    //     allowNull: true
+    // },
     token: {
         type: Sequelize.UUID,
         allowNull: false,

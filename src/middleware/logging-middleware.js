@@ -21,7 +21,7 @@ const logger = winston.createLogger({
         winston.format.label({ label: "[LOGGER]" }),
         winston.format.printf(
             (info) =>
-                ` ${info.label} ${info.timestamp} ${info.level} : ${info.message}`
+                ` ${info.label} ${info.timestamp} ${info.level.toUpperCase()} : ${info.message}`
         )
     ),
     transports: [

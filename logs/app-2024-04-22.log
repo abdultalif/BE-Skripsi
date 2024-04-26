@@ -76,3 +76,7 @@ Error: Route.post() requires a callback function but got a [object Undefined]
     at proto.<computed> [as post] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\index.js:521:19)
     at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/routes/api.js:66:8
     at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-04-22 11:04:13.078 PM error : Error in login function: Email or password wrong
+ [LOGGER] 2024-04-22 11:04:13.082 PM error : Error: Email or password wrong
+    at login (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/user-controller.js:204:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

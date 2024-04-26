@@ -1,0 +1,71 @@
+{
+    "rajaongkir": {
+        "query": {
+            "origin": "78",
+            "destination": "54",
+            "weight": 2000,
+            "courier": "jne"
+        },
+        "status": {
+            "code": 200,
+            "description": "OK"
+        },
+        "origin_details": {
+            "city_id": "78",
+            "province_id": "9",
+            "province": "Jawa Barat",
+            "type": "Kabupaten",
+            "city_name": "Bogor",
+            "postal_code": "16911"
+        },
+        "destination_details": {
+            "city_id": "54",
+            "province_id": "9",
+            "province": "Jawa Barat",
+            "type": "Kabupaten",
+            "city_name": "Bekasi",
+            "postal_code": "17837"
+        },
+        "results": [
+            {
+                "code": "jne",
+                "name": "Jalur Nugraha Ekakurir (JNE)",
+                "costs": [
+                    {
+                        "service": "OKE",
+                        "description": "Ongkos Kirim Ekonomis",
+                        "cost": [
+                            {
+                                "value": 18000,
+                                "etd": "2-3",
+                                "note": ""
+                            }
+                        ]
+                    },
+                    {
+                        "service": "REG",
+                        "description": "Layanan Reguler",
+                        "cost": [
+                            {
+                                "value": 20000,
+                                "etd": "1-2",
+                                "note": ""
+                            }
+                        ]
+                    },
+                    {
+                        "service": "YES",
+                        "description": "Yakin Esok Sampai",
+                        "cost": [
+                            {
+                                "value": 36000,
+                                "etd": "1-1",
+                                "note": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
