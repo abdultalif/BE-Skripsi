@@ -45,6 +45,8 @@ router.post('/api/cancel-transaction', authentication, orderCotroller.cancelTran
 router.get('/api/orderfilter', authentication, orderCotroller.getFilterCheckoutById);
 router.post('/api/order', authentication, orderCotroller.createOrder);
 router.post('/api/midtransWebhook', orderCotroller.midtransWebhook);
+router.put('/api/status-ongkir/:orderId', authentication, orderCotroller.updateStatusOngkir);
+router.put('/api/resi/:orderId', authentication, orderCotroller.resiUpdate);
 
 
 // Carts

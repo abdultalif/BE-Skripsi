@@ -466,3 +466,18 @@
     at async order.findOne (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\model.js:1240:12)
     at async midtransWebhook (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:109:27)
  [LOGGER] 2024-04-26 10:56:17.549 AM ERROR : Error in processing Midtrans webhook: Operation timeout
+ [LOGGER] 2024-04-26 12:35:32.542 PM ERROR : Error in get province function getaddrinfo ENOTFOUND api.rajaongkir.com
+ [LOGGER] 2024-04-26 12:35:32.544 PM ERROR : Error: getaddrinfo ENOTFOUND api.rajaongkir.com
+    at AxiosError.from (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/node_modules/axios/lib/core/AxiosError.js:89:14)
+    at RedirectableRequest.handleRequestError (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/node_modules/axios/lib/adapters/http.js:610:25)
+    at RedirectableRequest.emit (node:events:514:28)
+    at eventHandlers.<computed> (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\follow-redirects\index.js:38:24)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:501:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async province (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/ongkir-controller.js:12:26)

@@ -36,11 +36,17 @@ const createOrder = async (req, res, next) => {
             credit_card: {
                 secure: true,
             },
-            item_details: itemDetails,
+            // item_details: itemDetails,
             customer_details: {
                 first_name: req.user.name,
                 email: req.user.email,
                 phone: req.user.phone
+            },
+            shipping_address: {
+                first_name: req.user.name,
+                email: req.user.email,
+                phone: req.user.phone,
+                address: req.body.address,
             },
             // expiry: {
             //     unit: "minutes",
@@ -67,8 +73,11 @@ const createOrder = async (req, res, next) => {
             id: parameter.transaction_details.order_id,
             userId: req.user.id,
             totalPrice: req.body.total,
-            token: transactionToken,
+            shippingPrice: req.body.ongkir,
             status: 'Pending',
+            shippingStatus: 'PROCESSING',
+            address: req.body.address,
+            token: transactionToken,
             responseMidtrans: JSON.stringify(transaction)
         });
 
@@ -175,7 +184,7 @@ const getFilterCheckoutById = async (req, res, next) => {
                         attributes: ['id', 'name', 'price', 'image', 'category']
                     }]
                 }],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
         });
         res.status(200).json({
             status: true,
@@ -214,7 +223,7 @@ const getFilterCheckouts = async (req, res, next) => {
                         attributes: ['id', 'name', 'price', 'image', 'category']
                     }]
                 }],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
         });
         res.status(200).json({
             status: true,
@@ -250,7 +259,7 @@ const getCheckout = async (req, res, next) => {
                         attributes: ['id', 'name', 'price', 'image', 'category']
                     }]
                 }],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
         });
 
         res.status(200).json({
@@ -303,6 +312,62 @@ const cancelTransaction = async (req, res, next) => {
 }
 
 
+const updateStatusOngkir = async (req, res, next) => {
+    try {
+        const ongkirExist = await Order.findOne({
+            where: { id: req.params.orderId },
+        })
+        if (!ongkirExist) throw new ResponseError(404, false, 'Order not found', null);
+
+        ongkirExist.shippingStatus = req.body.shippingStatus;
+
+        await ongkirExist.save();
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'Update status ongkir successfuly',
+            data: ongkirExist,
+        });
+        logger.info('Update status ongkir successfuly');
+    } catch (error) {
+        logger.error(`Error in update status funtion : ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
+
+const resiUpdate = async (req, res, next) => {
+    try {
+        const orderExist = await Order.findOne({
+            where: { id: req.params.orderId }
+        })
+
+        if (!orderExist) throw new ResponseError(404, false, 'Order not found')
+
+        orderExist.shippingStatus = req.body.shippingStatus;
+        orderExist.resi = req.body.resi;
+
+        await orderExist.save();
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'Update resi successfuly',
+            data: orderExist,
+        });
+        logger.info('Update resi successfuly');
+
+
+    } catch (error) {
+        logger.error(`Error in resi update function: ${error.message}`)
+        logger.error(error.stack);
+        next(error)
+    }
+}
+
+
 
 
 
@@ -312,5 +377,7 @@ export default {
     getFilterCheckoutById,
     getFilterCheckouts,
     cancelTransaction,
-    getCheckout
+    getCheckout,
+    updateStatusOngkir,
+    resiUpdate
 };

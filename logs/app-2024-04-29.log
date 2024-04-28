@@ -1,0 +1,80 @@
+ [LOGGER] 2024-04-29 12:09:18.410 AM ERROR : Error in get province function getaddrinfo ENOTFOUND api.rajaongkir.com
+ [LOGGER] 2024-04-29 12:09:18.584 AM ERROR : Error: getaddrinfo ENOTFOUND api.rajaongkir.com
+    at AxiosError.from (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/node_modules/axios/lib/core/AxiosError.js:89:14)
+    at RedirectableRequest.handleRequestError (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/node_modules/axios/lib/adapters/http.js:610:25)
+    at RedirectableRequest.emit (node:events:514:28)
+    at eventHandlers.<computed> (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\follow-redirects\index.js:38:24)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:501:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async province (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/ongkir-controller.js:12:26)
+ [LOGGER] 2024-04-29 12:09:58.117 AM ERROR : Error in create order function: notNull Violation: order.resi cannot be null
+ [LOGGER] 2024-04-29 12:09:58.119 AM ERROR : SequelizeValidationError: notNull Violation: order.resi cannot be null
+    at InstanceValidator._validate (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\model.js:2426:7)
+    at async order.create (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\model.js:1362:12)
+    at async createOrder (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:75:9)
+ [LOGGER] 2024-04-29 12:10:09.014 AM ERROR : Error in processing Midtrans webhook: Order not found
+ [LOGGER] 2024-04-29 12:10:09.014 AM ERROR : Error: Order not found
+    at midtransWebhook (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:123:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-04-29 12:11:20.033 AM ERROR : Error in processing Midtrans webhook: Order not found
+ [LOGGER] 2024-04-29 12:11:20.034 AM ERROR : Error: Order not found
+    at midtransWebhook (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:123:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-04-29 12:17:01.592 AM ERROR : Error in processing Midtrans webhook: Order not found
+ [LOGGER] 2024-04-29 12:17:01.594 AM ERROR : Error: Order not found
+    at midtransWebhook (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:123:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-04-29 12:40:51.934 AM ERROR : Error in get menu function Menu is not found
+ [LOGGER] 2024-04-29 12:40:51.935 AM ERROR : Error: Menu is not found
+    at getMenu (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/menu-controller.js:124:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-04-29 01:48:45.766 AM ERROR : Error in processing Get Checkout : Checkout not found
+ [LOGGER] 2024-04-29 01:48:45.770 AM ERROR : Error: Checkout not found
+    at getCheckout (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:248:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-04-29 01:48:51.443 AM ERROR : Error in processing Get Checkout : Checkout not found
+ [LOGGER] 2024-04-29 01:48:51.444 AM ERROR : Error: Checkout not found
+    at getCheckout (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:248:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-04-29 01:49:24.154 AM ERROR : Error in create menu function [object Object]
+ [LOGGER] 2024-04-29 01:49:24.155 AM ERROR : Error: [object Object]
+    at validate (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/menu-controller.js:16:34)
+    at Layer.handle [as handle_request] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:514:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ [LOGGER] 2024-04-29 01:50:02.612 AM ERROR : Error in create menu function [object Object]
+ [LOGGER] 2024-04-29 01:50:02.616 AM ERROR : Error: [object Object]
+    at validate (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/validation/validation.js:23:15)
+    at createMenu (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/menu-controller.js:16:34)
+    at Layer.handle [as handle_request] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:526:35)
+    at finish (node:internal/streams/writable:748:10)
+ [LOGGER] 2024-04-29 01:57:06.894 AM ERROR : Error in processing Get Checkout : Checkout not found
+ [LOGGER] 2024-04-29 01:57:06.895 AM ERROR : Error: Checkout not found
+    at getCheckout (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:248:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-04-29 01:57:08.892 AM ERROR : Error in processing Get Checkout : Checkout not found
+ [LOGGER] 2024-04-29 01:57:08.893 AM ERROR : Error: Checkout not found
+    at getCheckout (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:248:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
