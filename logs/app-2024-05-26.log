@@ -1,0 +1,32 @@
+ [LOGGER] 2024-05-26 07:15:39.445 AM ERROR : Error in login function: Email or password wrong
+ [LOGGER] 2024-05-26 07:15:39.449 AM ERROR : Error: Email or password wrong
+    at login (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/user-controller.js:204:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-05-26 07:56:59.768 AM ERROR : Error in create review function: [object Object]
+ [LOGGER] 2024-05-26 07:56:59.770 AM ERROR : Error: [object Object]
+    at validate (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/validation/validation.js:23:15)
+    at createReview (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/review-controller.js:8:30)
+    at Layer.handle [as handle_request] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at authentication (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/middleware/auth-middleware.js:19:5)
+    at Layer.handle [as handle_request] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\express\lib\router\index.js:284:15
+ [LOGGER] 2024-05-26 08:08:59.442 PM ERROR : Error in login function: Email or password wrong
+ [LOGGER] 2024-05-26 08:08:59.452 PM ERROR : Error: Email or password wrong
+    at login (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/user-controller.js:204:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-05-26 08:08:59.537 PM ERROR : Error in login function: Email or password wrong
+ [LOGGER] 2024-05-26 08:08:59.537 PM ERROR : Error: Email or password wrong
+    at login (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/user-controller.js:204:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-05-26 08:09:08.074 PM ERROR : Error in login function: Email or password wrong
+ [LOGGER] 2024-05-26 08:09:08.074 PM ERROR : Error: Email or password wrong
+    at login (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/user-controller.js:204:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-05-26 08:09:14.964 PM ERROR : Error in login function: Email or password wrong
+ [LOGGER] 2024-05-26 08:09:14.965 PM ERROR : Error: Email or password wrong
+    at login (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/user-controller.js:204:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

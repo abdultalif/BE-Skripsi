@@ -1,0 +1,36 @@
+ [LOGGER] 2024-05-21 11:17:18.109 AM ERROR : Error in login function: Email or password wrong
+ [LOGGER] 2024-05-21 11:17:18.112 AM ERROR : Error: Email or password wrong
+    at login (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/user-controller.js:204:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2024-05-21 11:01:27.956 PM ERROR : Error in weekly function: Unknown column 'order.created_at' in 'where clause'
+ [LOGGER] 2024-05-21 11:01:27.961 PM ERROR : Error
+    at Query.run (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async order.findAll (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\model.js:1140:21)
+    at async weekly (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:426:24)
+ [LOGGER] 2024-05-21 11:05:50.855 PM ERROR : Error in monthly function: Unknown column 'order.created_at' in 'where clause'
+ [LOGGER] 2024-05-21 11:05:50.858 PM ERROR : Error
+    at Query.run (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async order.findAll (D:\tugas kuliah\skripsi\Website Skripsi\BE\node_modules\sequelize\lib\model.js:1140:21)
+    at async monthly (file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/controller/order-cotroller.js:455:24)
+ [LOGGER] 2024-05-21 11:45:48.016 PM ERROR : uncaughtException: Cart is not defined
+ReferenceError: Cart is not defined
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/model/review-model.js:41:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-05-21 11:49:02.165 PM ERROR : uncaughtException: Cart is not defined
+ReferenceError: Cart is not defined
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/model/review-model.js:41:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-05-21 11:54:15.239 PM ERROR : uncaughtException: Cart is not defined
+ReferenceError: Cart is not defined
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/model/review-model.js:41:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2024-05-21 11:55:31.389 PM ERROR : uncaughtException: Cart is not defined
+ReferenceError: Cart is not defined
+    at file:///D:/tugas%20kuliah/skripsi/Website%20Skripsi/BE/src/model/review-model.js:41:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)

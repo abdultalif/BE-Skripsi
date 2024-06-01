@@ -6,6 +6,7 @@ import { uploadMenu, uploadUser } from "../middleware/upload-middleware.js";
 import cartController from "../controller/cart-controller.js";
 import orderCotroller from "../controller/order-cotroller.js";
 import ongkirController from "../controller/ongkir-controller.js";
+import reviewController from "../controller/review-controller.js";
 
 const router = express.Router();
 // router.use(authentication);
@@ -18,6 +19,7 @@ router.get('/api/menus/:menuId', authentication, isAdmin, menuController.getMenu
 router.patch('/api/menus/:menuId', authentication, isAdmin, uploadMenu.single('image'), menuController.updateMenu);
 
 // Users
+router.get('/api/user-count', authentication, isAdmin, userController.getUserCount);
 router.get('/api/users/get-login', authentication, userController.getLogin);
 router.get('/api/users/:userId', authentication, userController.getUser);
 router.patch('/api/users/:userId', authentication, uploadUser.single('image'), userController.updateUser);
@@ -47,6 +49,18 @@ router.post('/api/order', authentication, orderCotroller.createOrder);
 router.post('/api/midtransWebhook', orderCotroller.midtransWebhook);
 router.put('/api/status-ongkir/:orderId', authentication, orderCotroller.updateStatusOngkir);
 router.put('/api/resi/:orderId', authentication, orderCotroller.resiUpdate);
+router.get('/api/daily', authentication, isAdmin, orderCotroller.daily);
+router.get('/api/weekly', authentication, isAdmin, orderCotroller.weekly);
+router.get('/api/monthly', authentication, isAdmin, orderCotroller.monthly);
+router.get('/api/orderLimit5', authentication, isAdmin, orderCotroller.getCheckoutsLimit5);
+router.get('/api/order-status', authentication, isAdmin, orderCotroller.orderStatus);
+router.get('/api/total-quantity', authentication, isAdmin, orderCotroller.getTotalQuantity);
+router.get('/api/total-price', authentication, isAdmin, orderCotroller.getTotalPrice);
+router.get('/api/order-count', authentication, isAdmin, orderCotroller.getOrdersCount);
+
+
+// Reviews
+router.post('/api/reviews', authentication, reviewController.createReview);
 
 
 // Carts

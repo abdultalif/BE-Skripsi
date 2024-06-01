@@ -11,6 +11,7 @@ import User from "../model/user-model.js";
 import { Op } from "sequelize";
 import Menu from "../model/menu-model.js";
 import axios from "axios";
+import sequelize from "../utils/db.js";
 
 
 const snap = new midtransClient.Snap({
@@ -368,6 +369,269 @@ const resiUpdate = async (req, res, next) => {
 }
 
 
+const daily = async (req, res, next) => {
+    try {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+
+        const orders = await Order.findAll({
+            where: {
+                createdAt: {
+                    [Op.gte]: today,
+                    [Op.lt]: tomorrow
+                }
+            },
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'name', 'email', 'phone']
+                },
+                {
+                    model: OrdersItems,
+                    attributes: ['id', 'quantity', 'subtotal'],
+                    include: [{
+                        model: Menu,
+                        attributes: ['id', 'name', 'price', 'image', 'category']
+                    }]
+                }
+            ],
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+
+        });
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'Get order daily Successfuly',
+            data: orders,
+        });
+        logger.info('Get order daily Successfuly');
+    } catch (error) {
+        next(error)
+        logger.error(`Error in daily function: ${error.message}`)
+        logger.error(error.stack)
+    }
+}
+
+
+const weekly = async (req, res, next) => {
+    try {
+        const now = new Date();
+        const startOfWeek = new Date(now.setDate(now.getDate() - now.getDay()));
+        startOfWeek.setHours(0, 0, 0, 0);
+        const endOfWeek = new Date(startOfWeek);
+        endOfWeek.setDate(endOfWeek.getDate() + 7);
+
+        const orders = await Order.findAll({
+            where: {
+                createdAt: {
+                    [Op.gte]: startOfWeek,
+                    [Op.lt]: endOfWeek
+                }
+            },
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'name', 'email', 'phone']
+                },
+                {
+                    model: OrdersItems,
+                    attributes: ['id', 'quantity', 'subtotal'],
+                    include: [{
+                        model: Menu,
+                        attributes: ['id', 'name', 'price', 'image', 'category']
+                    }]
+                }
+            ],
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+        });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'Get order weekly Successfuly',
+            data: orders,
+        });
+        logger.info('Get order weekly Successfuly');
+    } catch (error) {
+        next(error)
+        logger.error(`Error in weekly function: ${error.message}`)
+        logger.error(error.stack)
+    }
+}
+
+
+const monthly = async (req, res, next) => {
+    try {
+        const now = new Date();
+        const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+        const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+
+        const orders = await Order.findAll({
+            where: {
+                createdAt: {
+                    [Op.gte]: startOfMonth,
+                    [Op.lt]: endOfMonth
+                }
+            },
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'name', 'email', 'phone']
+                },
+                {
+                    model: OrdersItems,
+                    attributes: ['id', 'quantity', 'subtotal'],
+                    include: [{
+                        model: Menu,
+                        attributes: ['id', 'name', 'price', 'image', 'category']
+                    }]
+                }
+            ],
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+        });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'Get order monthly Successfuly',
+            data: orders,
+        });
+        logger.info('Get order monthly Successfuly');
+    } catch (error) {
+        next(error)
+        logger.error(`Error in monthly function: ${error.message}`)
+        logger.error(error.stack)
+    }
+}
+
+
+const getCheckoutsLimit5 = async (req, res, next) => {
+    try {
+        const filterCheckout = await Order.findAll({
+            order: [['updatedAt', 'DESC']],
+            limit: 5,
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'name', 'email', 'phone']
+                },
+                {
+                    model: OrdersItems,
+                    attributes: ['id', 'quantity', 'subtotal'],
+                    include: [{
+                        model: Menu,
+                        attributes: ['id', 'name', 'price', 'image', 'category']
+                    }]
+                }],
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+        });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: `Get 5 DESC orders Successfuly`,
+            data: filterCheckout
+        });
+        logger.info('Get 5 DESC orders Successfuly');
+    } catch (error) {
+        logger.error(`Error in processing Get Checkout : ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+}
+
+const orderStatus = async (req, res, next) => {
+    try {
+        const statuses = await Order.findAll({
+            attributes: ['status', [sequelize.fn('COUNT', sequelize.col('status')), 'count']],
+            group: ['status']
+        });
+
+        const data = { status: {} };
+        statuses.forEach(item => {
+            data.status[item.status] = item.get('count');
+        });
+
+        res.status(200).json({
+            message: "Get count status successfully",
+            data: data
+        })
+        logger.info("Get count status successfully");
+    } catch (error) {
+        logger.error(`Error in order status function: ${error.message}`);
+        logger.error(error.stack);
+        next(error)
+    }
+}
+
+const getTotalQuantity = async (req, res, next) => {
+    try {
+        const [results] = await sequelize.query(`
+        SELECT SUM(oi.quantity) AS totalQuantity
+        FROM orders_items oi
+        INNER JOIN orders o ON oi.orderId = o.id
+        WHERE o.status = 'Success'
+    `);
+
+        const totalQuantity = results[0].totalQuantity;
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'Total quantity retrieved successfully',
+            data: totalQuantity
+        });
+        logger.info("Total quantity retrieved successfully");
+    } catch (error) {
+        logger.error(`Error in get total quantity function: ${error.message}`);
+        logger.error(error.stack);
+        next(error)
+    }
+}
+
+const getTotalPrice = async (req, res, next) => {
+    try {
+        const total = await Order.sum('totalPrice', {
+            where: {
+                status: "Success"
+            }
+        });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'Total price retrieved successfully',
+            data: total
+        });
+        logger.info("Total price retrieved successfully");
+    } catch (error) {
+        logger.error(`Error in get total price function: ${error.message}`);
+        logger.error(error.stack);
+        next(error)
+    }
+}
+
+
+const getOrdersCount = async (req, res, next) => {
+    try {
+        const ordersCount = await Order.count({
+            where: {
+                status: "Success"
+            }
+        });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'Order count retrieved successfully',
+            data: ordersCount
+        });
+        logger.info("Order count retrieved successfully");
+    } catch (error) {
+        logger.error(`Error in get Order count function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
 
 
 
@@ -379,5 +643,13 @@ export default {
     cancelTransaction,
     getCheckout,
     updateStatusOngkir,
-    resiUpdate
+    resiUpdate,
+    daily,
+    weekly,
+    monthly,
+    getCheckoutsLimit5,
+    orderStatus,
+    getTotalQuantity,
+    getTotalPrice,
+    getOrdersCount
 };

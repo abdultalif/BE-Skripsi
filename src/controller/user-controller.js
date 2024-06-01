@@ -611,6 +611,23 @@ const createUser = async (req, res, next) => {
     }
 };
 
+const getUserCount = async (req, res, next) => {
+    try {
+        const userCount = await User.count();
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'User count retrieved successfully',
+            data: userCount
+        });
+        logger.info("User count retrieved successfully");
+    } catch (error) {
+        logger.error(`Error in get user count function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+    }
+};
+
 export default {
     register,
     getUsers,
@@ -627,5 +644,6 @@ export default {
     resetPassword,
     getLogin,
     activatedUser,
-    createUser
+    createUser,
+    getUserCount
 };
