@@ -49,9 +49,16 @@ router.post('/api/order', authentication, orderCotroller.createOrder);
 router.post('/api/midtransWebhook', orderCotroller.midtransWebhook);
 router.put('/api/status-ongkir/:orderId', authentication, orderCotroller.updateStatusOngkir);
 router.put('/api/resi/:orderId', authentication, orderCotroller.resiUpdate);
+
+// Laporan Admin
 router.get('/api/daily', authentication, isAdmin, orderCotroller.daily);
 router.get('/api/weekly', authentication, isAdmin, orderCotroller.weekly);
 router.get('/api/monthly', authentication, isAdmin, orderCotroller.monthly);
+router.get('/api/yearly', authentication, isAdmin, orderCotroller.yearly);
+router.get('/api/yesterday', authentication, isAdmin, orderCotroller.yesterday);
+
+
+// Dashboard
 router.get('/api/orderLimit5', authentication, isAdmin, orderCotroller.getCheckoutsLimit5);
 router.get('/api/order-status', authentication, isAdmin, orderCotroller.orderStatus);
 router.get('/api/total-quantity', authentication, isAdmin, orderCotroller.getTotalQuantity);
@@ -72,8 +79,10 @@ router.get('/api/carts/:cartId', authentication, cartController.getCart);
 router.delete('/api/carts/:cartId', authentication, cartController.deleteCart);
 
 // Menus public
-router.get('/api-public/menus', menuController.getMenus);
 router.get('/api-public/cari-menu', menuController.cariMenu);
+router.get('/api-public/menus', menuController.products);
+router.get('/api-public/reviews/:menuId', reviewController.getReview);
+
 
 
 // Raja Ongkir

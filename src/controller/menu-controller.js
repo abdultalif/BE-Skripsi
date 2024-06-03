@@ -5,8 +5,8 @@ import Menu from "../model/menu-model.js";
 import { createMenuValidation, updateMenuValidation } from "../validation/menus-validation.js";
 import { validate } from "../validation/validation.js";
 import fs from "fs";
-import Order from "../model/order-model.js";
 import Review from "../model/review-model.js";
+import sequelize from "../utils/db.js";
 
 
 const createMenu = async (req, res, next) => {
@@ -51,6 +51,7 @@ const createMenu = async (req, res, next) => {
     }
 };
 
+// ini untuk data menu di role admin
 const getMenus = async (req, res, next) => {
     try {
         const menusExists = await Menu.findAll({
@@ -214,6 +215,59 @@ const cariMenu = async (req, res, next) => {
     }
 }
 
+// ini untuk data menu di role user
+const products = async (req, res, next) => {
+    try {
+        const products = await Menu.findAll({
+            attributes: {
+                include: [
+                    [sequelize.literal(`(
+                        SELECT COUNT(r.id)
+                        FROM reviews AS r
+                        WHERE r.menuId = Menu.id
+                    )`), 'reviewsCount'],
+                    [sequelize.literal(`(
+                        SELECT AVG(r.rating)
+                        FROM reviews AS r
+                        WHERE r.menuId = Menu.id
+                    )`), 'averageRating']
+                ]
+            }
+        });
+
+        const formattedProducts = products.map(product => {
+            const { id, name, description, price, image, category, dataValues } = product;
+            const reviewsCount = dataValues.reviewsCount || 0;
+            const averageRating = dataValues.averageRating || null;
+
+            return {
+                id,
+                name,
+                description,
+                price,
+                image,
+                category,
+                reviewsCount,
+                averageRating
+            };
+        });
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "OK",
+            data: formattedProducts
+        });
+
+        logger.info(`Get menus successfully`);
+    } catch (error) {
+        logger.error(`Error in Get Products Function: ${error.message}`)
+        logger.error(error.stack);
+        next(error)
+    }
+}
+
+
 
 export default {
     getMenus,
@@ -222,4 +276,5 @@ export default {
     deleteMenu,
     cariMenu,
     updateMenu,
+    products,
 };

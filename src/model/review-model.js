@@ -10,7 +10,7 @@ const Review = sequelize.define('Reviews', {
         primaryKey: true,
     },
     rating: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
     },
     review: {
@@ -38,15 +38,21 @@ const Review = sequelize.define('Reviews', {
     timestamps: true
 });
 
-User.hasMany(Review, {
-    foreignKey: 'userId'
-});
-
-
 Menu.hasMany(Review, {
     foreignKey: 'menuId'
 });
 
+Review.belongsTo(Menu, {
+    foreignKey: 'menuId'
+});
+
+User.hasMany(Review, {
+    foreignKey: 'userId'
+});
+
+Review.belongsTo(User, {
+    foreignKey: 'userId'
+});
 
 (async () => {
     await sequelize.sync();

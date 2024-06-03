@@ -383,6 +383,7 @@ const daily = async (req, res, next) => {
                     [Op.lt]: tomorrow
                 }
             },
+            order: [['updatedAt', 'DESC']],
             include: [
                 {
                     model: User,
@@ -415,6 +416,52 @@ const daily = async (req, res, next) => {
     }
 }
 
+const yesterday = async (req, res, next) => {
+    try {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const yesterday = new Date(today);
+        yesterday.setDate(yesterday.getDate() - 1);
+
+        const orders = await Order.findAll({
+            where: {
+                createdAt: {
+                    [Op.gte]: yesterday,
+                    [Op.lt]: today
+                }
+            },
+            order: [['updatedAt', 'DESC']],
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'name', 'email', 'phone']
+                },
+                {
+                    model: OrdersItems,
+                    attributes: ['id', 'quantity', 'subtotal'],
+                    include: [{
+                        model: Menu,
+                        attributes: ['id', 'name', 'price', 'image', 'category']
+                    }]
+                }
+            ],
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+        });
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'Get order yesterday Successfuly',
+            data: orders,
+        });
+        logger.info('Get order yesterday Successfuly');
+    } catch (error) {
+        next(error);
+        logger.error(`Error in yesterday function: ${error.message}`);
+        logger.error(error.stack);
+    }
+}
+
 
 const weekly = async (req, res, next) => {
     try {
@@ -431,6 +478,7 @@ const weekly = async (req, res, next) => {
                     [Op.lt]: endOfWeek
                 }
             },
+            order: [['updatedAt', 'DESC']],
             include: [
                 {
                     model: User,
@@ -475,6 +523,7 @@ const monthly = async (req, res, next) => {
                     [Op.lt]: endOfMonth
                 }
             },
+            order: [['updatedAt', 'DESC']],
             include: [
                 {
                     model: User,
@@ -505,6 +554,50 @@ const monthly = async (req, res, next) => {
     }
 }
 
+
+const yearly = async (req, res, next) => {
+    try {
+        const now = new Date();
+        const startOfYear = new Date(now.getFullYear(), 0, 1);
+        const endOfYear = new Date(now.getFullYear() + 1, 0, 1);
+
+        const orders = await Order.findAll({
+            where: {
+                createdAt: {
+                    [Op.gte]: startOfYear,
+                    [Op.lt]: endOfYear
+                }
+            },
+            order: [['updatedAt', 'DESC']],
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'name', 'email', 'phone']
+                },
+                {
+                    model: OrdersItems,
+                    attributes: ['id', 'quantity', 'subtotal'],
+                    include: [{
+                        model: Menu,
+                        attributes: ['id', 'name', 'price', 'image', 'category']
+                    }]
+                }
+            ],
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+        });
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: 'Get order yearly Successfully',
+            data: orders,
+        });
+        logger.info('Get order yearly Successfully');
+    } catch (error) {
+        next(error)
+        logger.error(`Error in yearly function: ${error.message}`)
+        logger.error(error.stack)
+    }
+}
 
 const getCheckoutsLimit5 = async (req, res, next) => {
     try {
@@ -645,8 +738,10 @@ export default {
     updateStatusOngkir,
     resiUpdate,
     daily,
+    yesterday,
     weekly,
     monthly,
+    yearly,
     getCheckoutsLimit5,
     orderStatus,
     getTotalQuantity,

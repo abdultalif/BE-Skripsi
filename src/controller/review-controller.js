@@ -1,5 +1,7 @@
 import logger from "../middleware/logging-middleware.js";
+import Menu from "../model/menu-model.js";
 import Review from "../model/review-model.js";
+import User from "../model/user-model.js";
 import { createReviewValidation } from "../validation/review-validation.js";
 import { validate } from "../validation/validation.js";
 
@@ -24,6 +26,42 @@ const createReview = async (req, res, next) => {
     }
 };
 
+
+const getReview = async (req, res, next) => {
+    try {
+
+        const result = await Review.findAll({
+            where: {
+                menuId: req.params.menuId
+            },
+            include: [
+                {
+                    model: User,
+                    attributes: ['name']
+                }
+            ],
+            order: [['updatedAt', 'DESC']],
+        });
+
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "Get review successfully",
+            data: result
+        });
+        logger.info(`get review successfuly`);
+
+    } catch (error) {
+
+        logger.error(`Error in get review function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+
+    }
+};
+
 export default {
-    createReview
+    createReview,
+    getReview
 }
