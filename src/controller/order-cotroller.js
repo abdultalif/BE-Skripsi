@@ -185,7 +185,7 @@ const getFilterCheckoutById = async (req, res, next) => {
                         attributes: ['id', 'name', 'price', 'image', 'category']
                     }]
                 }],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'updatedAt']
         });
         res.status(200).json({
             status: true,
@@ -224,7 +224,7 @@ const getFilterCheckouts = async (req, res, next) => {
                         attributes: ['id', 'name', 'price', 'image', 'category']
                     }]
                 }],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'updatedAt']
         });
         res.status(200).json({
             status: true,
@@ -260,7 +260,7 @@ const getCheckout = async (req, res, next) => {
                         attributes: ['id', 'name', 'price', 'image', 'category']
                     }]
                 }],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'updatedAt']
         });
 
         res.status(200).json({
@@ -341,6 +341,7 @@ const updateStatusOngkir = async (req, res, next) => {
 
 const resiUpdate = async (req, res, next) => {
     try {
+
         const orderExist = await Order.findOne({
             where: { id: req.params.orderId }
         })
@@ -348,21 +349,19 @@ const resiUpdate = async (req, res, next) => {
         if (!orderExist) throw new ResponseError(404, false, 'Order not found')
 
         orderExist.shippingStatus = req.body.shippingStatus;
-        orderExist.resi = req.body.resi;
 
         await orderExist.save();
 
         res.status(200).json({
             status: true,
             statusResponse: 200,
-            message: 'Update resi successfuly',
+            message: 'Updated status delivery successfuly',
             data: orderExist,
         });
-        logger.info('Update resi successfuly');
-
+        logger.info('Updated status delivery successfuly');
 
     } catch (error) {
-        logger.error(`Error in resi update function: ${error.message}`)
+        logger.error(`Error in Updated status delivery function: ${error.message}`)
         logger.error(error.stack);
         next(error)
     }
@@ -398,7 +397,7 @@ const daily = async (req, res, next) => {
                     }]
                 }
             ],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'updatedAt']
 
         });
 
@@ -445,7 +444,7 @@ const yesterday = async (req, res, next) => {
                     }]
                 }
             ],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'updatedAt']
         });
 
         res.status(200).json({
@@ -493,7 +492,7 @@ const weekly = async (req, res, next) => {
                     }]
                 }
             ],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'updatedAt']
         });
         res.status(200).json({
             status: true,
@@ -538,7 +537,7 @@ const monthly = async (req, res, next) => {
                     }]
                 }
             ],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'updatedAt']
         });
         res.status(200).json({
             status: true,
@@ -583,7 +582,7 @@ const yearly = async (req, res, next) => {
                     }]
                 }
             ],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'updatedAt']
         });
         res.status(200).json({
             status: true,
@@ -617,7 +616,7 @@ const getCheckoutsLimit5 = async (req, res, next) => {
                         attributes: ['id', 'name', 'price', 'image', 'category']
                     }]
                 }],
-            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'resi', 'updatedAt']
+            attributes: ['id', 'totalPrice', 'status', 'token', 'shippingStatus', 'shippingPrice', 'address', 'updatedAt']
         });
         res.status(200).json({
             status: true,

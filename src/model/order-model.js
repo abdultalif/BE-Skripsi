@@ -35,11 +35,6 @@ const Order = sequelize.define('order', {
         type: Sequelize.TEXT,
         allowNull: false
     },
-    resi: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        defaultValue: '00-000'
-    },
     token: {
         type: Sequelize.UUID,
         allowNull: false,

@@ -68,6 +68,7 @@ router.get('/api/order-count', authentication, isAdmin, orderCotroller.getOrders
 
 // Reviews
 router.post('/api/reviews', authentication, reviewController.createReview);
+router.get('/api/reviews/:orderId/:menuId', authentication, reviewController.getReviews);
 
 
 // Carts

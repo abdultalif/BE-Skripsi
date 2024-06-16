@@ -2,6 +2,7 @@ import sequelize from "../utils/db.js";
 import { Sequelize } from "sequelize";
 import User from "./user-model.js";
 import Menu from "./menu-model.js";
+import Order from "./order-model.js";
 
 const Review = sequelize.define('Reviews', {
     id: {
@@ -22,6 +23,14 @@ const Review = sequelize.define('Reviews', {
         allowNull: false,
         references: {
             model: Menu,
+            key: 'id'
+        }
+    },
+    orderId: {
+        type: Sequelize.UUID,
+        allowNull: false,
+        references: {
+            model: Order,
             key: 'id'
         }
     },
@@ -52,6 +61,14 @@ User.hasMany(Review, {
 
 Review.belongsTo(User, {
     foreignKey: 'userId'
+});
+
+Order.hasMany(Review, {
+    foreignKey: 'orderId'
+});
+
+Review.belongsTo(Order, {
+    foreignKey: 'orderId'
 });
 
 (async () => {

@@ -61,7 +61,44 @@ const getReview = async (req, res, next) => {
     }
 };
 
+const getReviews = async (req, res, next) => {
+    try {
+
+        const result = await Review.findAll({
+            where: {
+                menuId: req.params.menuId,
+                orderId: req.params.orderId,
+                userId: req.user.id,
+            },
+            // include: [
+            //     {
+            //         model: User,
+            //         attributes: ['name']
+            //     }
+            // ],
+            // order: [['updatedAt', 'DESC']],
+        });
+
+
+        res.status(200).json({
+            status: true,
+            statusResponse: 200,
+            message: "Get reviews successfully",
+            data: result
+        });
+        logger.info(`get reviews successfuly`);
+
+    } catch (error) {
+
+        logger.error(`Error in get reviews function: ${error.message}`);
+        logger.error(error.stack);
+        next(error);
+
+    }
+}
+
 export default {
     createReview,
-    getReview
+    getReview,
+    getReviews
 }
