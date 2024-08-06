@@ -6,6 +6,7 @@ import "./src/middleware/logging-middleware.js";
 import cors from "cors";
 import { fileURLToPath } from 'url';
 import path from "path";
+import logger from "./src/middleware/logging-middleware.js";
 
 
 const port = process.env.PORT;
@@ -32,5 +33,5 @@ const __dirname = path.dirname(__filename);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.listen(port, () => {
-    console.log(`App berjalan di http://localhost:${port}`);
+    logger.info(`App berjalan di http://localhost:${port}`);
 });

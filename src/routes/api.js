@@ -86,10 +86,15 @@ router.get('/api-public/reviews/:menuId', reviewController.getReview);
 
 
 
-// Raja Ongkir
-router.get('/api/provinsi', ongkirController.province);
-router.get('/api/city/:provinceId', ongkirController.city);
-router.post('/api/ongkir', authentication, ongkirController.ongkir);
+// // Raja Ongkir
+// router.get('/api/provinsi', ongkirController.province);
+// router.get('/api/city/:provinceId', ongkirController.city);
+// router.post('/api/ongkir', authentication, ongkirController.ongkir);
+
+
+// Ongkir
+router.get('/api/ongkir', authentication, ongkirController.getPriceDelivery);
+router.post('/api/ongkir', authentication, ongkirController.getPriceDeliverybyRegion);
 
 
 
